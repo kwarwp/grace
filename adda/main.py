@@ -13,6 +13,6 @@ FINAL = "https://img.elo7.com.br/product/main/1790FA1/vela-ponto-de-interrogacao
 def tale():
     floresta = Cena(img=FLORESTA)
     homem_aranha = Elemento (img=HOMEM_ARANHA, tit="Homem_Aranha", style=dict(left=100, top=100, width=100, higth=100, bottom=100))
-    floresta.vai()
+    #floresta.vai()
     
 tale()
