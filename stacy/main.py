@@ -12,7 +12,8 @@ PANTANO = "https://i2.wp.com/cromossomonerd.com.br/wp-content/uploads/2017/02/MP
 def tale():
    pantano = Cena(img = PANTANO)
    barbie = Elemento(img =BARBIE, tit = "barbie", style=dict(left=290, top=220, width=160, higth=100, bottom=100))
-   
+   barbie_t = Texto(pantano, "socorro!!!!!!!!!")
+   barbie.vai = barbie_t.vai
    barbie.entra(pantano)
    pantano.vai()
    
