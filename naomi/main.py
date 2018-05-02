@@ -23,10 +23,10 @@ def nos():
    alice.vai = alice_t.vai
    casinha.vai()
      
-
+   
    pantano = Cena(img = PANTANO)
    casinha.direita = pantano
-   pantano.vai()
+   
    
    
    yoda = Elemento(img= YODA, tit= "yoda", style=dict(left=290, top=180, width=80, higth=100))
@@ -54,9 +54,7 @@ def nos():
    homem_aranha_t = Texto(castelo, "Entregue!")
    homem_aranha.vai = homem_aranha_t.vai
    homem_aranha.entra(castelo)
-   castelo.vai()
-   pantano.vai()
- 
-"""
+   casinha.vai()
+   
 
 nos()
