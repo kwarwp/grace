@@ -16,7 +16,8 @@ def tale():
    floresta = Cena(img=FLORESTA)
    pantano1 = Cena(img=PANTANO)
    pantano2 = Cena(img=PANTANO)
-   pantano3 = Cena(img=PANTANO)
+   
+
  
    homem = Elemento(img=HOMEM_ARANHA, tit= "aranha", style=dict(left=100, top=100, width=100, higth=100, bottom=100))
    homem.entra(floresta)
@@ -39,7 +40,7 @@ def tale():
    #alice_t2 = Texto(pantano3,"SPIDER FRACO!")
    #def p1():
    #	pantano2.vai()
-  # 	alice_t1.vai()
+   # 	alice_t1.vai()
    #alice1.vai = p1
    #def p2():
    #	pantano3.vai()
