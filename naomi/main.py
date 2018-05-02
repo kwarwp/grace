@@ -13,9 +13,23 @@ PANTANO = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW2c7m2GcvUpqgc
 
 def nos():
    casinha = Cena(img = CASINHA)
-   homem_aranha = Elemento(img =HOMEM_ARANHA, tit= "homem_aranha", STYLE=dict(left=100, top=100, width=100, higth=100, botton=100))
-   
+   homem_aranha = Elemento(img =HOMEM_ARANHA, tit= "homem_aranha", style=dict(left=290, top=100, width=160, higth=100))
+   homem_aranha_t = Texto(casinha, "tem alguém aí???")
+   homem_aranha.vai = homem_aranha_t.vai
    homem_aranha.entra(casinha)
+
+
+
+   castelo = Cena(img = CASTELO)
+   casinha.direita=castelo
+   alice = Elemento(img= ALICE, tit= "alice", style=dict(left=290, top=180, width=80, higth=100))
+   alice_t = Texto(castelo, "Socorro, estou perdida! Leve-me para o Castelo!!!")
+   alice.vai = alice_t.vai
+   alice.entra(castelo)
+   castelo.vai()
+   
    casinha.vai()
+
+
 
 nos()
