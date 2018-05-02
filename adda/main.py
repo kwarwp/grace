@@ -11,7 +11,16 @@ PANTANO = "http://pt.clubpenguinwiki.info/static/images/cpwpt/thumb/4/4b/Festa_d
 CASTELO = "https://i.pinimg.com/originals/10/a7/8a/10a78a8d28dcfc1999848a8815e23679.png"
 
 def tale():
+   casinha = Cena(img = CASINHA)
+   homem_aranha = Elemento(img = HOMEM_ARANHA, tit="homem_aranha", style = dict(left= 100, top= 100,width= 100, hight= 100)
+   homem_aranha.entra(casinha)
+   
+   castelo = Cena(img = CASTELO)
+   alice = Elemento(img = ALICE, tit="alice", style = dict(left= 100, top= 100,width= 100, hight= 100)
+   
    pantano = Cena(img = PANTANO)
+   yoda = Elemento(img = YODA, tit="yoda", style = dict(left= 100, top= 100,width= 100, hight= 100)
    pantano.vai()
+   alice.vai()
 
 tale()
