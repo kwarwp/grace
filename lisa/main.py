@@ -14,7 +14,7 @@ def tale():
     floresta = Cena(img = FLORESTA)
     nave = Elemento(img=NAVE, tit= "nave", style=dict(left=250, top=200, width=300, hight=300, bottom=300))
     nave_t = Texto(floresta, "Desce uma nave na floresta")
-    nave_t.vai = nave.vai
+    nave.vai = nave_t.vai
     nave.entra(floresta)
     floresta.vai()
     
