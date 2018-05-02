@@ -1,7 +1,7 @@
 # grace.anastasia.main.py
 from _spy.vitollino.main import Cena, Elemento, Texto
 from _spy.vitollino.main import STYLE
-global alice_t1,alice_t2,a
+
 STYLE ["width"] = 900
 
 HOMEM_ARANHA = "http://4.bp.blogspot.com/-RJm2iY2ETNc/T9eVS0j1frI/AAAAAAAAFpE/BV5ZIE-UHxA/s1600/Homem-Aranha-png-Queroimagem.com+(7).png"
@@ -12,34 +12,43 @@ PANTANO = "http://img15.deviantart.net/cda6/i/2014/346/9/f/pantano_by_tetamonja-
 FINAL = "http://innhost.com.br/wp-content/uploads/2014/05/innhost_duvida.png"
 
 def tale():
-   global a, alice_t1,alice_t2
+   
    floresta = Cena(img=FLORESTA)
-   pantano = Cena(img=PANTANO)
+   pantano1 = Cena(img=PANTANO)
+   pantano2 = Cena(img=PANTANO)
+   pantano3 = Cena(img=PANTANO)
+ 
    homem = Elemento(img=HOMEM_ARANHA, tit= "aranha", style=dict(left=100, top=100, width=100, higth=100, bottom=100))
    homem.entra(floresta)
    homem_t=Texto(floresta,"Saltitando pelas arvores ele tem uma visao privilegiada")
    homem.vai=homem_t.vai
    
-   floresta.direita = pantano
+   floresta.direita = pantano1
    alice = Elemento(img=ALICE, tit= "alicinha", style=dict(left=800, top=150, width=100, higth=100, bottom=100))
-   alice.entra(pantano)
+   alice.entra(pantano1)
+   alice_t=Texto(pantano1,"O pântano é meu!")
+   alice.vai=alice_t.vai
    
-   alice_t1 = Texto(pantano,"O que sera que uma menina tao doce quanto ela estaria fazendo em um lugar tao sombrio como o pantano?")
-   alice_t2 = Texto(pantano,"SPIDER FRACO!")
-   a=0
-   def alicefala ():
-       global a,alice_t1,alice_t2
-       if a==0:
-
-       if a==1:
-          global alice_t2.vai()
-       a+=1   
-       if a>=0:
-          a=0
-   alice.vai=alicefala
+   pantano1.esquerda=pantano2
+   alice = Elemento(img=ALICE, tit= "alicinha", style=dict(left=800, top=150, width=100, higth=100, bottom=100))
+   alice.entra(pantano2)
+   alice_t=Texto(pantano2,"SPIDER CUZAUN")
+   alice.vai=alice_t.vai
    
-
-
+   #alice_t1 = Texto(pantano2,"O que sera que uma menina tao doce quanto ela estaria fazendo em um lugar tao sombrio como o pantano?")
+   #alice_t2 = Texto(pantano3,"SPIDER FRACO!")
+   #def p1():
+   #	pantano2.vai()
+  # 	alice_t1.vai()
+   #alice1.vai = p1
+   #def p2():
+   #	pantano3.vai()
+   #	alice_t2.vai()
+   #alice2.vai = p2
+   
+   #alice_t1.vai()
+   #alice_t2.vai()
+   
    floresta.vai()
 
 tale()
