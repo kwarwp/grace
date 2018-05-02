@@ -13,48 +13,45 @@ PANTANO = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW2c7m2GcvUpqgc
 
 def nos():
    casinha = Cena(img = CASINHA)
+   pantano = Cena(img = PANTANO)   
+   castelo = Cena(img = CASTELO)
+   
    homem_aranha = Elemento(img =HOMEM_ARANHA, tit= "homem_aranha", style=dict(left=190, top=100, width=160, higth=100))
+   homem_aranha1 = Elemento(img =HOMEM_ARANHA, tit= "homem_aranha", style=dict(left=190, top=100, width=160, higth=100))
+   alice = Elemento(img= ALICE, tit= "alice", style=dict(left=340, top=180, width=80, higth=300))
+   alice1 = Elemento(img= ALICE, tit= "alice1", style=dict(left=340, top=180, width=80, higth=300))
+   alice2 = Elemento(img= ALICE, tit= "alice2", style=dict(left=340, top=180, width=80, higth=300))
+   yoda = Elemento(img= YODA, tit= "yoda", style=dict(left=290, top=180, width=80, higth=100))
+   
+   
    homem_aranha_t = Texto(casinha, "tem alguém aí???")
    homem_aranha.vai = homem_aranha_t.vai
-   homem_aranha.entra(casinha)
-   alice = Elemento(img= ALICE, tit= "alice", style=dict(left=340, top=180, width=80, higth=300))
-   alice.entra(casinha)
+   homem_aranha1_t = Texto(castelo, "Entregue!")
+   homem_aranha1.vai = homem_aranha1_t.vai
    alice_t = Texto(casinha, "Estou perdida! Por favor, leve-me para o Castelo!")
    alice.vai = alice_t.vai
-   casinha.vai()
-     
-   
-   pantano = Cena(img = PANTANO)
-   casinha.direita = pantano
-   
-   
-   
-   yoda = Elemento(img= YODA, tit= "yoda", style=dict(left=290, top=180, width=80, higth=100))
+   alice1_t = Texto(pantano, "Socorro, Homem-Aranha!!!")
+   alice1.vai = alice1_t.vai
+   alice2_t = Texto(castelo, "Muito obrigada!!!")
+   alice2.vai = alice2_t.vai
    yoda_t = Texto(pantano, "Alice, você ficará presa neste pantano!")
    yoda.vai = yoda_t.vai
+   
+   casinha.direita = pantano
+   homem_aranha.entra(casinha)
+   homem_aranha1.entra(castelo)
+   homem_aranha_t.vai = homem_aranha.vai
+   alice.entra(casinha)
+   alice.vai = alice_t.vai
+   alice1.entra(pantano)
+   alice2.entra(castelo)
    yoda.entra(pantano)
-   alice = Elemento(img= ALICE, tit= "alice", style=dict(left=190, top=180, width=80, higth=300))
-   alice.entra(pantano)
-   alice_t = Texto(pantano, "Socorro, Homem-Aranha!!!")
-   alice.vai = alice_t.vai
- 
-
-   
-
-   casinha.vai()
-   castelo = Cena(img = CASTELO)
-   pantano.direita=castelo
+   pantano.direita= castelo
    
    
-   alice = Elemento(img= ALICE, tit= "alice", style=dict(left=450, top=180, width=80, higth=100))
-   alice_t = Texto(castelo, "Muito obrigada!!!")
-   alice.vai = alice_t.vai
-   alice.entra(castelo)
-   homem_aranha = Elemento(img =HOMEM_ARANHA, tit= "homem_aranha", style=dict(left=290, top=100, width=160, higth=100))
-   homem_aranha_t = Texto(castelo, "Entregue!")
-   homem_aranha.vai = homem_aranha_t.vai
-   homem_aranha.entra(castelo)
+   
+   
    casinha.vai()
    
-
+   
 nos()
