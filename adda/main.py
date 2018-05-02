@@ -12,8 +12,8 @@ CASTELO = "https://i.pinimg.com/originals/10/a7/8a/10a78a8d28dcfc1999848a8815e23
 
 def tale():
    casinha = Cena(img = CASINHA)
-   homem_aranha = Elemento(img = HOMEM_ARANHA, tit="homem_aranha", style = dict(left= 100, top= 100,width= 100, hight= 100)
-   homem_aranha.entra(casinha)
+   homem_aranha = Elemento(img = HOMEM_ARANHA, tit = "homem_aranha", style = dict(left= 100, top= 100, width= 100, hight= 100))
+   homem_aranha.entra(CASINHA)
    
    castelo = Cena(img = CASTELO)
    alice = Elemento(img = ALICE, tit="alice", style = dict(left= 100, top= 100,width= 100, hight= 100)
