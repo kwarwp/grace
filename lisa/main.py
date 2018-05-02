@@ -18,7 +18,6 @@ def tale():
     nave.vai = nave_t.vai
     mestre_yoda.entra(floresta)
     nave.entra(floresta)
-    floresta.vai()
     
     
     casa_amarela = Cena(img=CASA_AMARELA)
@@ -35,5 +34,7 @@ def tale():
     
     cinderela_t = Texto(casa_amarela, "Cinderela se assusta com o Mestre Yoda!")
     cinderela.vai = cinderela_t.vai
+    
+    floresta.vai()
     
 tale()  
