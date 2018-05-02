@@ -20,7 +20,14 @@ def tale():
     pantano = Cena (img=PANTANO)
     floresta.direita=pantano
     alice = Elemento(img=ALICE, tit="Cachinhos_dourados", style=dict(left=400, top=300, width=100, higth=100, bottom=100))
+    alice_text = Texto(pantano, "oh! e agora, quem poderá me defender?")
+    alice.vai = alice_text.vai
     alice.entra(pantano)
+    
+    yoda = Elemento(img=YODA, tit="Mestre dos Mestres", style=dict(left=400, top=300, width=100, higth=100, bottom=100))
+    yoda_text = Texto(pantano, "Homem aranha e alice procurem o lado negro da força!!")
+    yoda.vai = yoda_text.vai
+    yoda.entra(pantano)
         
     floresta.vai()
     
