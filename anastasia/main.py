@@ -32,7 +32,7 @@ def tale():
    pantano1.esquerda=pantano2
    alice = Elemento(img=ALICE, tit= "alicinha", style=dict(left=800, top=150, width=100, higth=100, bottom=100))
    alice.entra(pantano2)
-   alice_t=Texto(pantano2,"SPIDER CUZAUN")
+   alice_t=Texto(pantano2,"SPIDER FRACOO!")
    alice.vai=alice_t.vai
    
    #alice_t1 = Texto(pantano2,"O que sera que uma menina tao doce quanto ela estaria fazendo em um lugar tao sombrio como o pantano?")
