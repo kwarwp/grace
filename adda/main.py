@@ -1,18 +1,17 @@
 # grace.adda.main.py
 from _spy.vitollino.main import Cena, Elemento, Texto
 from _spy.vitollino.main import STYLE
-STYLE ["width"] = 900
+STYLE ["width"]= 900
 
-HOMEM_ARANHA = "https://http2.mlstatic.com/adesivo-decorativo-recortado-infantil-parede-homem-aranha-D_NQ_NP_14090-MLB4095351091_042013-F.jpg"
-ALICE = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV0qG3TevJ2fNO4KblVuGlqxf1cH3kH-54QMEZ1QHwjmPLbNgy"
-YODA = "http://obviousmag.org/renato_collyer/yoda2.jpg"
-FLORESTA = "https://img.elo7.com.br/product/zoom/10C700C/painel-floresta-g-frete-gratis-painel-impresso.jpg"
-PANTANO = "https://abrilmundoestranho.files.wordpress.com/2017/09/pantano-facebook.jpg?quality=70&strip=info"
-FINAL = "https://img.elo7.com.br/product/main/1790FA1/vela-ponto-de-interrogacao-vela-cerveja.jpg"
+HOMEM_ARANHA = "https://www.bemcolar.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/a/d/xadesivo-de-parede-infantil-homem-aranha.png.pagespeed.ic.s6_hi3U3pZ.png"
+ALICE = "https://3.bp.blogspot.com/-9TV8MKrd94M/V2YHE_KbLXI/AAAAAAAAGPA/iQwHwGeAucspu3Pp6UcchZQf3K2ce_g5wCLcB/s320/1e.png"
+YODA = "http://pngimg.com/uploads/starwars/starwars_PNG8.png"
+CASINHA ="https://cdn.pixabay.com/photo/2016/06/08/21/39/house-1444716_960_720.png"
+PANTANO = "http://pt.clubpenguinwiki.info/static/images/cpwpt/thumb/4/4b/Festa_de_Halloween_2011_Labirinto_do_P%C3%A2ntano.png/250px-Festa_de_Halloween_2011_Labirinto_do_P%C3%A2ntano.png"
+CASTELO = "https://i.pinimg.com/originals/10/a7/8a/10a78a8d28dcfc1999848a8815e23679.png"
 
 def tale():
-    floresta = Cena(img=FLORESTA)
-    homem_aranha = Elemento (img=HOMEM_ARANHA, tit="Homem_Aranha", style=dict(left=100, top=100, width=100, higth=100, bottom=100))
-    #floresta.vai()
-    
+   pantano = Cena(img = PANTANO)
+   pantano.vai()
+
 tale()
