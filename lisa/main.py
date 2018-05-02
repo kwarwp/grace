@@ -18,14 +18,15 @@ def tale():
     nave.vai = nave_t.vai
     mestre_yoda.entra(floresta)
     nave.entra(floresta)
-    
-    
-    
-    floresta.direita=casa
-    mestre_yoda = Elemento(img=MESTRE_YODA, tit= "mestre_yoda", style=dict(left=340, top=350, width=100, hight=100, bottom=100))
-    casa_amarela = Cena(img=CASA_AMARELA)
-    mestre_yoda_t = Text(casa, "Mestre Yoda avista uma casa amarela.")
-    mestre_yoda.vai = mestre_yoda_t.vai
     floresta.vai()
+    
+    
+    floresta.direita=casa_amarela
+    casa_amarela = Cena(img=CASA_AMARELA)
+    mestre_yoda = Elemento(img=MESTRE_YODA, tit= "mestre_yoda", style=dict(left=340, top=350, width=100, hight=100, bottom=100))
+    mestre_yoda.entra(casa_amarela)
+    mestre_yoda_t = Text(casa_amrela, "Mestre Yoda avista uma casa amarela.")
+    mestre_yoda.vai = mestre_yoda_t.vai
+    casa_amarela.vai()
     
 tale()  
