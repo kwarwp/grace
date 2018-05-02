@@ -12,6 +12,8 @@ pais_de_alice = "https://png.pngtree.com/element_origin_min_pic/16/07/21/235790e
 def texto():
     cidade = Cena(img = CIDADE)
     Alice = Elemento(img= ALICE, tit= "Alice", style=dict(left=100, top=100, width=100, bottom=100))
+    
+    Alice.entra(cidade)
     cidade.vai()
     
 
