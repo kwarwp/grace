@@ -23,7 +23,7 @@ def tale():
     
     floresta.direita=casa
     mestre_yoda = Elemento(img=MESTRE_YODA, tit= "mestre_yoda", style=dict(left=340, top=350, width=100, hight=100, bottom=100))
-    casa_amarela = Elemento(img=CASA_AMARELA, tit= "casa_amarela", style=dict(left=340, top=350, width=100, hight=100, bottom=100))
+    casa_amarela = Cena(img=CASA_AMARELA)
     mestre_yoda_t = Text(casa, "Mestre Yoda avista uma casa amarela.")
     mestre_yoda.vai = mestre_yoda_t.vai
     floresta.vai()
