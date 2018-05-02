@@ -12,7 +12,7 @@ BELA_ADORMECIDA = "https://i.pinimg.com/originals/7d/ed/98/7ded98f455349d5da9bb6
 
 def tale():
     floresta = Cena(img = FLORESTA)
-    Nave = Elemento(img=NAVE, tit= nave, style=dict(right=100, top=100, width=100, hight=100, bottom=100))
+    Nave = Elemento(img=NAVE, tit= Nave, style=dict(right=100, top=100, width=100, hight=100, bottom=100))
     
     floresta.vai()
     
