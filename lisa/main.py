@@ -8,7 +8,7 @@ NAVE = "https://ugc.kn3.net/i/origin/http://servidordeimagenes1.files.wordpress.
 MESTRE_YODA = "https://www.allcenter.com.br/wp-content/uploads/2017/03/star-wars-yoda-sixth-scale-hot-toys-silo-902738.png"
 CASA_AMARELA = "https://cdn.clipte.com/u/boiperc0/14057-1xok/14057-mwaj/g1.jpg"
 CINDERELA = "https://vignette.wikia.nocookie.net/disneyprincesas/images/9/9d/Tumblr_o1xpveBV601v56ooio1_500.png/revision/latest?cb=20160710162330&path-prefix=pt-br"
-BELA_ADORMECIDA = "https://i.pinimg.com/originals/7d/ed/98/7ded98f455349d5da9bb67bea5282e78.png"
+BELA_ADORMECIDA = "http://3.bp.blogspot.com/-e4HhX75lSnQ/UCxBDhEOA2I/AAAAAAAAVWI/AEga-sVj7ic/s1600/pngbrave03.png"
 
 def tale():
     floresta = Cena(img = FLORESTA)
