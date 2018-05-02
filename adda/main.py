@@ -17,6 +17,11 @@ def tale():
     homem_aranha.vai = homem_aranha_text.vai 
     homem_aranha.entra(floresta)
     
+    pantano = Cena (img=PANTANO)
+    floresta.direita=pantano
+    alice = Elemento(img=ALICE, tit="Cachinhos_dourados", style=dict(left=400, top=300, width=100, higth=100, bottom=100))
+    alice.entra(pantano)
+        
     floresta.vai()
     
 tale()
