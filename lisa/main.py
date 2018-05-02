@@ -33,4 +33,7 @@ def tale():
     cinderela.entra(casa_amarela)
     cinderela.vai
     
+    cinderela_t = Texto(casa_amarela, "Cinderela se assusta com o Mestre Yoda!")
+    cinderela.vai = cinderela_t.vai
+    
 tale()  
