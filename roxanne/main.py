@@ -1,4 +1,5 @@
-from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
+from _spy.vitollino.main import Cena, Elemento, Texto
+from _spy.vitollino.main import STYLE
 
 STYLE = ["width"] = 900
 
