@@ -1,5 +1,4 @@
 # grace.sarah.main.py
-
 from _spy.vitollino.main import Cena, Elemento, Texto
 from _spy.vitollino.main import STYLE
 STYLE ["width"]= 900
@@ -14,3 +13,5 @@ def texto():
     cidade = Cena(img = pantano)
     cidade.vai()
     
+
+texto()
