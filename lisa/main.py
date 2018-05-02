@@ -49,7 +49,8 @@ def tale():
     cinderela.vai
     bela = Elemento(img=BELA_ADORMECIDA, tit= "bela", style=dict(left=420, top=330, width=100, hight=100, bottom=100))
     bela.entra(casa2)
-    bela.vai
+    bela_t = Texto(casa2, "Valente aparece sorateiramente para salvar Cinderela.")
+    bela.vai = bela_t.vai
     
     
     floresta.vai()
