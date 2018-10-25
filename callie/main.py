@@ -12,11 +12,26 @@ meredith - Universo
 
 class Perigo: 
     def _init_(self) 
-         self.mesa = Mesa()
+         self.baralho = Baralho()
          
     def apresenta (self): 
-         self.turno.classe()
+         self.mesa.aranha()
 
 
-if _name_ == "   main  "; 
 
+
+class Perder: 
+    def _init_(self):
+    
+    
+
+class Tesouro:
+     def _init_(self)
+        self.baralho = Baralho
+     def apresenta (self)
+     self.turno.Valor()
+     
+     if __name__ == "__main__":
+     Perigo = Perigo()
+     Perigo.apresenta() 
+     
