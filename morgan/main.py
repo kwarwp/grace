@@ -9,4 +9,4 @@ def jurupinga ():
      kiosk = bostinha (ing = kiosk)
      praia=cena(ing= praia)
      kiosk.direita=praia 
-     praia . esquerda = kiosk 
+     praia.esquerda =kiosk
