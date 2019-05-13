@@ -9,4 +9,12 @@ def jurupinga ():
      kiosk = bostinha (ing = kiosk)
      praia=cena(ing= praia)
      kiosk.direita=praia 
-     praia.esquerda =kiosk
+     praia.esquerda =kiosk  
+     raplh=elemento(img=raplh,tit" tesão dE vaca",Style=dict(left-150,top=160,width=60,height=200))
+     raplh.entrar(paisagem) 
+     eraplh=texto(paisagem," ola, vou te quebra meu irmão, cade a venelopi ? quero dar uma volta de carro, a menina tem futuro!!!")
+     raplh=eraplh.vai
+     bostinha=elemento(img=raplh,tit"tesão dE vaca",Style=dict(left-150,top=160,width=60,height=200))
+     bostinha.entra(kiosk)
+     ebostinha=texto(kiosk," eu sou uma bostinha meu amigo, me use como emoj!!!")
+     bostinha=bostinha.vai
