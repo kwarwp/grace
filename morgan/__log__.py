@@ -34,3 +34,10 @@ SyntaxError: EOL while scanning string literal
                                                                               ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Mon May 13 2019 11:15:04.738 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  bostinha="https://marcianosmx.com/wp-content/uploads/2015/10/Emoji_Caca.jpg
+                                                                             ^
+SyntaxError: EOL while scanning string literal
+'''},
