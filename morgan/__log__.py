@@ -55,3 +55,10 @@ SyntaxError: EOL while scanning string literal
                                                                               ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Mon May 13 2019 11:16:47.247 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 13
+  raplh=elemento(img=raplh,tit" tesão dE vaca",Style=dict(left-150,top=160,width=60,height=200))
+                               ^
+SyntaxError: invalid syntax
+'''},
