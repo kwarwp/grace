@@ -76,3 +76,10 @@ SyntaxError: invalid syntax
                                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon May 13 2019 11:18:46.201 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 13
+  raplh=elemento(ing=raplh,tit"tesão dE vaca",Style=dict(left-150,top=160,width=60,height=200))
+                               ^
+SyntaxError: invalid syntax
+'''},
