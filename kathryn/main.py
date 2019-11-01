@@ -7,5 +7,5 @@ class brulu():
     saku= Elemento(img=SAKU)
     vegetal= Cena(img=VEGETAL)
     saku.entra(vegetal)
-    vegetal.vai
+    vegetal.vai()
 brulu()
