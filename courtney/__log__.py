@@ -61,3 +61,10 @@ IndentationError: unexpected indent
     (cama)
 NameError: name 'cama' is not defined
 '''},
+{'date': 'Mon Jul 25 2022 15:47:57.426 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  for camara in tumba:
+  ^
+IndentationError: unexpected indent
+'''},
