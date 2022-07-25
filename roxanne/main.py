@@ -4,6 +4,14 @@
 # Copyright © 2022  Carlo Oliveira <carlo@nce.ufrj.br>,
 # SPDX-License-Identifier: (GPLv3-or-later AND LGPL-2.0-only) WITH bison-exception
 from random import shuffle
+from _spy.vitollino.main import Cena, STYLE
+from random import shuffle
+STYLE.update(width=1000, height=500)
+TEMPLO = "https://i.imgur.com/OOTUIwl.jpg"
+TESOURO = "https://i.imgur.com/OuPgmla.jpg"
+templo = Cena(TEMPLO)
+cena_tesouro = Cena(TESOURO)
+templo = Cena(TEMPLO)
 jogar = input ("Quer jogar o tesouro Inca?")
 tumba = list("AMCDI"*3)
 tesouro = [1,2,3,4,5,6,7,8,9]*2
@@ -11,6 +19,7 @@ tumba += tesouro
 shuffle(tumba)
 corredor = []
 mochila = 0
+templo.vai()
 if jogar == 's':
     input("simbora!")
     for camara in tumba:
