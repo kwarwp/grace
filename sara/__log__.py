@@ -63,3 +63,10 @@ NameError: name 'AMCDI' is not defined
     tumba = list(AMCDI)*3
 NameError: name 'AMCDI' is not defined
 '''},
+{'date': 'Mon Jul 25 2022 17:50:28.159 GMt-0300 (GMT-03:00) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 28
+  tumba = [p{A}, {M}, {C}, {D}, {I}]*3
+             ^
+SyntaxError: invalid syntax
+'''},
