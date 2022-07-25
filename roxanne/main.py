@@ -3,8 +3,12 @@
 # This file is part of program Jogo Inca
 # Copyright © 2022  Carlo Oliveira <carlo@nce.ufrj.br>,
 # SPDX-License-Identifier: (GPLv3-or-later AND LGPL-2.0-only) WITH bison-exception
+from random import shuffle
 jogar = input ("Quer jogar o tesouro Inca?")
 tumba = list("AMCDI"*3)
+tesouro = [1,2,3,4,5,6,7,8,9]*2
+tumba += tesouro
+shuffle(tumba)
 corredor = []
 if jogar == 's':
     input("simbora!")
