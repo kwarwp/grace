@@ -14,7 +14,7 @@ mochila = 0
 if jogar == 's':
     input("simbora!")
     for camara in tumba:
-        dois_monstros = camara in corredor
+        dois_monstros = (camara not in tesouro) and (camara in corredor)
         eh_tesouro = camara in tesouro
         if eh_tesouro:
             mochila += camara
