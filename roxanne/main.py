@@ -9,7 +9,14 @@ corredor = []
 if jogar == 's':
     input("simbora!")
     for camara in tumba:
+        dois_monstros = camara in corredor
         corredor.append(camara)
-        input(f"Você já encontrou {corredor}")
+        fica = input(f"Você já encontrou {corredor}, fica(s) ou sai(n)")
+        if fica != "s":
+            input("Voce desistiu")
+            break
+        if dois_monstros:
+            input("você perdeu")
+            break
 else:
     input("pena!")
