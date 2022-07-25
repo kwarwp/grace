@@ -7,12 +7,12 @@ from random import shuffle
 from _spy.vitollino.main import Cena, STYLE
 from random import shuffle
 STYLE.update(width=1000, height=500)
-TEMPLO = "https://i.imgur.com/OOTUIwl.jpg"
+TEMPLO = "https://unsplash.com/photos/EKNe678ktEY"
 TESOURO = "https://i.imgur.com/OuPgmla.jpg"
-A = 
+A = "https://imgur.com/iCrJ46A"
 M = 
-C = 
-D = 
+C = "https://i.imgur.com/8VfAotu.jpg"
+D = "https://i.imgur.com/OHmUIhz.jpg" 
 I = 
 templo = Cena(TEMPLO)
 cena_tesouro = Cena(TESOURO)
