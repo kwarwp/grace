@@ -10,17 +10,22 @@ tesouro = [1,2,3,4,5,6,7,8,9]*2
 tumba += tesouro
 shuffle(tumba)
 corredor = []
+mochila = 0
 if jogar == 's':
     input("simbora!")
     for camara in tumba:
         dois_monstros = camara in corredor
+        eh_tesouro = camara in tesouro
+        if eh_tesouro:
+            mochila += camara
         corredor.append(camara)
         fica = input(f"Você já encontrou {corredor}, fica(s) ou sai(n)")
         if fica != "s":
-            input("Voce desistiu")
+            input("Voce desistiu, mas ficou com {mochila} tesouros")
             break
         if dois_monstros:
             input("você perdeu")
+            mochila = 0
             break
 else:
     input("pena!")
