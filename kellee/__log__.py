@@ -15,3 +15,10 @@
     if (jogar == "sim" or SIM or Sim):
 NameError: name 'SIM' is not defined
 '''},
+{'date': 'Mon Jul 25 2022 16:16:54.916 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 22
+  if fica != 's' or 'S' or "sim" or "SIM" or "Sim"):
+                                              ^
+SyntaxError: invalid syntax
+'''},
