@@ -292,3 +292,10 @@ Traceback (most recent call last):
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Jul 25 2022 18:14:20.164 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 33
+  corredor.append(camara)
+  ^
+IndentationError: expected an indented block
+'''},
