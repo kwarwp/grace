@@ -285,3 +285,10 @@ Traceback (most recent call last):
   module <module> line 3
     from _spy.vitollino.main import Cena, SYLE
 '''},
+{'date': 'Mon Jul 25 2022 18:13:53.755 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 34
+  corredor.append(camara)
+  ^
+IndentationError: expected an indented block
+'''},
