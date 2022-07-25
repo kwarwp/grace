@@ -9,8 +9,12 @@ from random import shuffle
 STYLE.update(width=1000, height=500)
 TEMPLO = "https://i.imgur.com/OOTUIwl.jpg"
 TESOURO = "https://i.imgur.com/OuPgmla.jpg"
+MONSTRO = "https://i.imgur.com/lcvvL1B.png"
+ARANHA = "https://i.imgur.com/p2jHT5d.png"
+COBRA = "https://i.imgur.com/p2jHT5d.png"
 templo = Cena(TEMPLO)
 cena_tesouro = Cena(TESOURO)
+cena_monstro = Cena(MONSTRO)
 templo = Cena(TEMPLO)
 jogar = input ("Quer jogar o tesouro Inca?")
 tumba = list("AMCDI"*3)
@@ -27,6 +31,9 @@ if jogar == 's':
         eh_tesouro = camara in tesouro
         if eh_tesouro:
             mochila += camara
+            cena_tesouro.vai()
+        else:
+            cena_monstro.vai()
         corredor.append(camara)
         fica = input(f"Você já encontrou {corredor}, fica(s) ou sai(n)")
         if dois_monstros:
