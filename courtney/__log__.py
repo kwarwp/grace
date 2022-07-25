@@ -89,3 +89,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Jul 25 2022 16:04:11.158 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  input(f'Você encontrou {camara}')
+  ^
+IndentationError: expected an indented block
+'''},
