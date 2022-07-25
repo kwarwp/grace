@@ -33,8 +33,8 @@ if jogar == 's':
         eh_tesouro = camara in tesouro
         if eh_tesouro:
             mochila += camara
+            cena_tesouro.vai()
         corredor.append(camara)
-        tesouro.vai()
         cena_A.vai()
         cena_C.vai()
         cena_D.vai()
