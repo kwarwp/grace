@@ -25,7 +25,7 @@ D = Cena(D)
 I = Cena(I)
 
 jogar = input ("Quer jogar o tesouro Inca?")
-tumba = [A, M, C, D, I]*3
+tumba = list[A, M, C, D, I]*3
 tesouro = [1,2,3,4,5,6,7,8,9]*2
 tumba += tesouro
 shuffle(tumba)
