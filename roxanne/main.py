@@ -20,12 +20,12 @@ if jogar == 's':
             mochila += camara
         corredor.append(camara)
         fica = input(f"Você já encontrou {corredor}, fica(s) ou sai(n)")
-        if fica != "s":
-            input("Voce desistiu, mas ficou com {mochila} tesouros")
-            break
         if dois_monstros:
             input("você perdeu")
             mochila = 0
+            break
+        if fica != "s":
+            input(f"Voce desistiu, mas ficou com {mochila} tesouros")
             break
 else:
     input("pena!")
