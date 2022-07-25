@@ -10,13 +10,14 @@ STYLE.update(width=1000, height=500)
 TEMPLO = "https://unsplash.com/photos/EKNe678ktEY"
 TESOURO = "https://i.imgur.com/OuPgmla.jpg"
 A = "https://imgur.com/iCrJ46A"
-M = 
 C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg" 
-I = 
 templo = Cena(TEMPLO)
 cena_tesouro = Cena(TESOURO)
 templo = Cena(TEMPLO)
+cena_A = Cena(A)
+cena_C = Cena(C)
+cena_D = Cena(D)
 jogar = input ("Quer jogar o tesouro Inca?")
 tumba = list("AMCDI"*3)
 tesouro = [1,2,3,4,5,6,7,8,9]*2
