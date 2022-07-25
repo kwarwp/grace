@@ -82,3 +82,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Jul 25 2022 16:03:19.804 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  input('Que legal, vamos lá!')
+  ^
+IndentationError: expected an indented block
+'''},
