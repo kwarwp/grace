@@ -58,3 +58,10 @@ TypeError: Can't convert list to str implicitely
     input("ganhou: " + len(cripta))
 TypeError: Can't convert int to str implicitely
 '''},
+{'date': 'Mon Jul 25 2022 14:35:32.862 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  elif input(f"Cripta :{cripta} vai?") != 's':
+   ^
+SyntaxError: invalid syntax
+'''},
