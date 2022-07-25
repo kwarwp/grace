@@ -18,6 +18,12 @@ I = "https://imgur.com/CikvXEF"
 templo = Cena(TEMPLO)
 cena_tesouro = Cena(TESOURO)
 templo = Cena(TEMPLO)
+A = Cena(A)
+M = Cena(M)
+C = Cena(C)
+D = Cena(D)
+I = Cena(I)
+
 jogar = input ("Quer jogar o tesouro Inca?")
 tumba = [A, M, C, D, I]*3
 tesouro = [1,2,3,4,5,6,7,8,9]*2
