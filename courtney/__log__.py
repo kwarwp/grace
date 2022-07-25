@@ -327,3 +327,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Jul 25 2022 18:17:35.877 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 33
+  if desabamento == 'D'
+                        ^
+SyntaxError: invalid syntax
+'''},
