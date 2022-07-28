@@ -763,3 +763,10 @@ IndexError: pop index out of range
     if corredor.pop() == 'C':
 IndexError: pop index out of range
 '''},
+{'date': 'Thu Jul 28 2022 16:49:01.349 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 35
+  else:
+   ^
+SyntaxError: invalid syntax
+'''},
