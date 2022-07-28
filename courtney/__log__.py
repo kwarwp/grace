@@ -770,3 +770,10 @@ IndexError: pop index out of range
    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Jul 28 2022 16:49:20.975 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 35
+  else:
+   ^
+SyntaxError: invalid syntax
+'''},
