@@ -28,7 +28,9 @@ if jogar == 's':
         if eh_tesouro:
             mochila += camara
             cenaTesouro.vai()
-            corredor.append(camara)
+        else:
+            cobra.vai()
+        corredor.append(camara)
         fica = input(f"Você já encontrou {corredor}, fica(s) ou sai(n)")
         if dois_monstros:
             input("você perdeu")
