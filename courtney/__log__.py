@@ -422,3 +422,10 @@ NameError: name 'MONSTRO' is not defined
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu Jul 28 2022 16:04:13.889 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 35
+  else:
+   ^
+SyntaxError: invalid syntax
+'''},
