@@ -580,3 +580,10 @@ AttributeError: 'str' object has no attribute 'vai'
     perigo[cobra].vai()
 AttributeError: 'str' object has no attribute 'vai'
 '''},
+{'date': 'Thu Jul 28 2022 16:19:26.648 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 33
+  perigo.['C'].vai()
+          ^
+SyntaxError: invalid syntax
+'''},
