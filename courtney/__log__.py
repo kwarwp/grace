@@ -415,3 +415,10 @@ NameError: name 'MONSTRO' is not defined
     cena_monstro = Cena(MONSTRO)
 NameError: name 'MONSTRO' is not defined
 '''},
+{'date': 'Thu Jul 28 2022 16:01:36.317 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 34
+  cobra.vai()
+  ^
+IndentationError: expected an indented block
+'''},
