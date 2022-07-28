@@ -362,3 +362,10 @@ SyntaxError: invalid syntax
                   ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Jul 28 2022 15:08:34.506 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 32
+  corredor.append(camara)
+  ^
+IndentationError: expected an indented block
+'''},
