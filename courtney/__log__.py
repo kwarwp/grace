@@ -777,3 +777,10 @@ SyntaxError: invalid syntax
    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Jul 28 2022 16:50:24.613 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 35
+  else:
+   ^
+SyntaxError: invalid syntax
+'''},
