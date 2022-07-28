@@ -369,3 +369,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu Jul 28 2022 15:08:51.531 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 32
+  corredor.append(camara)
+  ^
+IndentationError: expected an indented block
+'''},
