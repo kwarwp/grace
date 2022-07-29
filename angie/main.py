@@ -3,7 +3,7 @@
 # This file is part of program Jogo Inca
 # Copyright © 2022  Vanessa Vianna <vanmvianna@gmail.com>,
 # SPDX-License-Identifier: (GPLv3-or-later AND LGPL-2.0-only) WITH bison-exception
-# IMPORTANDO BIBLIOTECA
+# IMPORTANDO BIBLIOTECAS
 from random import shuffle
 from _spy.vitollino.main import Cena, STYLE
 from random import shuffle
@@ -33,6 +33,7 @@ shuffle(tumba)
 corredor = []
 mochila = 0
 #JOGO
+cena_templo.vai()
 if jogar == 's':
     input("simbora!")
     for camara in tumba:
@@ -41,12 +42,17 @@ if jogar == 's':
         if eh_tesouro:
             mochila += camara
         corredor.append(camara)
-        cena_templo.vai()
+        if tesouro:
         cena_tesouro.vai()
+        if A:
         cena_A.vai()
+        if M:
         cena_M.vai()
+        if F:
         cena_F.vai()
+        if C:
         cena_C.vai()
+        if D:
         cena_D.vai()
         fica = input(f"Você já encontrou {corredor}, fica(s) ou sai(n)")
         if dois_monstros:
