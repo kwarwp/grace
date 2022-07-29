@@ -33,33 +33,21 @@ shuffle(tumba)
 corredor = []
 mochila = 0
 #JOGO
-cena_templo.vai()
 if jogar == 's':
     input("simbora!")
+    cena_templo.vai()
     for camara in tumba:
         dois_monstros = (camara not in tesouro) and (camara in corredor)
         eh_tesouro = camara in tesouro
         if eh_tesouro:
             mochila += camara
         corredor.append(camara)
-        if tesouro:
         cena_tesouro.vai()
-         break
-        if A:
         cena_A.vai()
-         break
-        if M:
         cena_M.vai()
-         break
-        if F:
         cena_F.vai()
-         break
-        if C:
         cena_C.vai()
-         break
-        if D:
         cena_D.vai()
-         break
         fica = input(f"Você já encontrou {corredor}, fica(s) ou sai(n)")
         if dois_monstros:
             input("você perdeu")
