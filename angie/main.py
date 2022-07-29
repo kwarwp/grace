@@ -24,6 +24,7 @@ cena_M = Cena(IM)
 cena_F = Cena(IF)
 cena_C = Cena(IC)
 cena_D = Cena(ID)
+templo = cena_templo
 #JOGO
 jogar = input ("Quer jogar o tesouro Inca?")
 tumba = list("AMCDI"*3)
@@ -57,5 +58,3 @@ if jogar == 's':
             break
 else:
     input("pena!")
-    
-
