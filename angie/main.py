@@ -9,33 +9,34 @@ from _spy.vitollino.main import Cena, STYLE
 from random import shuffle
 STYLE.update(width=1000, height=500)
 #IMAGENS
-ITEMPLO = "https://i.imgur.com/DuyTTha.jpg"
-ITESOURO = "https://i.imgur.com/OuPgmla.jpg"
-IA = "https://imgur.com/iCrJ46A"
-IM = "https://imgur.com/a/KYT6HiQ"
-IF = "https://imgur.com/xYv9YdG"
-IC = "https://i.imgur.com/8VfAotu.jpg"
-ID = "https://i.imgur.com/OHmUIhz.jpg" 
+TEMPLO = "https://i.imgur.com/DuyTTha.jpg"
+TESOURO = "https://i.imgur.com/OuPgmla.jpg"
+A = "https://imgur.com/iCrJ46A"
+M = "https://imgur.com/a/KYT6HiQ"
+F = "https://imgur.com/xYv9YdG"
+C = "https://i.imgur.com/8VfAotu.jpg"
+D = "https://i.imgur.com/OHmUIhz.jpg" 
 #CENAS
-cena_templo = Cena(ITEMPLO)
-cena_tesouro = Cena(ITESOURO)
-cena_A = Cena(IA)
-cena_M = Cena(IM)
-cena_F = Cena(IF)
-cena_C = Cena(IC)
-cena_D = Cena(ID)
-templo = cena_templo
+cena_templo = Cena(TEMPLO)
+cena_tesouro = Cena(TESOURO)
+cena_A = Cena(A)
+cena_M = Cena(M)
+cena_F = Cena(F)
+cena_C = Cena(C)
+cena_D = Cena(D)
 #JOGO
 jogar = input ("Quer jogar o tesouro Inca?")
-tumba = list("AMCDI"*3)
+tumba = list("AMFCD"*3)
 tesouro = [1,2,3,4,5,6,7,8,9]*2
 tumba += tesouro
 shuffle(tumba)
 corredor = []
 mochila = 0
-templo.vai()
+cena_templo.vai()
 cena_tesouro.vai()
 cena_A.vai()
+cena_M.vai()
+cena_F.vai()
 cena_C.vai()
 cena_D.vai()
 if jogar == 's':
