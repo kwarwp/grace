@@ -3,21 +3,28 @@
 # This file is part of program Jogo Inca
 # Copyright © 2022  Carlo Oliveira <carlo@nce.ufrj.br>,
 # SPDX-License-Identifier: (GPLv3-or-later AND LGPL-2.0-only) WITH bison-exception
+# IMPORTANDO BIBLIOTECA
 from random import shuffle
 from _spy.vitollino.main import Cena, STYLE
 from random import shuffle
 STYLE.update(width=1000, height=500)
-TEMPLO = "https://i.imgur.com/DuyTTha.jpg"
-TESOURO = "https://i.imgur.com/OuPgmla.jpg"
-A = "https://imgur.com/iCrJ46A"
-C = "https://i.imgur.com/8VfAotu.jpg"
-D = "https://i.imgur.com/OHmUIhz.jpg" 
-templo = Cena(TEMPLO)
-cena_tesouro = Cena(TESOURO)
-templo = Cena(TEMPLO)
-cena_A = Cena(A)
-cena_C = Cena(C)
-cena_D = Cena(D)
+#IMAGENS
+ITEMPLO = "https://i.imgur.com/DuyTTha.jpg"
+ITESOURO = "https://i.imgur.com/OuPgmla.jpg"
+IA = "https://imgur.com/iCrJ46A"
+IM = "https://imgur.com/a/KYT6HiQ"
+IF = "https://imgur.com/xYv9YdG"
+IC = "https://i.imgur.com/8VfAotu.jpg"
+ID = "https://i.imgur.com/OHmUIhz.jpg" 
+#CENAS
+cena_templo = Cena(ITEMPLO)
+cena_tesouro = Cena(ITESOURO)
+cena_A = Cena(IA)
+cena_M = Cena(IM)
+cena_F = Cena(IF)
+cena_C = Cena(IC)
+cena_D = Cena(ID)
+#JOGO
 jogar = input ("Quer jogar o tesouro Inca?")
 tumba = list("AMCDI"*3)
 tesouro = [1,2,3,4,5,6,7,8,9]*2
@@ -50,4 +57,5 @@ if jogar == 's':
             break
 else:
     input("pena!")
+    
 
