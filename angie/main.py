@@ -32,7 +32,6 @@ tumba += tesouro
 shuffle(tumba)
 corredor = []
 mochila = 0
-
 #JOGO
 if jogar == 's':
     input("simbora!")
