@@ -34,8 +34,7 @@ corredor = []
 mochila = 0
 #JOGO
 if jogar == 's':
-    input("simbora!")
-    cena_templo.vai()
+    input("simbora!", cena_templo.vai())
     for camara in tumba:
         dois_monstros = (camara not in tesouro) and (camara in corredor)
         eh_tesouro = camara in tesouro
@@ -43,8 +42,8 @@ if jogar == 's':
             mochila += camara
         corredor.append(camara)
         tumba = list("AMFCD"*3)
-    for cena in tumba:
-        cena(cena).vai
+    for letra in tumba:
+        cena_(letra).vai
         fica = input(f"Você já encontrou {corredor}, fica(s) ou sai(n)")
         if dois_monstros:
             input("você perdeu")
