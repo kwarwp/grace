@@ -54,3 +54,10 @@ AttributeError: 'list' object has no attribute 'vai'
     templo.vai()
 NameError: name 'templo' is not defined
 '''},
+{'date': 'Fri Jul 29 2022 18:25:00.290 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 46
+  cena_tesouro.vai()
+  ^
+IndentationError: expected an indented block
+'''},
