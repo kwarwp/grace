@@ -1,7 +1,7 @@
 # grace.roxanne.main.py
 # -*- coding: UTF8 -*-
 # This file is part of program Jogo Inca
-# Copyright © 2022  Carlo Oliveira <carlo@nce.ufrj.br>,
+# Copyright © 2022  Vanessa Vianna <vanmvianna@gmail.com>,
 # SPDX-License-Identifier: (GPLv3-or-later AND LGPL-2.0-only) WITH bison-exception
 # IMPORTANDO BIBLIOTECA
 from random import shuffle
@@ -24,7 +24,7 @@ cena_M = Cena(M)
 cena_F = Cena(F)
 cena_C = Cena(C)
 cena_D = Cena(D)
-#JOGO
+#MONTAGEM DO JOGO
 jogar = input ("Quer jogar o tesouro Inca?")
 tumba = list("AMFCD"*3)
 tesouro = [1,2,3,4,5,6,7,8,9]*2
@@ -32,13 +32,8 @@ tumba += tesouro
 shuffle(tumba)
 corredor = []
 mochila = 0
-cena_templo.vai()
-cena_tesouro.vai()
-cena_A.vai()
-cena_M.vai()
-cena_F.vai()
-cena_C.vai()
-cena_D.vai()
+
+#JOGO
 if jogar == 's':
     input("simbora!")
     for camara in tumba:
@@ -47,7 +42,13 @@ if jogar == 's':
         if eh_tesouro:
             mochila += camara
         corredor.append(camara)
-        
+        cena_templo.vai()
+        cena_tesouro.vai()
+        cena_A.vai()
+        cena_M.vai()
+        cena_F.vai()
+        cena_C.vai()
+        cena_D.vai()
         fica = input(f"Você já encontrou {corredor}, fica(s) ou sai(n)")
         if dois_monstros:
             input("você perdeu")
