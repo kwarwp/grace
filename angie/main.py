@@ -44,16 +44,22 @@ if jogar == 's':
         corredor.append(camara)
         if tesouro:
         cena_tesouro.vai()
+         break
         if A:
         cena_A.vai()
+         break
         if M:
         cena_M.vai()
+         break
         if F:
         cena_F.vai()
+         break
         if C:
         cena_C.vai()
+         break
         if D:
         cena_D.vai()
+         break
         fica = input(f"Você já encontrou {corredor}, fica(s) ou sai(n)")
         if dois_monstros:
             input("você perdeu")
