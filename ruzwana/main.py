@@ -10,6 +10,7 @@ from random import shuffle
 from _spy.vitollino.main import Cena, STYLE, Texto, Elemento
 from random import shuffle
 STYLE.update(width=1000, height=500)
+OBSIDIAN = "https://i.imgur.com/UFVadxc.png"
 TEMPLO = "https://i.imgur.com/OOTUIwl.jpg"
 TESOURO = "https://i.imgur.com/OuPgmla.jpg"
 MONSTRO = "https://i.imgur.com/lcvvL1B.png"
@@ -21,15 +22,30 @@ DESABA = "https://i.imgur.com/hZ0ohTz.jpg"
 CTEMPLO = Cena(TEMPLO)
 CTESOURO = Cena(TESOURO)
 cena_monstro = Cena(MONSTRO)
-CABANA = Cena('https://i.imgur.com/eOqt4eP.jpg')
+CABANA = 'https://i.imgur.com/eOqt4eP.jpg'
+CCABANA = Cena('https://i.imgur.com/eOqt4eP.jpg')
+
+
+class Camara:
+    """ Uma Camara do Templo """
+    def __init__(self, imagem, valor=0):
+        self._imagem = Cena(imagem)
+        self._valor = valor
+        
+    def define_imagem(self):
+        return CTESOURO
+        
+    def vai(self):
+        """ Revela a Câmara """
+        self._imagem.vai()
 
 
 class Tesouro:
     """ O jogo do Tesouro Inca """
     def __init__(self):
-        self.templo = CTEMPLO
-        self.tesouro = CTESOURO
-        self.cabana = CABANA
+        self.templo = Camara(TEMPLO)
+        self.tesouro = Camara(TESOURO)
+        self.cabana = Camara(CABANA)
         
         
     def escolheu(self, resposta):
