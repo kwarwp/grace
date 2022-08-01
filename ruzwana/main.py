@@ -6,9 +6,9 @@
 """ Tesouro Inca - Orientado a Objetos
 
 """
+from browser import alert
 from random import shuffle
 from _spy.vitollino.main import Cena, STYLE, Texto, Elemento
-from random import shuffle
 STYLE.update(width=1000, height=500)
 OBSIDIAN = "https://i.imgur.com/UFVadxc.png"
 TEMPLO = "https://i.imgur.com/OOTUIwl.jpg"
@@ -36,12 +36,14 @@ class Camara:
     def texto(self, fala, foi, **kwargs):
         Texto(self._imagem, fala, foi=foi, **kwargs).vai()
         
-    def segue(self):
-        self.texto("Prossegue?", foi=self.testa, A="sim", B="não")
+    def segue(self, vai, desiste):
+        def testa(resposta):
+            vai() if resposta == "A" else desiste()
+        self.texto("Prossegue?", foi=testa, A="sim", B="não")
         return self._segue
         
     def testa(self, resposta):
-        if resposta == B:
+        if resposta == "B":
             self._segue = False
         
         
@@ -55,11 +57,21 @@ class Tumba:
     """ Uma Tumba com várias Câmaras """
     def __init__(self):
         self._tumba = [Camara(img) for img in (ARANHA, MUMIA, COBRA, DESABA, CHAMAS)]
+        self._tumba = self._tumba *3
+        self.cripta = []
         
     def vai(self):
         """ Revela a Câmara """
-        while self._tumba:
-            self._tumba.pop().vai().segue()
+        def nada():
+            Camara(CABANA).vai()
+        camara = self._tumba.pop()
+        camara.vai()
+        if camara in self._cripta:
+            camara.texto("voce perdeu", lambda:None)
+        else:
+            self._cripta.append(camara)
+            camara.segue(self.vai, nada)
+            #alert(self._tumba)
 
 
 
@@ -67,7 +79,7 @@ class Tesouro:
     """ O jogo do Tesouro Inca """
     def __init__(self):
         self.templo = Camara(TEMPLO)
-        self.tesouro = Camara(TESOURO)
+        #self.tesouro = Camara(TESOURO)
         self.tesouro = Tumba()
         self.cabana = Camara(CABANA)
         
@@ -75,6 +87,7 @@ class Tesouro:
     def escolheu(self, resposta):
         if resposta == "A":
             self.tesouro.vai()
+            #self.cabana.vai()
         else:
             self.cabana.vai()
         
