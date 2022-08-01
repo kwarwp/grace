@@ -10,6 +10,8 @@ from browser import alert
 from random import shuffle
 from _spy.vitollino.main import Cena, STYLE, Texto, Elemento
 STYLE.update(width=1000, height='600px')
+OURO = "https://i.imgur.com/aqt77Uj.png"
+TURQUESA = "https://i.imgur.com/dRj6lAy.png"
 OBSIDIAN = "https://i.imgur.com/UFVadxc.png"
 TEMPLO = "https://i.imgur.com/OOTUIwl.jpg"
 TESOURO = "https://i.imgur.com/OuPgmla.jpg"
@@ -45,6 +47,12 @@ class Camara:
     def vai(self):
         """ Revela a Câmara """
         self._imagem.vai()
+        v = self._valor
+        g, o, t = v // 10, (v % 10) //5, v % 5
+        elm = [OURO]*g + [OBSIDIAN] * o + [TURQUESA] *t
+        [Elemento(img, cena=self._imagem, w=80, h=80, x=80+i*100, y=400) for i, img in enumerate(elm[:9])]
+        [Elemento(img, cena=self._imagem, w=80, h=80, x=80+i*100, y=500) for i, img in enumerate(elm[9:])]
+        
         return self
 
 
@@ -86,6 +94,7 @@ class Tesouro:
         self.mochila = 0
                 
     def termina(self):
+        self.cabana = Camara(CABANA, self.mochila)
         self.cabana.vai()
         self.cabana.texto(f"Você ficou com {self.mochila} tesouros", lambda: None)
                 
