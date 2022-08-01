@@ -39,7 +39,8 @@ class Camara:
     def segue(self, vai, desiste):
         def testa(resposta):
             vai() if resposta == "A" else desiste()
-        self.texto("Prossegue?", foi=testa, A="sim", B="não")
+        texto = f"Você achou {self._valor} tesouros, Prossegue?" if self.valor else "Prossegue?"
+        self.texto(texto, foi=testa, A="sim", B="não")
         return self._segue
         
     def testa(self, resposta):
@@ -57,7 +58,7 @@ class Tumba:
     """ Uma Tumba com várias Câmaras """
     def __init__(self):
         self._tumba = [Camara(img) for img in (ARANHA, MUMIA, COBRA, DESABA, CHAMAS)]
-        valores = (1,2,3,4,5,6,7,8,9,11,12,13,14,15)*2
+        valores = (2,3,4,5,6,7,8,9,11,12,13,14,15,17)*2
         tesouros = [Camara(TESOURO, valor) for valor in valores]
         self._tumba = self._tumba *3
         self._tumba += tesouros
