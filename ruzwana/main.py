@@ -31,7 +31,6 @@ class Camara:
     def __init__(self, imagem, valor=0):
         self._imagem = Cena(imagem)
         self._valor = valor
-        self._segue = True
         
     def texto(self, fala, foi, **kwargs):
         Texto(self._imagem, fala, foi=foi, **kwargs).vai()
@@ -39,14 +38,9 @@ class Camara:
     def segue(self, vai, desiste):
         def testa(resposta):
             vai() if resposta == "A" else desiste()
-        texto = f"Você achou {self._valor} tesouros, Prossegue?" if self.valor else "Prossegue?"
+        texto = f"Você achou {self._valor} tesouros, Prossegue?" if self._valor else "Prossegue?"
         self.texto(texto, foi=testa, A="sim", B="não")
-        return self._segue
-        
-    def testa(self, resposta):
-        if resposta == "B":
-            self._segue = False
-        
+        Tesouro.JOGO.recebe(self._valor)
         
     def vai(self):
         """ Revela a Câmara """
@@ -68,7 +62,8 @@ class Tumba:
     def vai(self):
         """ Revela a Câmara """
         def nada():
-            Camara(CABANA).vai()
+            Tesouro.JOGO.termina()
+            #Camara(CABANA).vai()
         camara = self._tumba.pop()
         camara.vai()
         if camara in self._cripta:
@@ -79,16 +74,24 @@ class Tumba:
             #alert(self._tumba)
 
 
-
 class Tesouro:
     """ O jogo do Tesouro Inca """
+    JOGO = None
     def __init__(self):
+        Tesouro.JOGO = self
         self.templo = Camara(TEMPLO)
         #self.tesouro = Camara(TESOURO)
         self.tesouro = Tumba()
         self.cabana = Camara(CABANA)
-        
-        
+        self.mochila = 0
+                
+    def termina(self):
+        self.cabana.vai()
+        self.cabana.texto(f"Você ficou com {self.mochila} tesouros", lambda: None)
+                
+    def recebe(self, quantia):
+        self.mochila += quantia
+                
     def escolheu(self, resposta):
         if resposta == "A":
             self.tesouro.vai()
