@@ -9,7 +9,7 @@
 from browser import alert
 from random import shuffle
 from _spy.vitollino.main import Cena, STYLE, Texto, Elemento
-STYLE.update(width=1000, height=500)
+STYLE.update(width=1000, height='600px')
 OBSIDIAN = "https://i.imgur.com/UFVadxc.png"
 TEMPLO = "https://i.imgur.com/OOTUIwl.jpg"
 TESOURO = "https://i.imgur.com/OuPgmla.jpg"
@@ -57,8 +57,12 @@ class Tumba:
     """ Uma Tumba com várias Câmaras """
     def __init__(self):
         self._tumba = [Camara(img) for img in (ARANHA, MUMIA, COBRA, DESABA, CHAMAS)]
+        valores = (1,2,3,4,5,6,7,8,9,11,12,13,14,15)*2
+        tesouros = [Camara(TESOURO, valor) for valor in valores]
         self._tumba = self._tumba *3
-        self.cripta = []
+        self._tumba += tesouros
+        shuffle(self._tumba)
+        self._cripta = []
         
     def vai(self):
         """ Revela a Câmara """
