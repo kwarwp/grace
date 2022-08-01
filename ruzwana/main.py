@@ -41,7 +41,7 @@ class Tesouro:
     def vai(self):
         """ Inicia o jogo """
         self.templo.vai()
-        Texto("Vai se aventurar?", A="sim", B="não", foi=self.escolheu).vai()
+        Texto("Vai se aventurar?", A="sim", B="não", foi=self.escolheu, cena=self.templo).vai()
 
 
 Tesouro().vai()
