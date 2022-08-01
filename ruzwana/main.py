@@ -31,13 +31,36 @@ class Camara:
     def __init__(self, imagem, valor=0):
         self._imagem = Cena(imagem)
         self._valor = valor
+        self._segue = True
         
     def texto(self, fala, foi, **kwargs):
-        Texto(self._imagem, fala, foi=foi).vai()
+        Texto(self._imagem, fala, foi=foi, **kwargs).vai()
+        
+    def segue(self):
+        self.texto("Prossegue?", foi=self.testa, A="sim", B="não")
+        return self._segue
+        
+    def testa(self, resposta):
+        if resposta == B:
+            self._segue = False
+        
         
     def vai(self):
         """ Revela a Câmara """
         self._imagem.vai()
+        return self
+
+
+class Tumba:
+    """ Uma Tumba com várias Câmaras """
+    def __init__(self):
+        self._tumba = [Camara(img) for img in (ARANHA, MUMIA, COBRA, DESABA, CHAMAS)]
+        
+    def vai(self):
+        """ Revela a Câmara """
+        while self._tumba:
+            self._tumba.pop().vai().segue()
+
 
 
 class Tesouro:
@@ -45,6 +68,7 @@ class Tesouro:
     def __init__(self):
         self.templo = Camara(TEMPLO)
         self.tesouro = Camara(TESOURO)
+        self.tesouro = Tumba()
         self.cabana = Camara(CABANA)
         
         
