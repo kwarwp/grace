@@ -32,8 +32,8 @@ class Camara:
         self._imagem = Cena(imagem)
         self._valor = valor
         
-    def define_imagem(self):
-        return CTESOURO
+    def texto(self, fala, foi, **kwargs):
+        Texto(self._imagem, fala, foi=foi).vai()
         
     def vai(self):
         """ Revela a Câmara """
@@ -57,7 +57,8 @@ class Tesouro:
     def vai(self):
         """ Inicia o jogo """
         self.templo.vai()
-        Texto(self.templo, "Vai se aventurar?", A="sim", B="não", foi=self.escolheu).vai()
+        self.templo.texto("Vai se aventurar?", foi=self.escolheu, A="sim", B="não")
+        #Texto(self.templo, "Vai se aventurar?", A="sim", B="não", foi=self.escolheu).vai()
 
 
 Tesouro().vai()
