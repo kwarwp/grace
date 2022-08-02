@@ -26,7 +26,7 @@ CTESOURO = Cena(TESOURO)
 cena_monstro = Cena(MONSTRO)
 CABANA = 'https://i.imgur.com/eOqt4eP.jpg'
 CCABANA = Cena('https://i.imgur.com/eOqt4eP.jpg')
-
+ARTEFATO = "6XWBDyv x4uhqBj lPIhp1W Gl8Y4eu y2kxI4H"
 
 class Camara:
     """ Uma Camara do Templo """
@@ -58,7 +58,7 @@ class Camara:
 
 class Tumba:
     """ Uma Tumba com várias Câmaras """
-    def __init__(self):
+    def __init__(self, artefato):
         self._tumba = [Camara(img) for img in (ARANHA, MUMIA, COBRA, DESABA, CHAMAS)]
         valores = (2,3,4,5,6,7,8,9,11,12,13,14,15,17)*2
         tesouros = [Camara(TESOURO, valor) for valor in valores]
@@ -69,17 +69,53 @@ class Tumba:
         
     def vai(self):
         """ Revela a Câmara """
+        incursao = Tesouro.JOGO
         def nada():
-            Tesouro.JOGO.termina()
+            incursao.termina()
             #Camara(CABANA).vai()
         camara = self._tumba.pop()
         camara.vai()
         if camara in self._cripta:
+            incursao.perdeu()
             camara.texto("voce perdeu", lambda:None)
         else:
             self._cripta.append(camara)
-            camara.segue(self.vai, nada)
+            incursao.segue(self.vai, nada)
+            #camara.segue(self.vai, nada)
             #alert(self._tumba)
+
+
+class Jogador:
+    """ Um jogador robótico """
+    def __init__(self, perfil):
+        self.perfil = [False] * perfil + [True]
+        self.mochila = 0
+        
+    def vai(self, segue, volta):
+        volta() if choice(perfil) else segue()
+        
+    def recebe(self, segue, volta):
+        self.mochila += quantia
+
+
+
+class Humano:
+    """ Um jogador humano """
+    def __init__(self):
+        pass
+
+
+class Incursao:
+    """ A exploração de uma das tumbas do templo """
+    def __init__(self):
+        self.jogadores = [Jogador(perfil) for perfil in range(5)]  # + [Humano()]
+        
+    def perdeu(self, segue, volta):
+        
+    def vai(self, segue, volta):
+        valor_artefato = [5,5,5,10,10]
+        for tumba in valor_artefato:
+            Tumba(valor_artefato).vai()
 
 
 class Tesouro:
