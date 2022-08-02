@@ -52,7 +52,7 @@ class Camara:
         elm = [OURO]*g + [OBSIDIAN] * o + [TURQUESA] *t
         [Elemento(img, cena=self._imagem, w=80, h=80, x=80+i*100, y=400) for i, img in enumerate(elm[:9])]
         [Elemento(img, cena=self._imagem, w=80, h=80, x=80+i*100, y=500) for i, img in enumerate(elm[9:])]
-        
+        Tesouro.INCURSAO.recebe(self._valor)
         return self
 
 
@@ -69,7 +69,7 @@ class Tumba:
         
     def vai(self):
         """ Revela a Câmara """
-        incursao = Tesouro.JOGO
+        incursao = Tesouro.INCURSAO
         def nada():
             incursao.termina()
             #Camara(CABANA).vai()
@@ -80,7 +80,7 @@ class Tumba:
             camara.texto("voce perdeu", lambda:None)
         else:
             self._cripta.append(camara)
-            incursao.segue(self.vai, nada)
+            incursao.segue()
             #camara.segue(self.vai, nada)
             #alert(self._tumba)
 
@@ -89,14 +89,20 @@ class Jogador:
     """ Um jogador robótico """
     def __init__(self, perfil):
         self.perfil = [False] * perfil + [True]
-        self.mochila = 0
+        self.cabana = self.mochila = 0
         
-    def vai(self, segue, volta):
+    def _vai(self, segue, volta):
         volta() if choice(perfil) else segue()
         
-    def recebe(self, segue, volta):
+    def vai(self, segue, volta):
+        Tesouro.INCURSAO.decide(self, choice(perfil)
+        
+    def recebe(self, quantia):
         self.mochila += quantia
-
+        
+    def guarda(self, quantia):
+        self.cabana += quantia * self.mochila
+        self.mochila = 0
 
 
 class Humano:
@@ -109,20 +115,58 @@ class Incursao:
     """ A exploração de uma das tumbas do templo """
     def __init__(self):
         self.jogadores = [Jogador(perfil) for perfil in range(5)]  # + [Humano()]
+        self.votantes = 0
+        self.artefatos = [5,5,5,10,10]
+        self.incursao = self.excursao = []
         
-    def perdeu(self, segue, volta):
+    def inicia(self, jogador, volta):
+        if self.artefatos:
+            self.incursao = self.jogadores[:]
+            self.excursao = []
+            self.tumba = Tumba(self.artefatos.pop())
+        else:
+            Tesouro.JOGO.termina()
+        
+    def decide(self, jogador, volta):
+        self.votantes -= 1
+        
+        self.excursao.append(jogador) or self.incursao.remove(jogador)  if volta else None
+        if not self.votantes:
+            if self.incursao:
+                self.vai()
+            else:
+                self.inicia()
+        
+                
+    def recebe(self, quantia):
+        butim, resto = quantia // len(self.incursao), quantia % len(self.incursao) 
+        
+    def segue(self, vai, desiste):
+        self.excursao = [jogador for jogador in self.incursao if jogador.volta()]
+        def testa(resposta):
+            vai() if resposta == "A" else desiste()
+        texto = f"Você achou {self._valor} tesouros, Prossegue?" if self._valor else "Prossegue?"
+        self.texto(texto, foi=testa, A="sim", B="não")
+        Tesouro.JOGO.recebe(self._valor)
+        
+    def perdeu(self):
+        [jogador.guarda(0 if jogador in self.incursao else 1) for jogador in self.jogadores]
+        self.inicia()
         
     def vai(self, segue, volta):
-        valor_artefato = [5,5,5,10,10]
-        for tumba in valor_artefato:
+        valor_artefato = self.artefato.pop()
+        if self.artefato:
+            self.incursao = self.jogadores[:]
             Tumba(valor_artefato).vai()
 
 
 class Tesouro:
     """ O jogo do Tesouro Inca """
     JOGO = None
+    INCURSAO = None
     def __init__(self):
         Tesouro.JOGO = self
+        Tesouro.INCURSAO = self.incursao = Incursao()
         self.templo = Camara(TEMPLO)
         #self.tesouro = Camara(TESOURO)
         self.tesouro = Tumba()
