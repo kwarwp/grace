@@ -7,7 +7,7 @@
 
 """
 from browser import alert
-from random import shuffle
+from random import shuffle, choice
 from _spy.vitollino.main import Cena, STYLE, Texto, Elemento
 STYLE.update(width=1000, height='600px')
 OURO = "https://i.imgur.com/aqt77Uj.png"
@@ -44,6 +44,10 @@ class Camara:
         self.texto(texto, foi=testa, A="sim", B="não")
         Tesouro.JOGO.recebe(self._valor)
         
+    def volta(self):
+        """ Retorna à Câmara """
+        Tesouro.INCURSAO.recebe(self._valor)
+        
     def vai(self):
         """ Revela a Câmara """
         self._imagem.vai()
@@ -52,7 +56,7 @@ class Camara:
         elm = [OURO]*g + [OBSIDIAN] * o + [TURQUESA] *t
         [Elemento(img, cena=self._imagem, w=80, h=80, x=80+i*100, y=400) for i, img in enumerate(elm[:9])]
         [Elemento(img, cena=self._imagem, w=80, h=80, x=80+i*100, y=500) for i, img in enumerate(elm[9:])]
-        Tesouro.INCURSAO.recebe(self._valor)
+        self._valor = Tesouro.INCURSAO.recebe(self._valor)
         return self
 
 
@@ -66,6 +70,11 @@ class Tumba:
         self._tumba += tesouros
         shuffle(self._tumba)
         self._cripta = []
+        
+    def volta(self):
+        """ Retorna à Câmara """
+        incursao = Tesouro.INCURSAO
+        [camara.volta() for camara in self.cripta]
         
     def vai(self):
         """ Revela a Câmara """
@@ -95,7 +104,7 @@ class Jogador:
         volta() if choice(perfil) else segue()
         
     def vai(self, segue, volta):
-        Tesouro.INCURSAO.decide(self, choice(perfil)
+        Tesouro.INCURSAO.decide(self, choice(perfil))
         
     def recebe(self, quantia):
         self.mochila += quantia
@@ -139,7 +148,10 @@ class Incursao:
         
                 
     def recebe(self, quantia):
-        butim, resto = quantia // len(self.incursao), quantia % len(self.incursao) 
+        butim, resto = quantia // len(self.incursao), quantia % len(self.incursao)
+        [jogador.recebe(butim) for jogador in self.incursao]
+        [jogador.vai() for jogador in self.incursao]
+        return resto
         
     def segue(self, vai, desiste):
         self.excursao = [jogador for jogador in self.incursao if jogador.volta()]
@@ -154,10 +166,7 @@ class Incursao:
         self.inicia()
         
     def vai(self, segue, volta):
-        valor_artefato = self.artefato.pop()
-        if self.artefato:
-            self.incursao = self.jogadores[:]
-            Tumba(valor_artefato).vai()
+        self.tumba.vai()
 
 
 class Tesouro:
