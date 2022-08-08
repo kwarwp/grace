@@ -18,7 +18,13 @@ class Camara:
         self.conteudo = conteudo
         self.valor = valor
     def revela(self):
-    
+        return self.conteudo
+    def resgata(self, jogadores):
+        butim, sobra = self.valor // jogadores, self. valor %jog
+        return self.conteudo
+        
+class Incursão:
+    pass
 class Tumba:
     pass
 class Jogador:
