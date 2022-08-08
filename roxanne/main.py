@@ -17,7 +17,7 @@ TESOURO = "https://i.imgur.com/OuPgmla.jpg"
 MONSTRO = "https://i.imgur.com/lcvvL1B.png"
 PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 #from parisa.main import tesouro_inca as art_tesouro
-from parisa.main import joga_tesouro as art_joga
+from courtney.main import joga_tesouro as art_joga
 from random import choice
 criptas = []
 def _joga_tesouro():
