@@ -13,12 +13,16 @@ C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg"
 from parisa.main import tesouro_inca as art_tesouro
 
+def _joga_tesouro():
+    """Inicia o jogo do tesouro inca"""
+    return input("Você achou Aranha. Continua(s)")
+    
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
-    quer = input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}.quer jogar (s)?")
+    quer = input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}.Quer jogar (s)?")
     fala = "beleza" if quer == "s" else "que triste"
     input(fala)
 
 if __name__ == "__main__":
-   art_tesouro()
-   #tesouro_inca()
+   #art_tesouro()
+   tesouro_inca()
