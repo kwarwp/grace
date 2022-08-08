@@ -1,4 +1,8 @@
 # grace.courtney.main.py
+# -*- coding: UTF8 -*-
+# This file is part of program Jogo Inca
+# Copyright 2022 Julia Barbosa <juliabarbosa@poli.ufrj.br>,
+# SPDX-License-Identifier: (GPLv3-or-later AND LGPL-2.0-only) WITH bison-exception
 
 TEMPLO = "https://i.imgur.com/4WE57S9.jpg"
 TESOURO = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgi7SJv8ULst1EochqpGSACaNpOVasSYaAOQ&usqp=CAU"
