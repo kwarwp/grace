@@ -23,7 +23,7 @@ def _joga_tesouro():
     camara = choice(camaras)
     criptas.append(camara[]) 
     return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
-    dois_monstros = = list("AMFCD"*3)
+    dois_monstros = list("AMFCD"*3)
     if dois_monstros:
             input("você perdeu")
             return "n"
