@@ -942,3 +942,10 @@ Exception: <TypeError: undefined has no properties>
                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 16:01:25.141 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 26
+  dois_monstros = = list("AMFCD"*3)
+                   ^
+SyntaxError: invalid syntax
+'''},
