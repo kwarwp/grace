@@ -900,3 +900,10 @@ Exception: <TypeError: undefined has no properties>
                                    ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Mon Aug 08 2022 15:48:40.923 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 28
+  if cripta == camara[]+camara[]
+                                 ^
+SyntaxError: invalid syntax
+'''},
