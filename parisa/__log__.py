@@ -510,3 +510,10 @@ IndentationError: unexpected indent
                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 16:25:08.267 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 25
+  def __init__{self}:
+               ^
+SyntaxError: invalid syntax
+'''},
