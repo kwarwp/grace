@@ -21,7 +21,7 @@ class Camara:
     def revela(self):
         return self.conteudo
     def resgata(self, jogadores):
-        butim, sobra = self.valor // jogadores, self. valor %jog
+        butim, sobra = self.valor // jogadores, self. valor % jogadores
         self.valor = sobra
         return butim
     def __repr__(self):
