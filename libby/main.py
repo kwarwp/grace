@@ -11,7 +11,7 @@ from parisa.main import tesouro_inca as art_tesouro
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
-    input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}")
+    input(f"Bem vindo ao Tesouro Inca - versão Libby {__name__}")
     
 
 if __name__ == "__main__":
