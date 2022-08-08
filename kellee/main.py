@@ -5,6 +5,7 @@
 # SPDX-License-Identifier: (GPLv3-or-later AND LGPL-2.0-only) WITH bison-exception
 from random import shuffle
 from _spy.vitollino.main import Cena, STYLE
+from random import shuffle
 STYLE.update(width=1000, height=500)
 TEMPLO = "https://i.imgur.com/OOTUIwl.jpg"
 TESOURO = "https://i.imgur.com/OuPgmla.jpg"
