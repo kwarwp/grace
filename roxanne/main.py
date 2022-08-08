@@ -11,6 +11,7 @@
     ---------
     * função tesouro_inca - executa o jogo.
     * função _joga_tesouro - avança na cripta.
+    * class Camara - Representa uma câmara no Templo
 """
 TEMPLO = "https://i.imgur.com/OOTUIwl.jpg"
 TESOURO = "https://i.imgur.com/OuPgmla.jpg"
@@ -22,9 +23,8 @@ from random import choice, shuffle
 class Camara:
     """ Uma camara do templo que contem um tesouro ou perigo 
     
-        
-            :param: conteudo: o descritor do conteúdo da camara, perigo ou tesouro
-            :param:valor: o número de tesouros que estão na câmara
+        :param: conteudo: o descritor do conteúdo da camara, perigo ou tesouro
+        :param:valor: o número de tesouros que estão na câmara
     """
     def __init__(self, conteudo, valor=0):
         self.conteudo = conteudo
@@ -55,14 +55,21 @@ class JogaTesouro():
     """Inicia o jogo do tesouro inca"""
     def __init__(self):
         self.criptas = []
-        self.camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
-        self.camaras = [Camara(contem) for contem in self.camaras] * 3
+        """Camaras já reveladas pelos aventureiros """
+        camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
+        self.camaras = [Camara(contem) for contem in camaras] * 3
+        """Camaras contidas no Templo """
         os_tesouros = [1,2,3,4,5,5, 7,7,9, 11,11,13,14, 15,17]
         self.os_tesouros = [Camara(valor, valor) for valor in os_tesouros]
+        """Camaras contidas no Templo que contêm tesouros"""
         self.camaras += self.os_tesouros
         shuffle(self.camaras)
         
     def joga(self):
+        """Executa uma jogada, revelando uma câmara 
+        
+           :return: Se o jogo continua, retorna "s"
+        """
         # camara = choice(self.camaras)
         camara = self.camaras.pop()
 
