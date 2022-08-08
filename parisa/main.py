@@ -48,6 +48,9 @@ class JogaTesouro():
        self.criptas=[]
        self.camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
        self.camaras = [camara(contem) for contem in self.camaras]
+       os_tesouros = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+       os_tesouros = [camara(valor, valor) for valor in os_tesouros]
+       self.camaras += os_tesouros
     
     def joga(self):
         camara = choice(self.camaras)  # sortear os perigos
