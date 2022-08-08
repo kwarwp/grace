@@ -982,3 +982,7 @@ NameError: name 'art_joga' is not defined
 'error': '''
 Exception: <TypeError: undefined has no properties>
 '''},
+{'date': 'Mon Aug 08 2022 16:05:52.578 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: undefined has no properties>
+'''},
