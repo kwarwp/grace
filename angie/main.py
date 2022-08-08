@@ -20,9 +20,9 @@ def _joga_tesouro():
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"] 
     camara = choice(camaras)
      tinha_monstros = camara in criptas
+      criptas.append(camara) 
     if tinha_monstros:
             return "n"
-    criptas.append(camara) 
     return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
 
 def tesouro_inca():
