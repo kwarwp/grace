@@ -10,14 +10,16 @@ MONSTRO = "https://i.imgur.com/lcvvL1B.png"
 PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 
 from random import choice 
+criptas = []
 
 def joga_tesouro():
     """Incia o jogo do tesouro Inca"""
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
     camara = choice(camaras)  #sortear 
-    criptas = []
-    criptas.append(camara[1])
+    criptas.append(camara[0])
     return input(f"Você visitou {criptas} achou {camara}.  Continua? s ou n?")
+    
+
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
