@@ -26,9 +26,9 @@ shuffle(tumba)
 corredor = []
 mochila = 0
 templo.vai()
-if (jogar == 's' or 'S' or "sim" or "SIM" or "Sim"):
-    print("Então vamos!")
-    print("Clique ok para encontrar cada monstro da tumba")
+if jogar == 's':
+    #print("Então vamos!")
+    #print("Clique ok para encontrar cada monstro da tumba")
     input("Simbora")
     for camara in tumba:
         dois_monstros = (camara not in tesouro) and (camera in corredor)
