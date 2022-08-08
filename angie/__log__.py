@@ -885,3 +885,7 @@ ImportError: cannot import name 'tesouro_inca'
     from parisa.main import tesouro_inca as art_tesouro
 ImportError: cannot import name 'tesouro_inca'
 '''},
+{'date': 'Mon Aug 08 2022 15:43:03.632 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: undefined has no properties>
+'''},
