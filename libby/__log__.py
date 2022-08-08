@@ -256,3 +256,10 @@ SyntaxError: invalid syntax
                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 16:05:14.424 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  return "n"
+  ^
+IndentationError: expected an indented block
+'''},
