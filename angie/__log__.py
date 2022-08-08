@@ -775,3 +775,10 @@ SyntaxError: trailing comma not allowed without surrounding parentheses
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Aug 08 2022 15:01:30.60 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}")
+  ^
+IndentationError: unexpected indent
+'''},
