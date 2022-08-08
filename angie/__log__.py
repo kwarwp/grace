@@ -907,3 +907,7 @@ SyntaxError: EOL while scanning string literal
                                  ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 15:57:35.461 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: undefined has no properties>
+'''},
