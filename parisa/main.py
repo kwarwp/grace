@@ -11,11 +11,11 @@ PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 
 def joga_tesouro():
     """Incia o jogo do tesouro Inca"""
-    return input("Você achou aranha. Continua(s)")
+    return input("Você achou aranha. Continua(s)?")
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
-    quer = input(f"Bem vindo ao Tesouro Inca - versão Parisa {__name__}. Quer jogar?(s)")
+    quer = input(f"Bem vindo ao Tesouro Inca - versão Parisa {__name__}. Quer jogar(s)?")
     fala = "beleza" if quer == "s" else "que triste"
     input(fala) 
     while joga_tesouro() == "s":
