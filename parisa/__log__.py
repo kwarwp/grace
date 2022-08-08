@@ -48,3 +48,10 @@ SyntaxError: invalid syntax
                               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 15:25:08.953 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  return input("Você achou", camara. "Continua? s ou n?")
+                                      ^
+SyntaxError: invalid syntax
+'''},
