@@ -27,7 +27,7 @@ class JogaTesouro ():
     self.criptas = []
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
     
-   def joga(self):
+    def joga(self):
         camara = choice(self.camaras)
         tinha_monstro = camara in self.criptas
         self.criptas.append(camara)
