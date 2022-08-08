@@ -482,3 +482,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Aug 08 2022 16:07:10.934 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 23
+  if cripta == "A":
+  ^
+IndentationError: unexpected indent
+'''},
