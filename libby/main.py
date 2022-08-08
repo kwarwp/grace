@@ -11,7 +11,7 @@ from parisa.main import tesouro_inca as art_tesouro
 
 def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
-    camaras = ["Aranha","Múmia","Cobra","Desabamento","incêndio"]
+    camaras = ["Aranha","Múmia","Cobra","Desabamento","Incêndio"]
     camara = choice(camaras)
     return input("Você achou Aranha. Continua(s)")
 
