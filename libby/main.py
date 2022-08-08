@@ -11,8 +11,8 @@ from parisa.main import tesouro_inca as art_tesouro
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
-   quer = input(f"Bem vindo ao Tesouro Inca - versão Libby {__name__}. Quer jogar (s)?")
-   fala = "beleza" if quer == "s" else "que pena"
+    quer = input(f"Bem vindo ao Tesouro Inca - versão Libby {__name__}. Quer jogar (s)?")
+    fala = "beleza" if quer == "s" else "que pena"
 input(fala)
 
 
