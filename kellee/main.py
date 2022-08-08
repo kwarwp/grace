@@ -3,7 +3,7 @@
 # This file is part of program Jogo Inca
 # Copyright © 2022  Erica Scheffel <ericascheffel@nce.ufrj.br>,
 # SPDX-License-Identifier: (GPLv3-or-later AND LGPL-2.0-only) WITH bison-exception
-from randon import shuffle
+from random import shuffle
 jogar = input("Quer jogar o Tesouro Inca?")
 tumba = list("AMCDI"*3)
 tesouro = [1,2,3,4,5,6,7,8,9]*2
