@@ -20,6 +20,21 @@ PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 from courtney.main import _joga_tesouro as art_joga
 from random import choice
 criptas = []
+class JogaTesouro():
+    """Inicia o jogo do tesouro inca"""
+    def __init__(self):
+        self.criptas = []
+        self.camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
+        
+    def joga(self):
+        camara = choice(self.camaras)
+        tinha_monstro = camara in self.criptas
+        self.criptas.append(camara)
+        if tinha_monstro:
+            input(f"Ja existia {camara} na {criptas}. Você abandonou correndo")
+            return "n"
+        return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
+
 def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
@@ -37,7 +52,8 @@ def tesouro_inca():
     fala = "beleza" if quer == "s" else "que triste"
     input(fala)
     # while art_joga() == "s":
-    while _joga_tesouro() == "s":
+    _joga_tesouro = JogaTesouros()
+    while _joga_tesouro.joga() == "s":
         pass
     fala = "que pena"
     input(fala)
