@@ -38,7 +38,7 @@ if (jogar == 's' or 'S' or "sim" or "SIM" or "Sim"):
             cena_monstro.vai()
             
         corredor.append(camara)        
-        fica = input(f"você encontrou {corredor}, você fica?")
+        fica = input(f"você já encontrou {corredor}, você fica?")
         if (fica != 's' or 'S' or "sim" or "SIM" or "Sim"):
             input("Você desistiu, mas ficou com {mochila} tesouros")
             break
