@@ -10,9 +10,9 @@ MONSTRO = "https://i.imgur.com/lcvvL1B.png"
 PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 
 def tesouro_inca():
-	"""O jogo do Tesouro Inca"""
-	input("Bem vindo ao Tesouro Inca - versão Parisa")
-	pass 
+    """O jogo do Tesouro Inca"""
+    input("Bem vindo ao Tesouro Inca - versão Parisa")
+    pass 
 
 
 tesouro_inca()
