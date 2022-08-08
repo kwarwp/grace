@@ -125,3 +125,10 @@ SyntaxError: invalid syntax
        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 15:49:59.562 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  contA = 0 int
+             ^
+SyntaxError: invalid syntax
+'''},
