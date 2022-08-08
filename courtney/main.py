@@ -9,7 +9,6 @@ TESOURO = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgi7SJv8ULst1Eo
 COBRA = "https://static.vecteezy.com/ti/vetor-gratis/p3/4858121-desenho-cobra-cobra-zangado-vetor.jpg"
 ARANHA = "https://i.imgur.com/Dizbyyi.jpg"
 
-from parisa,main import tesouro_inca
 from random import choice
 class Camara:
     def __init__(self, conteudo, valor=0):
@@ -54,7 +53,7 @@ class JogaTesouro():
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
-    quer = input(f"Bem vindo ao Tesouro Inca - versão Courtney /n {__name__}.Quer jogar (s)?")
+    quer = input(f"Bem vindo ao Tesouro Inca - versão Courtney {__name__}.\nQuer jogar (s)?")
     fala = "beleza" if quer == "s" else "que triste"
     input(fala)
     _joga_tesouro = JogaTesouro()
@@ -65,5 +64,5 @@ def tesouro_inca():
     
 
 if __name__ == "__main__":
-    # art_tesouro()
+
     tesouro_inca()
