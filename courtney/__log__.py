@@ -805,3 +805,10 @@ SyntaxError: invalid syntax
                   ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 14:55:43.197 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  if __name__ == "__main__";    
+                  ^
+SyntaxError: invalid syntax
+'''},
