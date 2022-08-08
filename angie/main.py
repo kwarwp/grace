@@ -11,10 +11,11 @@ M = "https://imgur.com/a/KYT6HiQ"
 F = "https://imgur.com/xYv9YdG"
 C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg"
-from parisa.main import tesouro_inca as art_tesouroo
+from parisa.main import tesouro_inca as art_tesouro
 
 def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
+    camara = ["Aranha", "Cobra", "Mumia", "Desabamento", "Incendio"]
     return input("Você achou Aranha. Continua(s)")
     
 def tesouro_inca():
@@ -29,5 +30,5 @@ def tesouro_inca():
     input(fala)
 
 if __name__ == "__main__":
-   #art_tesouroo()
+   #art_tesouro()
    tesouro_inca()
