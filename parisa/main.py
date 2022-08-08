@@ -19,6 +19,17 @@ PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 
 from random import choice 
 
+class Camara: 
+    def __init__(self, conteudo, valor=0):
+       self.conteudo = conteudo
+       self.valor = valor
+    def revela(self):
+     
+    
+class Tumba: 
+    pass   
+class Jogador: 
+    pass
 
 class JogaTesouro():
     """Incia o jogo do tesouro Inca"""
@@ -35,13 +46,13 @@ class JogaTesouro():
             return "n"
         return input(f"Você visitou {self.criptas} achou {camara}. Continua(s)")
 
-
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
     quer = input(f"Bem vindo ao Tesouro Inca - versão Parisa {__name__}. Quer jogar? (s ou n)")
     fala = "beleza" if quer == "s" else "que triste"
     input(fala) 
-    while joga_tesouro() == "s":
+    joga_tesouro = JogaTesouro()
+    while joga_tesouro.joga() == "s":
       pass
     fala = "que pena"
     input(fala)
