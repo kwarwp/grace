@@ -8,11 +8,23 @@ TEMPLO = "https://i.imgur.com/4WE57S9.jpg"
 TESOURO = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgi7SJv8ULst1EochqpGSACaNpOVasSYaAOQ&usqp=CAU"
 COBRA = "https://static.vecteezy.com/ti/vetor-gratis/p3/4858121-desenho-cobra-cobra-zangado-vetor.jpg"
 ARANHA = ""
-from parisa.main import tesouro_inca
+from parisa.main import tesouro_inca as art_tesouro
+
+def _joga_tesouro():
+    """Inicia o jogo do tesouro inca"""
+    return input('Vocêachou aranha. Continua(s)?')
 
 def tesouro_inca():
     """O jogo do tesouro Inca"""
-    input(f'Bem vindo ao Tesouro Inca - versão Courtney {__name__}')
+    quer = input(f'Bem vindo ao Tesouro Inca - versão Courtney {__name__} \n Quer jogar(s)?')
+    fala = 'beleza' if quer =='s' else'que triste'
+    input(fala)
+    while _joga_tesouro() == 's':
+        fala = 'beleza'
+        input(fala)
+    fala = 'poxa, que pena'
+    input(fala)
     
 if __name__ == "__main__":    
+    #art_tesouro()
     tesouro_inca()
