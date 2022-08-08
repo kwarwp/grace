@@ -670,3 +670,10 @@ SyntaxError: invalid syntax
     self.camaras = [camara(contem) for contem in self.camaras]
 NameError: name 'camara' is not defined
 '''},
+{'date': 'Mon Aug 08 2022 17:02:46.957 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 34
+  def __str__(self):
+  ^
+IndentationError: unexpected indent
+'''},
