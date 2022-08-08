@@ -69,3 +69,10 @@ Traceback (most recent call last):
                                          ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 15:27:49.492 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module parisa.main line 18
+  return input(f"Você achou {camara}.  "Continua? s ou n?")
+                                         ^
+SyntaxError: invalid syntax
+'''},
