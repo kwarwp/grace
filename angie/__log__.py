@@ -956,3 +956,7 @@ SyntaxError: invalid syntax
                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 16:01:46.892 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: undefined has no properties>
+'''},
