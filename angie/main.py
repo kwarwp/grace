@@ -39,25 +39,34 @@ class JogaTesouro():
     def __init__(self):
         self.criptas = []
         self.camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"] 
-    
+        self.camaras = [Camara(contem) for contem in self.camaras] * 3
+        os_tesouros = [1,2,3,4,5,5, 7,7,9, 11,11,13,14, 15,17]
+        self.os_tesouros = [Camara(valor, valor) for valor in os_tesouros]
+        self.camaras += self.os_tesouros
+        shuffle(self.camaras)
+        
     def joga(self):
-        camara = choice(self.camaras)
-        tinha_monstros = camara in self.criptas
-        self.criptas.append(camara) 
-        if tinha_monstros:
-           input(f"já existia {camara} na {criptas}. Você abandonou correndo")
-           return "n"
-        return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
-
+        #camara = choice(self.camaras)
+        camara = self.camara.pop()
+        
+                tinha_monstro = (camara not in self.os_tesouros) and (camara in self.criptas) 
+                self.criptas.append(camara)
+                revela = [cam.revela() for cam in self.criptas]
+                cam= camara.revela()
+                if tinha_monstro:
+                    input(f"Ja existia {cam} na {revela}. Você abandonou correndo")
+                    return "n"
+                return input(f"Você visitou {revela} achou {cam}. Continua(s)")
+        
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
     quer = input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}.Quer jogar (s)?")
     fala = "beleza" if quer == "s" else "que triste"
     input(fala)
     #while _joga_tesouro() == "s":
-    _joga_tesouro = JogaTesouros()
-    fala = "beleza"
-    input(fala)
+    _joga_tesouro = JogaTesouro()
+    while _joga_tesouro.joga() == "s":
+        pass
     fala = "que pena"
     input(fala)
     
