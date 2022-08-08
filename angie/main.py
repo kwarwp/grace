@@ -12,10 +12,12 @@ F = "https://imgur.com/xYv9YdG"
 C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg"
 from parisa.main import tesouro_inca as art_tesouro
+from random import choice 
 
 def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
     camara = ["Aranha", "Cobra", "Mumia", "Desabamento", "Incendio"]
+    camara  = choice(camaras)
     return input("Você achou Aranha. Continua(s)")
     
 def tesouro_inca():
