@@ -10,12 +10,15 @@ COBRA = "https://static.vecteezy.com/ti/vetor-gratis/p3/4858121-desenho-cobra-co
 ARANHA = "https://i.imgur.com/Dizbyyi.jpg"
 from parisa.main import tesouro_inca as art_tesouro
 from random import choice
+criptas = []
 
 def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
     camaras = ['Aranha','Cobra', 'Mumia', 'Desabamento', 'Incendio']
     camara = choice(camaras)
-    return input(f'Você achou {camara}. Continua(s)?')
+    criptas.append(camara)
+    return input(f'Você visitou {criptas} e achou {camara}. Continua(s)?')
+    
 
 def tesouro_inca():
     """O jogo do tesouro Inca"""
@@ -23,8 +26,7 @@ def tesouro_inca():
     fala = 'beleza' if quer =='s' else'que triste'
     input(fala)
     while _joga_tesouro() == 's':
-        fala = 'beleza'
-        input(fala)
+        pass
     fala = 'poxa, que pena'
     input(fala)
     
