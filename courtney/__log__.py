@@ -931,3 +931,10 @@ IndentationError: expected an indented block
     if duas_aranhas in criptas:
 NameError: name 'duas_aranhas' is not defined
 '''},
+{'date': 'Mon Aug 08 2022 15:55:48.985 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 24
+  dois_monstros.append(risco)
+  ^
+IndentationError: expected an indented block
+'''},
