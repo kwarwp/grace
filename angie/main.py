@@ -13,6 +13,7 @@ C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg"
 
 from random import choice, shuffle
+
 class Camara:
     def __init__(self, conteudo, valor=0):
         self.conteudo = conteudo
