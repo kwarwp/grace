@@ -14,7 +14,9 @@ def tesouro_inca():
     quer = input(f"Bem vindo ao Tesouro Inca - versão Libby {__name__}. Quer jogar (s)?")
     fala = "beleza" if quer == "s" else "que pena"
     input(fala)
-
-
+    continua = _joga_tesouro ()
+    fala = "beleza" if quer == "s" else "que pena"
+    input(fala)
+    
 if __name__ == "__main__":
     tesouro_inca()
