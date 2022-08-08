@@ -3,7 +3,15 @@
 # This file is part of program Jogo Inca
 # Copyright © 2022  Art Adriel <art.adriel@gmail.com>,
 # SPDX-License-Identifier: (GPLv3-or-later AND LGPL-2.0-only) WITH bison-exception
+""" O Jogo do Tesouro Inca
 
+    Um grupo de aventureiros se arrisca em uma escavação antiga de um templo inca.
+    
+    Changelog
+    ---------
+    * função tesouro_inca - executa o jogo.
+    * função _joga_tesouro - avança na cripta.
+"""
 TEMPLO = "https://i.imgur.com/OOTUIwl.jpg"
 TESOURO = "https://i.imgur.com/OuPgmla.jpg"
 MONSTRO = "https://i.imgur.com/lcvvL1B.png"
@@ -14,11 +22,15 @@ criptas = []
 
 def joga_tesouro():
     """Incia o jogo do tesouro Inca"""
+    contA = int
+    
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
     camara = choice(camaras)  # sortear os perigos
-    criptas.append(camara[0]) # recuperar a primeira letra 
-    return input(f"Você visitou {criptas} achou {camara}.  Continua? s ou n?")
-    
+    tinha_monstro = camara in criptas
+    criptas.append(camara)
+    if tinha_monstro:
+        return "n"
+    return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
 
 
 def tesouro_inca():
