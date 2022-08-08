@@ -904,3 +904,10 @@ NameError: name '_joga_tesouro' is not defined
     camara = choice(camaras)
 NameError: name 'choice' is not defined
 '''},
+{'date': 'Mon Aug 08 2022 15:43:25.385 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 23
+  return input(f'Você visitou {criptas} e achou {camara}. Continua(s)?')
+  ^
+IndentationError: expected an indented block
+'''},
