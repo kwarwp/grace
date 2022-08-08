@@ -1115,3 +1115,10 @@ NameError: name 'JogaTesouros' is not defined
     _joga_tesouro = JogaTesouros()
 NameError: name 'JogaTesouros' is not defined
 '''},
+{'date': 'Mon Aug 08 2022 17:48:02.199 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 52
+  tinha_monstro = (camara not in self.os_tesouros) and (camara in self.criptas) 
+  ^
+IndentationError: unexpected indent
+'''},
