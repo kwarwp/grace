@@ -27,23 +27,23 @@ class JogaTesouro ():
     self.criptas = []
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
     
-    def joga (self):
-    camara = choice 
-    tinha_monstro = camara in criptas
-    criptas.append(camara)
-    if tinha_monstro:
-        input(f"ja existia {camara} na {criptas}. voce saiu correndo")
-        return "n"
-    return input(f"você visitou {criptas} achou {camara}. Continua(s)")
-
+   def joga(self):
+        camara = choice(self.camaras)
+        tinha_monstro = camara in self.criptas
+        self.criptas.append(camara)
+        if tinha_monstro:
+            input(f"Ja existia {camara} na {self.criptas}. Você saiu correndo")
+            return "n"
+        return input(f"Você visitou {self.criptas} achou {camara}. Continua(s)")
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
-    quer = input(f"Bem vindo ao Tesouro Inca - versão Libby {__name__}.Quer jogar (s)?")
-    fala = "great" if quer == "s" else "que pena"
+    quer = input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}.Quer jogar (s)?")
+    fala = "beleza" if quer == "s" else "que triste"
     input(fala)
-    while _joga_tesouro() == "s":
-        fala = "great"
-        input(fala)
+    # while art_joga() == "s":
+    _joga_tesouro = JogaTesouro()
+    while _joga_tesouro.joga() == "s":
+        pass
     fala = "que pena"
     input(fala)
     
