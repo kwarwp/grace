@@ -52,8 +52,8 @@ def tesouro_inca():
     input(fala)
     #while _joga_tesouro() == "s":
     _joga_tesouro = JogaTesouros()
-        fala = "beleza"
-        input(fala)
+    fala = "beleza"
+    input(fala)
     fala = "que pena"
     input(fala)
     
