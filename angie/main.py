@@ -23,7 +23,7 @@ class Camara:
         butim, sobra = self.valor // jogadores, self. valor %jog
         return self.conteudo
         
-class Incursão:
+class Incursao:
     pass
 class Tumba:
     pass
