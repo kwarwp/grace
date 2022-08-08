@@ -62,3 +62,10 @@ Traceback (most recent call last):
   module <module> line 11
     from parisa.main import _joga_tesouro as art_joga
 '''},
+{'date': 'Mon Aug 08 2022 15:27:37.711 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module parisa.main line 18
+  return input(f"Você achou {camara}.  "Continua? s ou n?")
+                                         ^
+SyntaxError: invalid syntax
+'''},
