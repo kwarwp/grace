@@ -32,7 +32,7 @@ class Camara:
        self.valor = sobra
        return butim
 
-class Incursao 
+class Incursao:
     pass 
 
 class Tumba: 
@@ -46,6 +46,7 @@ class JogaTesouro():
     def __init__(self):
        self.criptas=[]
        self.camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
+       self.camaras = [camara(contem) for contem in self.camaras]
     
     def joga(self):
         camara = choice(self.camaras)  # sortear os perigos
