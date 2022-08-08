@@ -15,7 +15,7 @@ def joga_tesouro():
     """Incia o jogo do tesouro Inca"""
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
     camara = choice(camaras)  #sortear 
-    return input("Você achou", camara,  "Continua? s ou n?")
+    return input(f"Você achou {camara}.  "Continua? s ou n?")
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
