@@ -9,10 +9,13 @@ TESOURO = "https://i.imgur.com/OuPgmla.jpg"
 MONSTRO = "https://i.imgur.com/lcvvL1B.png"
 PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 
+from random import choice 
+
 def joga_tesouro():
     """Incia o jogo do tesouro Inca"""
-    camara = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
-    return input("Você achou aranha. Continua? s ou n?")
+    camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
+    camara = choice(camaras)  #sortear 
+    return input("Você achou", camara,  "Continua? s ou n?")
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
