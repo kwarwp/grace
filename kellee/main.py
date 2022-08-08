@@ -17,7 +17,7 @@ if (jogar == 's' or 'S' or "sim" or "SIM" or "Sim"):
     for camara in tumba:
         dois_monstros = camara in corredor
         corredor.append(camara)        
-        fica = input(f"você encontrou {corredor}, você fica ou sai?")
+        fica = input(f"você encontrou {corredor}, você fica?")
         if (fica != 's' or 'S' or "sim" or "SIM" or "Sim"):
             input("Você desistiu")
             break
