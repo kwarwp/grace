@@ -8,7 +8,7 @@ TESOURO = "https://i.imgur.com/OuPgmla.jpg"
 MONSTRO = "https://i.imgur.com/lcvvL1B.png"
 PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 #from parisa.main import tesouro_inca as art_tesouro
-#from parisa.main import _joga_tesouro as art_joga
+from parisa.main import _joga_tesouro as art_joga
 from random import choice
 criptas = []
 def _joga_tesouro():
@@ -23,7 +23,8 @@ def tesouro_inca():
     quer = input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}.Quer jogar (s)?")
     fala = "beleza" if quer == "s" else "que triste"
     input(fala)
-    while _joga_tesouro() == "s":
+    #while _joga_tesouro() == "s":
+    while art_joga() == "s":
         pass
     fala = "que pena"
     input(fala)
