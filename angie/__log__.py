@@ -990,3 +990,10 @@ Exception: <TypeError: undefined has no properties>
 'error': '''
 Exception: <TypeError: undefined has no properties>
 '''},
+{'date': 'Mon Aug 08 2022 16:08:31.750 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 22
+  tinha_monstros = camara in criptas
+  ^
+IndentationError: unexpected indent
+'''},
