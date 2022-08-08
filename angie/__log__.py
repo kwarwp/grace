@@ -761,3 +761,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Aug 08 2022 15:00:08.525 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 14
+  from parisa.main import tesouro_inca as art tesouro
+                                                     ^
+SyntaxError: trailing comma not allowed without surrounding parentheses
+'''},
