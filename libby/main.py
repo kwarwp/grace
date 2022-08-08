@@ -41,7 +41,8 @@ class JogaTesouro ():
     """Inicia o Jogo do tesouro inca""" 
     def _init_(self):
     self.criptas = []
-    camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
+    self.camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
+    self.camaras = [camara(contem) for contem in self.camaras]
     
     def joga(self):
         camara = choice(self.camaras)
