@@ -15,8 +15,8 @@ criptas = []
 def joga_tesouro():
     """Incia o jogo do tesouro Inca"""
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
-    camara = choice(camaras)  #sortear 
-    criptas.append(camara[0])
+    camara = choice(camaras)  # sortear os perigos
+    criptas.append(camara[0]) # recuperar a primeira letra 
     return input(f"Você visitou {criptas} achou {camara}.  Continua? s ou n?")
     
 
