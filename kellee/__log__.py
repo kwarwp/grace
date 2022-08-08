@@ -591,3 +591,10 @@ UnboundLocalError: local variable 'camara' referenced before assignment
               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 15:47:52.595 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  if dois_monstros = camara:
+                    ^
+SyntaxError: invalid syntax
+'''},
