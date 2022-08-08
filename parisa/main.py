@@ -18,15 +18,15 @@ MONSTRO = "https://i.imgur.com/lcvvL1B.png"
 PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 
 from random import choice 
-criptas = []
+
 
 class JogaTesouro():
     """Incia o jogo do tesouro Inca"""
-    def __init__{self}:
+    def __init__(self):
        self.criptas=[]
        self.camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
     
-    def joga(self)
+    def joga(self):
         camara = choice(self.camaras)  # sortear os perigos
         tinha_monstro = camara in self.criptas
         self.criptas.append(camara)
@@ -34,19 +34,6 @@ class JogaTesouro():
             input(f"Ja existia {camara} na {self.criptas}. Você abandonou correndo")
             return "n"
         return input(f"Você visitou {self.criptas} achou {camara}. Continua(s)")
-
-
-def joga_tesouro():
-    """Incia o jogo do tesouro Inca"""
-    #contA = int
-    
-    camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
-    camara = choice(camaras)  # sortear os perigos
-    tinha_monstro = camara in criptas
-    criptas.append(camara)
-    if tinha_monstro:
-        return "n"
-    return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
 
 
 def tesouro_inca():
