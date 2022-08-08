@@ -14,5 +14,5 @@ def tesouro_inca():
     input("Bem vindo ao Tesouro Inca - versão Parisa")
     
 
-if __name__== "__main__":
+if __name__== "__main__": # evitar a importação 
   tesouro_inca()
