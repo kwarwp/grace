@@ -17,17 +17,16 @@ from random import choice
 
 criptas = []
 #variavel global 
-
 def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"] 
     camara = choice(camaras)
     criptas.append(camara[]) 
     return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
-    
-    dois_monstros = (camara) and (camara)
+    dois_monstros = = list("AMFCD"*3)
     if dois_monstros:
             input("você perdeu")
+            return "n"
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
