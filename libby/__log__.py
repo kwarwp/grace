@@ -249,3 +249,10 @@ Traceback (most recent call last):
                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 16:05:06.743 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 28
+  tinha_monstro = def {camaras}
+                   ^
+SyntaxError: invalid syntax
+'''},
