@@ -11,7 +11,7 @@ M = "https://imgur.com/a/KYT6HiQ"
 F = "https://imgur.com/xYv9YdG"
 C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg"
-from parisa.main import tesouro_inca as art_tesouro
+from parisa.main import tesouro_inca as art_tesouroo
 
 def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
@@ -29,5 +29,5 @@ def tesouro_inca():
     input(fala)
 
 if __name__ == "__main__":
-   #art_tesouro()
+   #art_tesouroo()
    tesouro_inca()
