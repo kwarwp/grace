@@ -22,6 +22,7 @@ def _joga_tesouro():
      tinha_monstros = camara in criptas
       criptas.append(camara) 
     if tinha_monstros:
+            input(f"já existia {camara} na {criptas}. Você abandonou correndo")
             return "n"
     return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
 
@@ -36,7 +37,6 @@ def tesouro_inca():
     fala = "que pena"
     input(fala)
     
-
 if __name__ == "__main__":
     # art_tesouro()
     tesouro_inca()
