@@ -20,9 +20,9 @@ criptas = []
 
 def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
-    camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
+    camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"] #perigos
     camara = choice(camaras)
-    criptas.append(camara[])
+    criptas.append(camara[]) #lista de perigos na câmara 
     return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
 
 def tesouro_inca():
