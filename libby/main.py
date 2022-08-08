@@ -26,11 +26,14 @@ class camara:
     def revela (self):
         return self.conteudo
         
-class Tumba: 
+class Incursao: 
     pass
-Class Jogador:
+class tumba:
+    pass
+class Jogador:
     pass 
-JogaTesouro ():
+    
+class JogaTesouro ():
     """Inicia o Jogo do tesouro inca""" 
     def _init_(self):
     self.criptas = []
