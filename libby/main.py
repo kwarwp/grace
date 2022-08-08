@@ -7,15 +7,15 @@ TEMPLO = "https://i.imgur.com/OOTUIwl.jpg"
 TESOURO = "https://i.imgur.com/OuPgmla.jpg"
 MONSTRO = "https://i.imgur.com/lcvvL1B.png"
 PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
-TEMPLO = "https://i.imgur.com/OOTUIwl.jpg"
-TESOURO = "https://i.imgur.com/OuPgmla.jpg"
-MONSTRO = "https://i.imgur.com/lcvvL1B.png"
-PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 from parisa.main import tesouro_inca as art_tesouro
+from parisa.main import _joga_tesouro as art_joga
+from random import choice
 
 def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
-    return input("Você achou Aranha. Continua(s)")
+    camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
+    camara = choice(camaras)
+    return input(f"Você achou {camara}. Continua(s)")
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
