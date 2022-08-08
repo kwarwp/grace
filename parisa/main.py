@@ -18,7 +18,7 @@ def tesouro_inca():
     quer = input(f"Bem vindo ao Tesouro Inca - versão Parisa {__name__}. Quer jogar?(s)")
     fala = "beleza" if quer == "s" else "que triste"
     input(fala) 
-    while joga_tesouro() == "s"
+    while joga_tesouro() == "s":
       fala = "beleza"
       input(fala)
     fala = "que pena"
