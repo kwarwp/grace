@@ -14,24 +14,28 @@ D = "https://i.imgur.com/OHmUIhz.jpg"
 
 from random import choice
 
-criptas = []
-def _joga_tesouro():
+class JogaTesouro():
     """Inicia o jogo do tesouro inca"""
-    camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"] 
-    camara = choice(camaras)
-    tinha_monstros = camara in criptas
-    criptas.append(camara) 
-    if tinha_monstros:
-            input(f"já existia {camara} na {criptas}. Você abandonou correndo")
-            return "n"
-    return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
+    def __init__(self):
+        self.criptas = []
+        self.camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"] 
+    
+    def joga(self):
+        camara = choice(self.camaras)
+        tinha_monstros = camara in self.criptas
+        self.criptas.append(camara) 
+        if tinha_monstros:
+           input(f"já existia {camara} na {criptas}. Você abandonou correndo")
+           return "n"
+        return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
     quer = input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}.Quer jogar (s)?")
     fala = "beleza" if quer == "s" else "que triste"
     input(fala)
-    while _joga_tesouro() == "s":
+    #while _joga_tesouro() == "s":
+    _joga_tesouro = JogaTesouros()
         fala = "beleza"
         input(fala)
     fala = "que pena"
