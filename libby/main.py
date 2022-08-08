@@ -27,6 +27,9 @@ class camara:
         return self.conteudo
         
 class Tumba: 
+    pass
+Class Jogador:
+    pass 
 JogaTesouro ():
     """Inicia o Jogo do tesouro inca""" 
     def _init_(self):
