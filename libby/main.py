@@ -51,6 +51,7 @@ class JogaTesouro ():
         tinha_monstro = camara in self.criptas
         self.criptas.append(camara)
         revela = [cam.revela() for cam in self criptas]
+        cam = camara.revela
         if tinha_monstro:
             input(f"Ja existia {camara} na {self.criptas}. Você saiu correndo")
             return "n"
