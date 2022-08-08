@@ -11,7 +11,7 @@ PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 
 def joga_tesouro
     """Incia o jogo do tesouro Inca"""
-    retunr input("Você achou aranha. Continua(s)")
+    return input("Você achou aranha. Continua(s)")
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
