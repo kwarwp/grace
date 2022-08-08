@@ -12,16 +12,15 @@ F = "https://imgur.com/xYv9YdG"
 C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg"
 
-from random import choice
-
+from random import choice, shuffle
 class Camara:
-    def _init_(self, conteudo, valor=0):
+    def __init__(self, conteudo, valor=0):
         self.conteudo = conteudo
         self.valor = valor
     def revela(self):
         return self.conteudo
     def resgata(self, jogadores):
-        butim, sobra = self.valor // jogadores, self. valor % jogadores
+        butim, sobra = self.valor // jogadores, self.valor % jogadores
         self.valor = sobra
         return butim
     def __repr__(self):
@@ -35,7 +34,6 @@ class Jogador:
     pass
 
 class JogaTesouro():
-    """Inicia o jogo do tesouro inca"""
     def __init__(self):
         self.criptas = []
         self.camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
@@ -74,3 +72,4 @@ def tesouro_inca():
 if __name__ == "__main__":
     # art_tesouro()
     tesouro_inca()
+
