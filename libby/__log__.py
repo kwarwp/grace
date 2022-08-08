@@ -277,3 +277,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Aug 08 2022 16:21:17.691 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 26
+  """Inicia o jogo do tesouro inca"""
+  ^
+IndentationError: expected an indented block
+'''},
