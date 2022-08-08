@@ -29,7 +29,7 @@ templo.vai()
 if jogar == 's':
     #print("Então vamos!")
     #print("Clique ok para encontrar cada monstro da tumba")
-    input("Simbora")
+    input("Então, clique em OK!")
     for camara in tumba:
         dois_monstros = (camara not in tesouro) and (camera in corredor)
         eh_tesouro = camara in tesouro
@@ -37,8 +37,7 @@ if jogar == 's':
             mochila += camara
             cena_tesouro.vai()
         else:
-            cena_monstro.vai()
-            
+            cena_monstro.vai()            
         corredor.append(camara)        
         fica = input(f"você já encontrou {corredor}, se você fica digite s, se você sai digite n")
         if dois_monstros:
