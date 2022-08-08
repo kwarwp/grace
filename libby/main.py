@@ -13,7 +13,7 @@ def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
     camaras = ["Aranha","Múmia","Cobra","Desabamento","Incêndio"]
     camara = choice(camaras)
-    return input("Você achou Aranha. Continua(s)")
+    return input(f"Você achou {camaras}. Continua(s)")
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
