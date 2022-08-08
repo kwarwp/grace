@@ -15,7 +15,7 @@ if (jogar == 's' or 'S' or "sim" or "SIM" or "Sim"):
     print("Clique ok para encontrar cada monstro da tumba")
     input("Simbora")
     for camara in tumba:
-        dois_monstros = camera in corredor
+        dois_monstros = camara in corredor
         corredor.append(camara)        
         fica = input(f"você encontrou {corredor}, você fica ou sai?")
         if (fica != 's' or 'S' or "sim" or "SIM" or "Sim"):
