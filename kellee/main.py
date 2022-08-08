@@ -23,10 +23,14 @@ criptas = []
 def _joga_tesouro():
     """Inicia o jogo do Tesouro Inca"""
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
-    camara = choice(camaras)
-    criptas.append(camara) 
-    return input(f"Você visitou {criptas} e achou {camara}. Continua? Tecle (s)")
-
+    camara = choice(camaras)    
+    tinha_monstro = camara in criptas
+    criptas.append(camara)
+    if tinha_monstro:
+        input(f"Já existia {camara} na {criptas}. Você fugiu!")
+        return "n"    
+    return input(f"Você visitou {criptas} e achou {camara}. Continua? Tecle (s)")     
+   
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
     quer = input(f"Bem-vindo ao Tesouro Inca - versão Kellee {__name__}.Quer jogar? tecle (s)")
