@@ -25,6 +25,10 @@ class camara:
         self.valor = valor 
     def revela (self):
         return self.conteudo
+    def resgata (self,jogadores):
+        butim, sobra = self.valor // jogadores, self.valor % jogadores 
+        self.valor = sobra
+        return butim
         
 class Incursao: 
     pass
