@@ -18,14 +18,26 @@ MONSTRO = "https://i.imgur.com/lcvvL1B.png"
 PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 #from parisa.main import tesouro_inca as art_tesouro
 # from courtney.main import _joga_tesouro as art_joga
-from random import choice
+from random import choice, shuffle
 class Camara:
+    """ Uma camara do templo que contem um tesouro ou perigo 
+    
+        
+            :param: conteudo: o descritor do conteúdo da camara, perigo ou tesouro
+            :param:valor: o número de tesouros que estão na câmara
+    """
     def __init__(self, conteudo, valor=0):
         self.conteudo = conteudo
         self.valor = valor
     def revela(self):
+        """ Mostra o conteúdo que estava oculto na câmara"""
         return self.conteudo
     def resgata(self, jogadores):
+        """ Divide o conteúdo que estava oculto na câmara por um grupo de aventureiros
+        
+            :param: jogadores: o número de aventureiros que vão dividir o tesouro
+            :return: o número de tesouros que cabe a cada aventureiro
+        """
         butim, sobra = self.valor // jogadores, self.valor % jogadores
         self.valor = sobra
         return butim
@@ -44,14 +56,17 @@ class JogaTesouro():
     def __init__(self):
         self.criptas = []
         self.camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
-        self.camaras = [Camara(contem) for contem in self.camaras]
+        self.camaras = [Camara(contem) for contem in self.camaras] * 3
         os_tesouros = [1,2,3,4,5,5, 7,7,9, 11,11,13,14, 15,17]
-        os_tesouros = [Camara(valor, valor) for valor in os_tesouros]
-        self.camaras += os_tesouros
+        self.os_tesouros = [Camara(valor, valor) for valor in os_tesouros]
+        self.camaras += self.os_tesouros
+        shuffle(self.camaras)
         
     def joga(self):
-        camara = choice(self.camaras)
-        tinha_monstro = camara in self.criptas
+        # camara = choice(self.camaras)
+        camara = self.camaras.pop()
+
+        tinha_monstro = (camara not in self.os_tesouros) and (camara in self.criptas) 
         self.criptas.append(camara)
         revela = [cam.revela() for cam in self.criptas]
         cam= camara.revela()
