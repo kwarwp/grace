@@ -23,8 +23,7 @@ def tesouro_inca():
     fala = "beleza" if quer == "s" else "que triste"
     input(fala) 
     while joga_tesouro() == "s":
-      fala = "beleza"
-      input(fala)
+      pass
     fala = "que pena"
     input(fala)
     
