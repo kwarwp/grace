@@ -15,11 +15,13 @@ D = "https://i.imgur.com/OHmUIhz.jpg"
 #from parisa.main import _joga_tesouro as art_joga
 from random import choice
 
+criptas = []
+#variavel global 
+
 def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
     camara = choice(camaras)
-    criptas = []
     criptas.append(camara[0])
     return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
 
