@@ -22,7 +22,7 @@ from random import choice
 criptas = [] 
 class JogaTesouro ():
     """Inicia o Jogo do tesouro inca""" 
-def _joga_tesouro():
+    def _init_(self):
     """Inicia o jogo do tesouro inca"""
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
     camara = choice(camaras)
