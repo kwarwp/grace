@@ -12,7 +12,7 @@ PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
     quer = input(f"Bem vindo ao Tesouro Inca - versão Parisa {__name__}. Quer jogar?(s)")
-    
-
+    fala = "beleza" if quer == "s" else "que triste"
+    input(fala) 
 if __name__== "__main__": 
   tesouro_inca()
