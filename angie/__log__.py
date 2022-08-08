@@ -911,3 +911,7 @@ SyntaxError: invalid syntax
 'error': '''
 Exception: <TypeError: undefined has no properties>
 '''},
+{'date': 'Mon Aug 08 2022 15:57:41.559 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: undefined has no properties>
+'''},
