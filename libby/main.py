@@ -21,7 +21,7 @@ PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 from random import choice
 criptas = [] 
 class JogaTesouro ():
-    """Inicia o Jogo do tesouro inca 
+    """Inicia o Jogo do tesouro inca""" 
 def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
