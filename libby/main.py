@@ -19,9 +19,13 @@ PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 #from parisa.main import tesouro_inca as art_tesouro
 #from parisa.main import _joga_tesouro as art_joga
 from random import choice
-criptas = [] 
-
-class JogaTesouro ():
+class camara:
+    def _init_(self,conteudo,valor=0): 
+        self.conteudo = conteudo
+        self.valor = valor 
+    def revela (self):
+class Tumba: 
+JogaTesouro ():
     """Inicia o Jogo do tesouro inca""" 
     def _init_(self):
     self.criptas = []
