@@ -996,3 +996,10 @@ NameError: name 'cripta' is not defined
     while _joga_tesouro() == 's':
 NameError: name '_joga_tesouro' is not defined
 '''},
+{'date': 'Mon Aug 08 2022 17:45:55.472 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  from parisa,main import tesouro_inca
+             ^
+SyntaxError: invalid syntax
+'''},
