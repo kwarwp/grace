@@ -160,3 +160,10 @@ SyntaxError: invalid syntax
                                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 15:51:54.191 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 23
+  if criptas.append(camara[0]) = "A"
+                                ^
+SyntaxError: invalid syntax
+'''},
