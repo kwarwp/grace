@@ -31,8 +31,7 @@ def tesouro_inca():
     fala = "Sim!" if quer == "s" else "Que pena..."
     input(fala)
     while _joga_tesouro() == "s":
-        fala = "Sim!" 
-        input(fala)
+        pass        
     fala = "Que pena!"
     input(fala)
 
