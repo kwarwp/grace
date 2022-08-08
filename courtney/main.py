@@ -12,24 +12,37 @@ from parisa.main import tesouro_inca as art_tesouro
 from random import choice
 criptas = []
 
-def _joga_tesouro():
+class Camara:
+    def __init__(self, conteudo, valor = 0):
+        self.conteudo = conteudo
+        self.valor = valor
+    def revela
+
+class jogaTesouro():
     """Inicia o jogo do tesouro inca"""
-    camaras = ['Aranha','Cobra', 'Mumia', 'Desabamento', 'Incendio']
-    camara = choice(camaras)
-    criptas.append(camara)
-    return input(f'Você visitou {criptas} e achou {camara}. Continua(s)?')
-    
+    def __init__(self):
+        self.criptas = []
+        camaras = ['Aranha','Cobra', 'Mumia', 'Desabamento', 'Incendio']
+    def joga(self):
+        camara = choice(camaras)
+        tinha_monstro = camara in self.criptas
+        self.criptas.append(camara)
+        if tinha_monstro:
+            input(f'Já existia {camara} na {self.criptas}. Vocêsaiu correndo')
+            return 'n'
+        return input('Você visitou {self.criptas} e achou {camara}. Continua(s)?')
+
 
 def tesouro_inca():
     """O jogo do tesouro Inca"""
     quer = input(f'Bem vindo ao Tesouro Inca - versão Courtney {__name__} \n Quer jogar(s)?')
-    fala = 'beleza' if quer =='s' else'que triste'
+    fala = 'beleza' if quer =='s' else 'que triste'
     input(fala)
     while _joga_tesouro() == 's':
         pass
     fala = 'poxa, que pena'
     input(fala)
-    
+    joga_tesouro = jogaTesouro()
 if __name__ == "__main__":    
     #art_tesouro()
     tesouro_inca()
