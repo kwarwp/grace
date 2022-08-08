@@ -242,3 +242,10 @@ Traceback (most recent call last):
   module <module> line 11
     from parisa.main import _joga_tesouro as art_joga
 '''},
+{'date': 'Mon Aug 08 2022 16:03:13.421 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 28
+  tinha_monstro = 
+                   ^
+SyntaxError: invalid syntax
+'''},
