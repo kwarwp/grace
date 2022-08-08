@@ -11,12 +11,12 @@ M = "https://imgur.com/a/KYT6HiQ"
 F = "https://imgur.com/xYv9YdG"
 C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg"
-from parisa.main import tesouro_inca 
+from parisa.main import tesouro_inca as art tesouro
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
      input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}")
 
-
 if __name__ == "__main__":
-   tesouro_inca()
+   art_tesuro()
+   #
