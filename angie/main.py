@@ -3,7 +3,7 @@
 # This file is part of program Jogo Inca
 # Copyright © 2022  Vanessa Vianna <vanmvianna@gmail.com>,
 # SPDX-License-Identifier: (GPLv3-or-later AND LGPL-2.0-only) WITH bison-exception
-#IMAGENS
+"""IMAGENS"""
 TEMPLO = "https://i.imgur.com/DuyTTha.jpg"
 TESOURO = "https://i.imgur.com/OuPgmla.jpg"
 A = "https://imgur.com/iCrJ46A"
@@ -13,6 +13,16 @@ C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg"
 
 from random import choice
+class Camara:
+    def _init_(self, conteudo, valor):
+        self.conteudo = conteudo
+        self.valor = valor
+    def revela(self):
+    
+class Tumba:
+    pass
+class Jogador:
+    pass
 
 class JogaTesouro():
     """Inicia o jogo do tesouro inca"""
