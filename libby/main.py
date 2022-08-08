@@ -25,7 +25,7 @@ def _joga_tesouro():
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
     camara = choice(camaras)
     criptas.append(camara)
-    tinha_monstro = def {camaras}
+    tinha_monstro = {camaras}
     if tinha_monstro:
     return "n"
     return input(f"você visitou {criptas} achou {camara}. Continua(s)")
