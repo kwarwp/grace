@@ -7,11 +7,13 @@ TEMPLO = "https://i.imgur.com/OOTUIwl.jpg"
 TESOURO = "https://i.imgur.com/OuPgmla.jpg"
 MONSTRO = "https://i.imgur.com/lcvvL1B.png"
 PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
+# from parisa.main import tesouro_inca
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
-    input("Bem vindo ao Tesouro Inca - versão Roxanne")
+    input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}")
     
-    
-tesouro_inca()
+
+if __name__ == "__main__":
+    tesouro_inca()
 
