@@ -10,7 +10,7 @@ PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
-    pass
+    input("Bem vindo ao Tesouro Inca - versão Roxanne")
     
     
 tesouro_inca()
