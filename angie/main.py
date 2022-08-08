@@ -21,8 +21,10 @@ class Camara:
         return self.conteudo
     def resgata(self, jogadores):
         butim, sobra = self.valor // jogadores, self. valor %jog
-        return self.conteudo
+        self.valor = sobra
         return butim
+    def __repr__(self):
+        return self.conteudo
         
 class Incursao:
     pass
