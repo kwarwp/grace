@@ -14,6 +14,8 @@ D = "https://i.imgur.com/OHmUIhz.jpg"
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
-    input("Bem vindo ao Tesouro Inca - versão Angie")
-    
-tesouro_inca()
+    input(f"Bem vindo ao Tesouro Inca - versão Angie" {_name_})
+
+
+if _name_== "_main_":
+   tesouro_inca()
