@@ -754,3 +754,10 @@ NameError: name 'tesouro_inca' is not defined
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Aug 08 2022 14:58:37.192 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}")
+  ^
+IndentationError: unexpected indent
+'''},
