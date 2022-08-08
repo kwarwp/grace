@@ -13,6 +13,7 @@ C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg"
 
 from random import choice
+
 class Camara:
     def _init_(self, conteudo, valor=0):
         self.conteudo = conteudo
