@@ -49,14 +49,14 @@ class JogaTesouro():
         #camara = choice(self.camaras)
         camara = self.camara.pop()
         
-                tinha_monstro = (camara not in self.os_tesouros) and (camara in self.criptas) 
-                self.criptas.append(camara)
-                revela = [cam.revela() for cam in self.criptas]
-                cam= camara.revela()
-                if tinha_monstro:
-                    input(f"Ja existia {cam} na {revela}. Você abandonou correndo")
-                    return "n"
-                return input(f"Você visitou {revela} achou {cam}. Continua(s)")
+        tinha_monstro = (camara not in self.os_tesouros) and (camara in self.criptas) 
+        self.criptas.append(camara)
+        revela = [cam.revela() for cam in self.criptas]
+        cam= camara.revela()
+        if tinha_monstro:
+            input(f"Ja existia {cam} na {revela}. Você abandonou correndo")
+            return "n"
+        return input(f"Você visitou {revela} achou {cam}. Continua(s)")
         
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
@@ -67,6 +67,8 @@ def tesouro_inca():
     _joga_tesouro = JogaTesouro()
     while _joga_tesouro.joga() == "s":
         pass
+    fala = "beleza"
+    input(fala)
     fala = "que pena"
     input(fala)
     
