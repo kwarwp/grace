@@ -27,7 +27,7 @@ def _joga_tesouro():
     tinha_monstro = camara in criptas
     criptas.append(camara)
     if tinha_monstro:
-        input(f"Ja existia {camara} na {cripats}. Você abandonou correndo")
+        input(f"Ja existia {camara} na {criptas}. Você abandonou correndo")
         return "n"
     return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
 
