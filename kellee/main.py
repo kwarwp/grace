@@ -45,7 +45,7 @@ if (jogar == 's' or 'S' or "sim" or "SIM" or "Sim"):
             mochila = 0
             break
         
-        if (fica != 's' or 'S' or "sim" or "SIM" or "Sim"):
+        if (fica != "sim"):
             input(f"Você desistiu, mas ficou com {mochila} tesouros")
             break
                 
