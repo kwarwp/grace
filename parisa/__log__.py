@@ -20,3 +20,10 @@ SyntaxError: invalid syntax
                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 15:13:06.576 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  def _joga_tesouro
+                    ^
+SyntaxError: invalid syntax
+'''},
