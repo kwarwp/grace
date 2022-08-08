@@ -24,6 +24,8 @@ class camara:
         self.conteudo = conteudo
         self.valor = valor 
     def revela (self):
+        return self.conteudo
+        
 class Tumba: 
 JogaTesouro ():
     """Inicia o Jogo do tesouro inca""" 
