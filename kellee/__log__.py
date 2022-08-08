@@ -619,3 +619,10 @@ SyntaxError: invalid syntax
                                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 15:55:44.460 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  dois_monstros = i in camara:
+                              ^
+SyntaxError: invalid syntax
+'''},
