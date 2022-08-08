@@ -5,6 +5,7 @@
 # SPDX-License-Identifier: (GPLv3-or-later AND LGPL-2.0-only) WITH bison-exception
 from random import shuffle
 from _spy.vitollino.main import Cena, STYLE
+STYLE.update(width=1000, height=500)
 TEMPLO = "https://i.imgur.com/OOTUIwl.jpg"
 TESOURO = "https://i.imgur.com/OuPgmla.jpg"
 MONSTRO = "https://i.imgur.com/lcvvL1B.png"
@@ -39,13 +40,14 @@ if (jogar == 's' or 'S' or "sim" or "SIM" or "Sim"):
             
         corredor.append(camara)        
         fica = input(f"você já encontrou {corredor}, você fica?")
-        if (fica != 's' or 'S' or "sim" or "SIM" or "Sim"):
-            input("Você desistiu, mas ficou com {mochila} tesouros")
-            break
-        
         if dois_monstros:
             input("Você perdeu")
             mochila = 0
             break
+        
+        if (fica != 's' or 'S' or "sim" or "SIM" or "Sim"):
+            input(f"Você desistiu, mas ficou com {mochila} tesouros")
+            break
+                
 else:
     print("Que pena")
