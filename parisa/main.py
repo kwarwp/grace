@@ -6,7 +6,7 @@
 
 def tesouro_inca():
 	"""O jogo do Tesouro Inca"""
-input("Bem vindo ao Tesouro Inca - versão Roxanne")
+input("Bem vindo ao Tesouro Inca - versão Parisa")
 pass 
 
 
