@@ -18,5 +18,5 @@ def tesouro_inca():
      input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}")
 
 if __name__ == "__main__":
-   art_tesuro()
+   art_tesouro()
    #
