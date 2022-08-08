@@ -29,7 +29,7 @@ class camara:
         butim, sobra = self.valor // jogadores, self.valor % jogadores 
         self.valor = sobra
         return butim
-    def _str_ (self):
+    def _repr_ (self):
         return self.conteudo
         
 class Incursao: 
@@ -45,8 +45,9 @@ class JogaTesouro ():
     self.criptas = []
     self.camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
     self.camaras = [camara(contem) for contem in self.camaras]
+    self.os_tesouros = [1,2,3,4,5,5,7,7,8,9,10,11,11,12,13,14,15,17]
     os_tesouros = [1,2,3,4,5,5,7,7,8,9,10,11,11,12,13,14,15,17]
-    os_tesouros = [camara(valor, valor ) for valor in os_tesouros]
+    self.os_tesouros = [camara(valor, valor ) for valor in os_tesouros]
     self.camaras += os_tesouros
     
     def joga(self):
