@@ -978,3 +978,7 @@ Exception: <TypeError: undefined has no properties>
     while art_joga() == "s":
 NameError: name 'art_joga' is not defined
 '''},
+{'date': 'Mon Aug 08 2022 16:05:01.426 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: undefined has no properties>
+'''},
