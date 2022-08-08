@@ -16,8 +16,23 @@ CHAMAS = "https://i.imgur.com/G2u6KB1.jpg"
 MUMIA = "https://i.imgur.com/awwkaBO.jpg"
 DESABA = "https://i.imgur.com/hZ0ohTz.jpg"
 
+from roxanne.main import _tesouro_inca as Carlo_tesouro #Renomeia a funcao importada
+
+def _joga_tesouro():
+    """Inicia o jogo do Tesouro Inca"""
+    return input("Você achou Aranha. Continua? Tecle (s)")
+
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
-    input("Bem-vindo ao Tesouro Inca - versão Kellee")
-    
-tesouro_inca()
+    quer = input(f"Bem-vindo ao Tesouro Inca - versão Kellee {__name__}.Quer jogar? tecle (s)")
+    fala = "Sim!" if quer == "s" else "Que pena..."
+    input(fala)
+    while _joga_tesouro() == "s":
+        fala = "Sim!" 
+        input(fala)
+    fala = "Que pena!"
+    input(fala)
+
+if __name__ == "__main__":   # Chama o modulo com mesmo nome se for o principal
+    #Carlo_tesouro()
+    tesouro_inca()
