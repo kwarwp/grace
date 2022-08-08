@@ -20,12 +20,15 @@ PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 #from parisa.main import _joga_tesouro as art_joga
 from random import choice
 criptas = [] 
+
 class JogaTesouro ():
     """Inicia o Jogo do tesouro inca""" 
     def _init_(self):
-    """Inicia o jogo do tesouro inca"""
+    self.criptas = []
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
-    camara = choice(camaras)
+    
+    def joga (self):
+    camara = choice 
     tinha_monstro = camara in criptas
     criptas.append(camara)
     if tinha_monstro:
