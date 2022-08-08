@@ -517,3 +517,10 @@ SyntaxError: invalid syntax
                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 08 2022 16:25:26.762 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  def joga(self)
+                 ^
+SyntaxError: invalid syntax
+'''},
