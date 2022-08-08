@@ -16,12 +16,11 @@ D = "https://i.imgur.com/OHmUIhz.jpg"
 from random import choice
 
 criptas = []
-#variavel global 
 def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
-    camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"] 
+    camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
     camara = choice(camaras)
-    criptas.append(camara[]) 
+    criptas.append(camara)
     return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
     dois_monstros = list("AMFCD"*3)
     if dois_monstros:
@@ -33,9 +32,9 @@ def tesouro_inca():
     quer = input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}.Quer jogar (s)?")
     fala = "beleza" if quer == "s" else "que triste"
     input(fala)
-    while _joga_tesouro() == "s":
-        fala = "beleza"
-        input(fala)
+    #while _joga_tesouro() == "s":
+    while art_joga() == "s":
+        pass
     fala = "que pena"
     input(fala)
     
@@ -43,3 +42,4 @@ def tesouro_inca():
 if __name__ == "__main__":
     # art_tesouro()
     tesouro_inca()
+
