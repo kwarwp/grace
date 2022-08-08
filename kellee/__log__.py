@@ -584,3 +584,10 @@ NameError: name 'camera' is not defined
     camara = choice(camara)
 UnboundLocalError: local variable 'camara' referenced before assignment
 '''},
+{'date': 'Mon Aug 08 2022 15:45:29.399 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  if criptas = 2*camara:
+              ^
+SyntaxError: invalid syntax
+'''},
