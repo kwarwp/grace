@@ -11,19 +11,17 @@ M = "https://imgur.com/a/KYT6HiQ"
 F = "https://imgur.com/xYv9YdG"
 C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg"
-#from parisa.main import tesouro_inca as art_tesouro
-#from parisa.main import _joga_tesouro as art_joga
+
 from random import choice
 
 criptas = []
-#variavel global 
 def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"] 
     camara = choice(camaras)
     criptas.append(camara[]) 
     return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
-    tinha_monstros = list("AMFCD"*3)
+    tinha_monstros = camara in criptas
     if tinha_monstros:
             return "n"
 
