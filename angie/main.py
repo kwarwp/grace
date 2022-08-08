@@ -1,4 +1,4 @@
-# grace.angie.main.py --- nome do modulo do python
+# grace.angie.main.py
 # -*- coding: UTF8 -*-
 # This file is part of program Jogo Inca
 # Copyright © 2022  Vanessa Vianna <vanmvianna@gmail.com>,
@@ -12,7 +12,7 @@ F = "https://imgur.com/xYv9YdG"
 C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg"
 
-def TESOURO_INCA():
+def tesouro_inca():
     """O jogo do Tesouro Inca"""
     input("Bem vindo ao Tesouro Inca - versão Angie")
     
