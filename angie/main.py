@@ -14,7 +14,7 @@ D = "https://i.imgur.com/OHmUIhz.jpg"
 
 from random import choice
 class Camara:
-    def _init_(self, conteudo, valor):
+    def _init_(self, conteudo, valor=0):
         self.conteudo = conteudo
         self.valor = valor
     def revela(self):
@@ -22,6 +22,7 @@ class Camara:
     def resgata(self, jogadores):
         butim, sobra = self.valor // jogadores, self. valor %jog
         return self.conteudo
+        return butim
         
 class Incursao:
     pass
