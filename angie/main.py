@@ -25,7 +25,8 @@ def _joga_tesouro():
     criptas.append(camara[]) 
     return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
     
-   if dois_monstros:
+    dois_monstros = (camara) and (camara)
+    if dois_monstros:
             input("você perdeu")
 
 def tesouro_inca():
