@@ -29,6 +29,8 @@ class camara:
         butim, sobra = self.valor // jogadores, self.valor % jogadores 
         self.valor = sobra
         return butim
+    def _str_ (self):
+        return self.conteudo
         
 class Incursao: 
     pass
@@ -48,10 +50,11 @@ class JogaTesouro ():
         camara = choice(self.camaras)
         tinha_monstro = camara in self.criptas
         self.criptas.append(camara)
+        revela = [cam.revela() for cam in self criptas]
         if tinha_monstro:
             input(f"Ja existia {camara} na {self.criptas}. Você saiu correndo")
             return "n"
-        return input(f"Você visitou {self.criptas} achou {camara}. Continua(s)")
+        return input(f"Você visitou {self.criptas} revela {camara}. Continua(s)")
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
     quer = input(f"Bem vindo ao Tesouro Inca - versão Libby {__name__}.Quer jogar (s)?")
