@@ -22,6 +22,11 @@ def tesouro_inca():
     quer = input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}.Quer jogar (s)?")
     fala = "beleza" if quer == "s" else "que triste"
     input(fala)
+    while _joga_tesouro() == "s":
+        fala = "beleza"
+        input(fala)
+    fala = "que pena"
+    input(fala)
 
 if __name__ == "__main__":
    #art_tesouro()
