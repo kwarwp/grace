@@ -9,7 +9,7 @@ TESOURO = "https://i.imgur.com/OuPgmla.jpg"
 MONSTRO = "https://i.imgur.com/lcvvL1B.png"
 PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 
-def joga_tesouro
+def joga_tesouro():
     """Incia o jogo do tesouro Inca"""
     return input("Você achou aranha. Continua(s)")
 
@@ -18,7 +18,11 @@ def tesouro_inca():
     quer = input(f"Bem vindo ao Tesouro Inca - versão Parisa {__name__}. Quer jogar?(s)")
     fala = "beleza" if quer == "s" else "que triste"
     input(fala) 
-    continua = joga_tesouro()
+    while joga_tesouro() == "s"
+      fala = "beleza"
+      input(fala)
+    fala = "que pena"
+    input(fala)
     
 if __name__== "__main__": 
   tesouro_inca()
