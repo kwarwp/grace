@@ -636,3 +636,10 @@ NameError: name 'joga_tesouro' is not defined
     while joga_tesouro.joga() == "s":
 NameError: name 'joga_tesouro' is not defined
 '''},
+{'date': 'Mon Aug 08 2022 16:54:39.984 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 35
+  class Incursao 
+                  ^
+SyntaxError: invalid syntax
+'''},
