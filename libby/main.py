@@ -21,10 +21,10 @@ def _joga_tesouro():
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
     quer = input(f"Bem vindo ao Tesouro Inca - versão Libby {__name__}.Quer jogar (s)?")
-    fala = "ok" if quer == "s" else "que pena"
+    fala = "great" if quer == "s" else "que pena"
     input(fala)
     while _joga_tesouro() == "s":
-        fala = "ok"
+        fala = "great"
         input(fala)
     fala = "que pena"
     input(fala)
