@@ -31,7 +31,8 @@ class Camara:
        # sobra = self.valor % jogadores
        self.valor = sobra
        return butim
-
+     def __str__(self):
+        return self.conteudo
 class Incursao:
     pass 
 
