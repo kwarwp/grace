@@ -53,7 +53,7 @@ class JogaTesouro ():
         revela = [cam.revela() for cam in self criptas]
         cam = camara.revela
         if tinha_monstro:
-            input(f"Ja existia {camara} na {self.criptas}. Você saiu correndo")
+            input(f"Ja existia {cam} na {self.criptas}. Você saiu correndo")
             return "n"
         return input(f"Você visitou {self.criptas} revela {camara}. Continua(s)")
 def tesouro_inca():
