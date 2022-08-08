@@ -11,6 +11,7 @@ M = "https://imgur.com/a/KYT6HiQ"
 F = "https://imgur.com/xYv9YdG"
 C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg"
+from parisa.main import tesouro_inca 
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
