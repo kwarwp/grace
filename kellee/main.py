@@ -17,10 +17,13 @@ MUMIA = "https://i.imgur.com/awwkaBO.jpg"
 DESABA = "https://i.imgur.com/hZ0ohTz.jpg"
 
 from roxanne.main import _tesouro_inca as Carlo_tesouro #Renomeia a funcao importada
+from random import choice
 
 def _joga_tesouro():
     """Inicia o jogo do Tesouro Inca"""
-    return input("Você achou Aranha. Continua? Tecle (s)")
+    camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
+    camara = choice(camaras)
+    return input(f"Você achou {camara}. Continua? Tecle (s)")
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
