@@ -17,9 +17,10 @@ TESOURO = "https://i.imgur.com/OuPgmla.jpg"
 MONSTRO = "https://i.imgur.com/lcvvL1B.png"
 PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 #from parisa.main import tesouro_inca as art_tesouro
-from courtney.main import _joga_tesouro as art_joga
+# from courtney.main import _joga_tesouro as art_joga
 from random import choice
-criptas = []
+
+
 class JogaTesouro():
     """Inicia o jogo do tesouro inca"""
     def __init__(self):
@@ -31,20 +32,9 @@ class JogaTesouro():
         tinha_monstro = camara in self.criptas
         self.criptas.append(camara)
         if tinha_monstro:
-            input(f"Ja existia {camara} na {criptas}. Você abandonou correndo")
+            input(f"Ja existia {camara} na {self.criptas}. Você abandonou correndo")
             return "n"
-        return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
-
-def _joga_tesouro():
-    """Inicia o jogo do tesouro inca"""
-    camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
-    camara = choice(camaras)
-    tinha_monstro = camara in criptas
-    criptas.append(camara)
-    if tinha_monstro:
-        input(f"Ja existia {camara} na {criptas}. Você abandonou correndo")
-        return "n"
-    return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
+        return input(f"Você visitou {self.criptas} achou {camara}. Continua(s)")
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
@@ -52,7 +42,7 @@ def tesouro_inca():
     fala = "beleza" if quer == "s" else "que triste"
     input(fala)
     # while art_joga() == "s":
-    _joga_tesouro = JogaTesouros()
+    _joga_tesouro = JogaTesouro()
     while _joga_tesouro.joga() == "s":
         pass
     fala = "que pena"
