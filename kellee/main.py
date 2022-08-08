@@ -40,7 +40,7 @@ if jogar == 's':
             cena_monstro.vai()
             
         corredor.append(camara)        
-        fica = input(f"você já encontrou {corredor}, você fica?")
+        fica = input(f"você já encontrou {corredor}, se você fica digite s, se você sai digite n")
         if dois_monstros:
             input("Você perdeu")
             mochila = 0
