@@ -24,6 +24,9 @@ def _joga_tesouro():
     camara = choice(camaras)
     criptas.append(camara[]) 
     return input(f"Você visitou {criptas} achou {camara}. Continua(s)")
+    
+   if dois_monstros:
+            input("você perdeu")
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
