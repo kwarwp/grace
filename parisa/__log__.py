@@ -677,3 +677,10 @@ NameError: name 'camara' is not defined
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Aug 08 2022 17:17:26.388 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 34
+  def __str__(self):
+  ^
+IndentationError: unexpected indent
+'''},
