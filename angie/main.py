@@ -19,8 +19,8 @@ def _joga_tesouro():
     """Inicia o jogo do tesouro inca"""
     camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"] 
     camara = choice(camaras)
-     tinha_monstros = camara in criptas
-      criptas.append(camara) 
+    tinha_monstros = camara in criptas
+    criptas.append(camara) 
     if tinha_monstros:
             input(f"já existia {camara} na {criptas}. Você abandonou correndo")
             return "n"
