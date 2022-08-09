@@ -30,6 +30,10 @@ class Camara:
     def revela(self):
         return self.conteudo
     def resgata(self, jogadores):
+        """Divide o conteúdo que estava oculto na câmara por um grupo de aventureiros
+        :param: jogadores: o número de aventureiros que vão dividir o tesouro
+        :return: o número de tesouros que cabe a cada aventureiro
+        """
         butim, sobra = self.valor // jogadores, self.valor % jogadores
         self.valor = sobra
         return butim 
@@ -54,6 +58,9 @@ class JogaTesouro():
         shuffle(self.camaras)
         
     def joga(self):
+        """Executa uma jogada, revelando uma câmara
+        :return: Se o jogo continua, retorna "s"
+        """
         camara = self.camaras.pop()
         
         tinha_monstro = (camara not in self.os_tesouros) and (camara in self.criptas)
