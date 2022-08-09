@@ -1341,3 +1341,10 @@ SyntaxError: invalid syntax
              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Aug 09 2022 17:33:45.942 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 67
+  if cam = lista_de_cenas[1]  
+          ^
+SyntaxError: invalid syntax
+'''},
