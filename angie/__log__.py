@@ -1397,3 +1397,10 @@ SyntaxError: invalid syntax
                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Aug 09 2022 17:46:18.205 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 68
+  cenanova = [s for s in list_cenas if "{cam}" in s])
+  ^
+IndentationError: unexpected indent
+'''},
