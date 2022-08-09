@@ -28,7 +28,7 @@ cena_M = Cena(M)
 cena_F = Cena(F)
 cena_C = Cena(C)
 cena_D = Cena(D)
-lista_cena = [cena_A, cena_M, cena_F, cena_C, cena_D]
+lista_de_cenas = [cena_A, cena_M, cena_F, cena_C, cena_D]
 
 """classe / modulos"""
 class Camara:
@@ -64,8 +64,9 @@ class JogaTesouro():
             input(f"Ja existia {cam} na {revela}. Você abandonou correndo")
             return "n"
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
-        if cam(1) = cenas(1)
-            cena_(1).vai()
+        if cam == lista_de_cenas[6]  
+        return  cena_(6).vai()
+        
 
 
 def tesouro_inca():
