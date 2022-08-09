@@ -1849,3 +1849,9 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Aug 09 2022 19:21:56.774 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: $locals_$exec_2063.JogaTesouro is not a function
+  module '$exec_2063' line 47
+class JogaTesouro():
+'''},
