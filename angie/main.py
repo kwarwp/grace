@@ -32,17 +32,29 @@ class Camara:
         return butim 
     def __repr__(self):
         return self.conteudo
-        
+
+class Incursao:
+    pass
+class Tumba:
+    pass
+class jogador: 
+    pass
+
 class JogaTesouro():
+
     def __init__(self):
+    
         self.criptas = []
         camaras = ["Aranha", "Mumia", "Cobra", "Desabamento", "Incendio"]
         self.camaras = [Camara(contem) for contem in camaras] * 3
         os_tesouros = [1,2,3,4,5,5,7,7,9,11,11,13,14,15,17]
         self.camaras += self.os_tesouros
         shuffle(self.camaras)
+        
     def joga(self):
+    
         camara = self.camaras.pop()
+        
         tinha_monstro = (camara not in self.os_tesouros) and (camara in self.criptas)
         self.criptas.append(camara)
         revela = [cam.revela() for cam in self.criptas]
@@ -53,6 +65,7 @@ class JogaTesouro():
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
         
     def tesouro_inca():
+    
         quer = input(f"Bem vindo ao Tesouro Inca - versão Angie {__name__}. Quer jogar (s)?")
         fala = "beleza" if quer == "s" else "que triste"
         input(fala)
