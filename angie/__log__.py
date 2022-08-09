@@ -1327,3 +1327,10 @@ SyntaxError: invalid syntax
              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Aug 09 2022 17:12:20.896 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 63
+  input(f"Ja existia {cam} na {revela}. Você abandonou correndo", cena_{cam}.vai())
+                                                                        ^
+SyntaxError: invalid syntax
+'''},
