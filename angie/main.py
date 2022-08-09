@@ -59,7 +59,7 @@ class JogaTesouro():
         tinha_monstro = (camara not in self.os_tesouros) and (camara in self.criptas) 
         self.criptas.append(camara)
         revela = [cam.revela() for cam in self.criptas]
-        cam= camara.revela()
+        cam = camara.revela()
         if tinha_monstro:
             input(f"Ja existia {cam} na {revela}. Você abandonou correndo", cenanova.vai())
             return "n"
