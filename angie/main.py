@@ -18,6 +18,12 @@ from random import choice, shuffle
 
 """classe / modulos"""
 class Camara: 
+"""Uma camara do templo que contem um tesouro ou perigo
+
+    Keyword arguments:
+    :param: conteudo: o descritor do conteúdo da camara, perigo ou tesouro
+    :param: valor: o número de tesouros que estão na câmara
+    """
     def __init__(self, conteudo, valor=0):
         self.conteudo = conteudo
         self.valor = valor
