@@ -29,13 +29,6 @@ class Camara:
         return butim
     def __repr__(self):
         return self.conteudo
-        
-class Incursao:
-    pass        
-class Tumba:
-    pass
-class Jogador:
-    pass
 
 class JogaTesouro():
     def __init__(self):
