@@ -52,8 +52,8 @@ class JogaTesouro():
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
 
 def tesouro_inca():
-    quer = input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}.Quer jogar (s)?")
-    fala = "beleza" if quer == "s" else "que triste"
+    quer = input(f"Bem vindo ao Tesouro Inca - versão Angie {__name__}.Quer jogar (s)?")
+    fala = "ok" if quer == "s" else "que triste"
     input(fala)
     _joga_tesouro = JogaTesouro()
     while _joga_tesouro.joga() == "s":
