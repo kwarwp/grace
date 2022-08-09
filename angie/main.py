@@ -14,8 +14,8 @@ C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg"
 
 """importacao de diretorio / biblioteca"""
-#from parisa.main import tesouro_inca as art tesouro
-#from courtney.main import _joga_tesouro as art_joga
+#from parisa.main import tesouro_inca as art_tesouro
+#from courtney.main import import _joga_tesouro as art_joga
 
 from random import choice, shuffle 
 
@@ -43,7 +43,6 @@ class jogador:
 class JogaTesouro():
 
     def __init__(self):
-    
         self.criptas = []
         camaras = ["Aranha", "Mumia", "Cobra", "Desabamento", "Incendio"]
         self.camaras = [Camara(contem) for contem in camaras] * 3
@@ -52,7 +51,7 @@ class JogaTesouro():
         shuffle(self.camaras)
         
     def joga(self):
-    
+        #camara = choice(self.camaras)
         camara = self.camaras.pop()
         
         tinha_monstro = (camara not in self.os_tesouros) and (camara in self.criptas)
@@ -65,10 +64,10 @@ class JogaTesouro():
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
         
     def tesouro_inca():
-    
         quer = input(f"Bem vindo ao Tesouro Inca - versão Angie {__name__}. Quer jogar (s)?")
         fala = "beleza" if quer == "s" else "que triste"
         input(fala)
+        #while art_joga() == "s":
         _joga_tesouro = JogaTesouro()
         while _joga_tesouro.joga() == "s":
             pass
