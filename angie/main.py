@@ -7,11 +7,11 @@
 """Imagens"""
 Templo = "https://i.imgur.com/DuyTTha.jpg"
 Tesouro = "https://i.imgur.com/OuPgmla.jpg"
-Aranha = "https://imgur.com/iCrJ46A"
-Mumia = "https://imgur.com/a/KYT6HiQ"
-Incendio = "https://imgur.com/xYv9YdG"
-Cobra = "https://i.imgur.com/8VfAotu.jpg"
-Desabamento = "https://i.imgur.com/OHmUIhz.jpg"
+A = "https://imgur.com/iCrJ46A"
+M = "https://imgur.com/a/KYT6HiQ"
+I = "https://imgur.com/xYv9YdG"
+C = "https://i.imgur.com/8VfAotu.jpg"
+D = "https://i.imgur.com/OHmUIhz.jpg"
 
 """importacao de diretorio / biblioteca"""
 #from parisa.main import tesouro_inca as art tesouro
