@@ -60,16 +60,9 @@ class JogaTesouro():
         revela = [cam.revela() for cam in self.criptas]
         cam= camara.revela()
         if tinha_monstro:
-            input(f"Ja existia {cam} na {revela}. Você abandonou correndo")
+            input(f"Ja existia {cam} na {revela}. Você abandonou correndo", cena_{cam}.vai())
             return "n"
-        return input(f"Você visitou {revela} achou {cam}. Continua(s)")
-        if cam == camaras
-        cena_tesouro = cena_tesouro.vai()
-        cena_A = cena_A.vai()
-        cena_M = cena_M.vai()
-        cena_F = cena_F.vai()
-        cena_C = cena_C.vai()
-        cena_D = cena_D.vai()
+        return input(f"Você visitou {revela} achou {cam}. Continua(s)", cena_{cam}.vai())
 
 
 def tesouro_inca():
