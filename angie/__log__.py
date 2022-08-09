@@ -1855,3 +1855,9 @@ Exception: $locals_$exec_2063.JogaTesouro is not a function
   module '$exec_2063' line 47
 class JogaTesouro():
 '''},
+{'date': 'Tue Aug 09 2022 19:25:11.563 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: $locals_$exec_2114.JogaTesouro is not a function
+  module '$exec_2114' line 46
+class JogaTesouro():
+'''},
