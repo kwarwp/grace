@@ -64,8 +64,6 @@ class JogaTesouro():
             input(f"Ja existia {cam} na {revela}. Você abandonou correndo")
             return "n"
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
-       
-        
         cenanova == [s for s in list_cenas if "{cam}" in s]
         return cenanova 
 
