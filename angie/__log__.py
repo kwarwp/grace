@@ -1418,3 +1418,10 @@ SyntaxError: invalid syntax
                     ^
 SyntaxError: can't assign to function call 
 '''},
+{'date': 'Tue Aug 09 2022 18:28:09.807 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 24
+  cena_Templo.vai() = Cena(TEMPLO)
+                    ^
+SyntaxError: can't assign to function call 
+'''},
