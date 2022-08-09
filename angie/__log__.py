@@ -1823,3 +1823,9 @@ NameError: name 'cena_templo' is not defined
     quer = input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}.Quer jogar (s)?", cena_templo.vai)
 NameError: name 'cena_templo' is not defined
 '''},
+{'date': 'Tue Aug 09 2022 19:20:24.912 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: $locals_$exec_1939.JogaTesouro is not a function
+  module '$exec_1939' line 47
+class JogaTesouro():
+'''},
