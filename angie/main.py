@@ -64,7 +64,7 @@ class JogaTesouro():
             input(f"Ja existia {cam} na {revela}. Você abandonou correndo", mostrarcena)
             return "n"
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
-        mostrarcena = [cam.vai() for cam in lista_cenas]
+        self.mostrarcena = [cam.vai() for cam in lista_cenas]
         
              
 def tesouro_inca():
