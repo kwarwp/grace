@@ -61,11 +61,10 @@ class JogaTesouro():
         revela = [cam.revela() for cam in self.criptas]
         cam= camara.revela()
         if tinha_monstro:
-            input(f"Ja existia {cam} na {revela}. Você abandonou correndo")
+            input(f"Ja existia {cam} na {revela}. Você abandonou correndo", cenanova)
             return "n"
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
         cenanova == [s for s in list_cenas if "{cam}" in s]
-        return cenanova 
 
 
 
