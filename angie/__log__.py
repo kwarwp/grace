@@ -1239,3 +1239,10 @@ SyntaxError: invalid syntax
                       ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Aug 09 2022 15:03:09.763 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 57
+  pass
+  ^
+IndentationError: expected an indented block
+'''},
