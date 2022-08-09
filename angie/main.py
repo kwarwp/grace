@@ -74,7 +74,7 @@ class JogaTesouro():
         while _joga_tesouro.joga() == "s":
             pass
         fala = "que pena"
-            input(fala)
+        input(fala)
 
 
     if __name__ == "__main__":
