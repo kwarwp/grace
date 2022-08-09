@@ -64,17 +64,19 @@ class JogaTesouro():
             input(f"Ja existia {cam} na {revela}. Você abandonou correndo", cena_Desmoronamento.vai())
             return "n"
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
-       
-        
              
-def tesouro_inca():
-    quer = input(f"Bem vindo ao Tesouro Inca - versão Angie {__name__}.Quer jogar (s)?", cena_templo.vai())
-    fala = "ok" if quer == "s" else "que triste"
-    input(fala)
-    _joga_tesouro = JogaTesouro()
-    while _joga_tesouro.joga() == "s":
-        pass
-    fala = "que pena"
-    input(fala)
-if __name__ == "__main__":
-    tesouro_inca()
+    def tesouro_inca():
+        quer = input(f"Bem vindo ao Tesouro Inca - versão Angie {__name__}.Quer jogar (s)?", cena_templo.vai())
+        fala = "beleza" if quer == "s" else "que triste"
+        input(fala)
+        # while art_joga() == "s":
+        _joga_tesouro = JogaTesouro()
+        while _joga_tesouro.joga() == "s":
+            pass
+        fala = "que pena"
+        input(fala)
+
+
+    if __name__ == "__main__":
+        # art_tesouro()
+        tesouro_inca()
