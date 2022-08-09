@@ -37,7 +37,7 @@ class JogaTesouro():
     def __init__(self):
         self.criptas = []
         camaras = ["Aranha", "Mumia", "Cobra", "Desabamento", "Incendio"]
-        self.camras = [Camara(contem) for contem in camaras] * 3
+        self.camaras = [Camara(contem) for contem in camaras] * 3
         os_tesouros = [1,2,3,4,5,5,7,7,9,11,11,13,14,15,17]
         self.camaras += self.os_tesouros
         shuffle(self.camaras)
@@ -51,6 +51,7 @@ class JogaTesouro():
             input(f"ja existia {cam} na {revela}. Você abandonou correndo")
             return "n"
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
+        
     def tesouro_inca():
         quer = input(f"Bem vindo ao Tesouro Inca - versão Angie {__name__}. Quer jogar (s)?")
         fala = "beleza" if quer == "s" else "que triste"
@@ -60,6 +61,7 @@ class JogaTesouro():
             pass
         fala = "que pena"
         input(fala)
+        
         if __name__ == "__main__":
             # art_tesouro()
             tesouro_inca()
