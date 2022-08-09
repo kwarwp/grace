@@ -12,23 +12,23 @@ from _spy.vitollino.main import Cena, STYLE
 STYLE.update(width=1000, height=500)
 
 """IMAGENS"""
-TEMPLO = "https://i.imgur.com/DuyTTha.jpg"
-TESOURO = "https://i.imgur.com/OuPgmla.jpg"
-A = "https://imgur.com/iCrJ46A"
-M = "https://imgur.com/a/KYT6HiQ"
-F = "https://imgur.com/xYv9YdG"
-C = "https://i.imgur.com/8VfAotu.jpg"
-D = "https://i.imgur.com/OHmUIhz.jpg" 
+imagem_TEMPLO = "https://i.imgur.com/DuyTTha.jpg"
+imagem_TESOURO = "https://i.imgur.com/OuPgmla.jpg"
+imagem_A = "https://imgur.com/iCrJ46A"
+imagem_M = "https://imgur.com/a/KYT6HiQ"
+imagem_F = "https://imgur.com/xYv9YdG"
+imagem_C = "https://i.imgur.com/8VfAotu.jpg"
+imagem_D = "https://i.imgur.com/OHmUIhz.jpg" 
 
 """CENAS"""
-cena_Templo = Cena(TEMPLO)
-cena_Tesouro = Cena(TESOURO)
-cena_Aranha = Cena(A)
-cena_Mumia = Cena(M)
-cena_Incendio = Cena(F)
-cena_Cobra = Cena(C)
-cena_Desmoronamento = Cena(D)
-lista_de_cenas = [cena_Aranha, cena_Mumia, cena_Incendio, cena_Cobra, cena_Desmoronamento]
+cena_Templo = Cena(imagem_TEMPLO)
+cena_Tesouro = Cena(imagem_TESOURO)
+cena_Aranha = Cena(imagem_A)
+cena_Mumia = Cena(imagem_M)
+cena_Incendio = Cena(imagem_F)
+cena_Cobra = Cena(imagem_C)
+cena_Desmoronamento = Cena(imagem_D)
+lista_cenas = [cena_Aranha, cena_Mumia, cena_Incendio, cena_Cobra, cena_Desmoronamento]
 
 """classe / modulos"""
 class Camara:
@@ -64,10 +64,11 @@ class JogaTesouro():
             input(f"Ja existia {cam} na {revela}. Você abandonou correndo", cenanova.vai())
             return "n"
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
-        cenanova == [s for s in list_cenas if cam in s]
-
-
-
+        for cam in lista_cenas:
+            print(cam)
+        else:
+             pass
+             
 def tesouro_inca():
     quer = input(f"Bem vindo ao Tesouro Inca - versão Angie {__name__}.Quer jogar (s)?", cena_templo.vai())
     fala = "ok" if quer == "s" else "que triste"
