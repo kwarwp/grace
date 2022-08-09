@@ -63,6 +63,14 @@ class JogaTesouro():
             input(f"Ja existia {cam} na {revela}. Você abandonou correndo")
             return "n"
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
+        if cam == camaras
+        cena_tesouro = cena_tesouro.vai()
+        cena_A = cena_A.vai()
+        cena_M = cena_M.vai()
+        cena_F = cena_F.vai()
+        cena_C = cena_C.vai()
+        cena_D = cena_D.vai()
+
 
 def tesouro_inca():
     quer = input(f"Bem vindo ao Tesouro Inca - versão Angie {__name__}.Quer jogar (s)?", cena_templo.vai())
