@@ -47,7 +47,7 @@ class Camara:
 class JogaTesouro():
     def __init__(self):
         self.criptas = []
-        camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
+        camaras = ["A", "M", "C", "D", "I"]
         self.camaras = [Camara(contem) for contem in camaras] * 3
         os_tesouros = [1,2,3,4,5,5, 7,7,9, 11,11,13,14, 15,17]
         self.os_tesouros = [Camara(valor, valor) for valor in os_tesouros]
@@ -64,8 +64,8 @@ class JogaTesouro():
             input(f"Ja existia {cam} na {revela}. Você abandonou correndo")
             return "n"
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
-        if cam = lista_cena
-            cena_.vai()
+        if cam(1) = cenas(1)
+            cena_(1).vai()
 
 
 def tesouro_inca():
