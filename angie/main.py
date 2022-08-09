@@ -65,10 +65,3 @@ class JogaTesouro():
         if __name__ == "__main__":
             # art_tesouro()
             tesouro_inca()
-        
-
-     
-
-
-
-
