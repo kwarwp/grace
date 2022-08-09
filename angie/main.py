@@ -14,6 +14,9 @@ Cobra = "https://i.imgur.com/8VfAotu.jpg"
 Desabamento = "https://i.imgur.com/OHmUIhz.jpg"
 
 """importacao de diretorio / biblioteca"""
+#from parisa.main import tesouro_inca as art tesouro
+#from courtney.main import _joga_tesouro as art_joga
+
 from random import choice, shuffle 
 
 """classe / modulos"""
@@ -58,6 +61,7 @@ class JogaTesouro():
         fala = "que pena"
         input(fala)
         if __name__ == "__main__":
+            # art_tesouro()
             tesouro_inca()
         
 
