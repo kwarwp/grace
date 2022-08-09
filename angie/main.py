@@ -21,13 +21,13 @@ C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg" 
 
 """CENAS"""
-cena_Templo.vai() = Cena(TEMPLO)
-cena_Tesouro.vai() = Cena(TESOURO)
-cena_Aranha.vai() = Cena(A)
-cena_Mumia.vai() = Cena(M)
-cena_Incendio.vai() = Cena(F)
-cena_Cobra.vai() = Cena(C)
-cena_Desmoronamento.vai() = Cena(D)
+cena_Templo = Cena(TEMPLO)
+cena_Tesouro = Cena(TESOURO)
+cena_Aranha = Cena(A)
+cena_Mumia = Cena(M)
+cena_Incendio = Cena(F)
+cena_Cobra = Cena(C)
+cena_Desmoronamento = Cena(D)
 lista_de_cenas = [cena_Aranha.vai(), cena_Mumia.vai(), cena_Incendio.vai(), cena_Cobra.vai(), cena_Desmoronamento.vai()]
 
 """classe / modulos"""
