@@ -49,7 +49,6 @@ class JogaTesouro():
         
     def joga(self):
         camara = self.camaras.pop()
-
         tinha_monstro = (camara not in self.os_tesouros) and (camara in self.criptas) 
         self.criptas.append(camara)
         revela = [cam.revela() for cam in self.criptas]
@@ -68,8 +67,5 @@ def tesouro_inca():
         pass
     fala = "que pena"
     input(fala)
-    
-
 if __name__ == "__main__":
     tesouro_inca()
-
