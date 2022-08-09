@@ -1313,3 +1313,10 @@ NameError: name 'Cena' is not defined
     cena_templo = Cena(TEMPLO)
 NameError: name 'Cena' is not defined
 '''},
+{'date': 'Tue Aug 09 2022 17:07:41.187 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 66
+  if cam == camaras
+                    ^
+SyntaxError: invalid syntax
+'''},
