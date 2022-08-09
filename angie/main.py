@@ -12,22 +12,22 @@ from _spy.vitollino.main import Cena, STYLE
 STYLE.update(width=1000, height=500)
 
 """IMAGENS"""
-imagem_Temp = "https://i.imgur.com/DuyTTha.jpg"
+imagem_Tem = "https://i.imgur.com/DuyTTha.jpg"
 imagem_Tes = "https://i.imgur.com/OuPgmla.jpg"
 imagem_A = "https://imgur.com/iCrJ46A"
 imagem_M = "https://imgur.com/a/KYT6HiQ"
-imagem_F = "https://imgur.com/xYv9YdG"
+imagem_I = "https://imgur.com/xYv9YdG"
 imagem_C = "https://i.imgur.com/8VfAotu.jpg"
 imagem_D = "https://i.imgur.com/OHmUIhz.jpg" 
 
 """CENAS"""
-cena_Templo = Cena(imagem_Temp)
+cena_Templo = Cena(imagem_Tem)
 cena_Tesouro = Cena(imagem_Tes)
 cena_Aranha = Cena(imagem_A)
 cena_Mumia = Cena(imagem_M)
-cena_Incendio = Cena(imagem_F)
+cena_Incendio = Cena(imagem_I)
 cena_Cobra = Cena(imagem_C)
-cena_Desmoronamento = Cena(imagem_D)
+cena_Desabamento = Cena(imagem_D)
 
 "módulos/classe"
 class Camara:
@@ -68,7 +68,6 @@ def tesouro_inca():
     quer = input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}.Quer jogar (s)?", cena_Templo.vai())
     fala = "beleza" if quer == "s" else "que triste"
     input(fala)
-    # while art_joga() == "s":
     _joga_tesouro = JogaTesouro()
     while _joga_tesouro.joga() == "s":
         pass
