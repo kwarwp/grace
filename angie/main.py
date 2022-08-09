@@ -12,8 +12,8 @@ from _spy.vitollino.main import Cena, STYLE
 STYLE.update(width=1000, height=500)
 
 """IMAGENS"""
-imagem_TEMPLO = "https://i.imgur.com/DuyTTha.jpg"
-imagem_TESOURO = "https://i.imgur.com/OuPgmla.jpg"
+imagem_Templo = "https://i.imgur.com/DuyTTha.jpg"
+imagem_Tesouro = "https://i.imgur.com/OuPgmla.jpg"
 imagem_A = "https://imgur.com/iCrJ46A"
 imagem_M = "https://imgur.com/a/KYT6HiQ"
 imagem_F = "https://imgur.com/xYv9YdG"
@@ -21,8 +21,8 @@ imagem_C = "https://i.imgur.com/8VfAotu.jpg"
 imagem_D = "https://i.imgur.com/OHmUIhz.jpg" 
 
 """CENAS"""
-cena_Templo = Cena(imagem_TEMPLO)
-cena_Tesouro = Cena(imagem_TESOURO)
+cena_Templo = Cena(imagem_Templo)
+cena_Tesouro = Cena(imagem_Tesouro)
 cena_Aranha = Cena(imagem_A)
 cena_Mumia = Cena(imagem_M)
 cena_Incendio = Cena(imagem_F)
@@ -45,6 +45,7 @@ class Camara:
         return self.conteudo
 
 class JogaTesouro():
+     
     def __init__(self):
         self.criptas = []
         camaras = ["Aranha", "Mumia", "Cobra", "Desmoronamento", "Incendio"]
@@ -59,15 +60,14 @@ class JogaTesouro():
         tinha_monstro = (camara not in self.os_tesouros) and (camara in self.criptas) 
         self.criptas.append(camara)
         revela = [cam.revela() for cam in self.criptas]
-        cam = camara.revela()
+        cam= camara.revela()
         if tinha_monstro:
-            input(f"Ja existia {cam} na {revela}. Você abandonou correndo", cena_Desmoronamento.vai())
+            input(f"Ja existia {cam} na {revela}. Você abandonou correndo")
             return "n"
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
              
     def tesouro_inca():
-        """O jogo do Tesouro Inca"""
-        quer = input(f"Bem vindo ao Tesouro Inca - versão Angie {__name__}.Quer jogar (s)?", cena_templo.vai())
+        quer = input(f"Bem vindo ao Tesouro Inca - versão Roxanne {__name__}.Quer jogar (s)?", cena_templo.vai)
         fala = "beleza" if quer == "s" else "que triste"
         input(fala)
         _joga_tesouro = JogaTesouro()
