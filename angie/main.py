@@ -64,10 +64,8 @@ class JogaTesouro():
             input(f"Ja existia {cam} na {revela}. Você abandonou correndo", cenanova.vai())
             return "n"
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
-        for cam in lista_cenas:
-            print(cam)
-        else:
-             pass
+        mostrarcena = [cam.vai() for cam in lista_cenas]
+        
              
 def tesouro_inca():
     quer = input(f"Bem vindo ao Tesouro Inca - versão Angie {__name__}.Quer jogar (s)?", cena_templo.vai())
