@@ -1842,3 +1842,10 @@ class JogaTesouro():
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Aug 09 2022 19:21:34.966 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 77
+  input(fala)
+  ^
+IndentationError: unexpected indent
+'''},
