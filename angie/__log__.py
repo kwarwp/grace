@@ -1253,3 +1253,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Aug 09 2022 16:04:29.12 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 21
+  """Uma camara do templo que contem um tesouro ou perigo
+  ^
+IndentationError: expected an indented block
+'''},
