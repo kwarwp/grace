@@ -28,7 +28,7 @@ cena_Mumia = Cena(M)
 cena_Incendio = Cena(F)
 cena_Cobra = Cena(C)
 cena_Desmoronamento = Cena(D)
-lista_de_cenas = [cena_Aranha.vai(), cena_Mumia.vai(), cena_Incendio.vai(), cena_Cobra.vai(), cena_Desmoronamento.vai()]
+lista_de_cenas = [cena_Aranha, cena_Mumia, cena_Incendio, cena_Cobra, cena_Desmoronamento]
 
 """classe / modulos"""
 class Camara:
@@ -61,7 +61,7 @@ class JogaTesouro():
         revela = [cam.revela() for cam in self.criptas]
         cam= camara.revela()
         if tinha_monstro:
-            input(f"Ja existia {cam} na {revela}. Você abandonou correndo", cenanova)
+            input(f"Ja existia {cam} na {revela}. Você abandonou correndo", cenanova.vai())
             return "n"
         return input(f"Você visitou {revela} achou {cam}. Continua(s)")
         cenanova == [s for s in list_cenas if "{cam}" in s]
