@@ -1411,3 +1411,10 @@ IndentationError: unexpected indent
                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Aug 09 2022 18:28:09.661 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 24
+  cena_Templo.vai() = Cena(TEMPLO)
+                    ^
+SyntaxError: can't assign to function call 
+'''},
