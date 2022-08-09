@@ -1404,3 +1404,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Aug 09 2022 17:46:51.120 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 68
+  if cenanova = [s for s in list_cenas if "{cam}" in s])
+               ^
+SyntaxError: invalid syntax
+'''},
