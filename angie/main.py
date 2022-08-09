@@ -21,14 +21,14 @@ C = "https://i.imgur.com/8VfAotu.jpg"
 D = "https://i.imgur.com/OHmUIhz.jpg" 
 
 """CENAS"""
-cena_templo = Cena(TEMPLO)
-cena_tesouro = Cena(TESOURO)
-cena_A = Cena(A)
-cena_M = Cena(M)
-cena_F = Cena(F)
-cena_C = Cena(C)
-cena_D = Cena(D)
-lista_de_cenas = [cena_A, cena_M, cena_F, cena_C, cena_D]
+cena_Templo.vai() = Cena(TEMPLO)
+cena_Tesouro.vai() = Cena(TESOURO)
+cena_Aranha.vai() = Cena(A)
+cena_Mumia.vai() = Cena(M)
+cena_Incendio.vai() = Cena(F)
+cena_Cobra.vai() = Cena(C)
+cena_Desmoronamento.vai() = Cena(D)
+lista_de_cenas = [cena_Aranha.vai(), cena_Mumia.vai(), cena_Incendio.vai(), cena_Cobra.vai(), cena_Desmoronamento.vai()]
 
 """classe / modulos"""
 class Camara:
@@ -47,7 +47,7 @@ class Camara:
 class JogaTesouro():
     def __init__(self):
         self.criptas = []
-        camaras = ["A", "M", "C", "D", "I"]
+        camaras = ["Aranha", "Mumia", "Cobra", "Desmoronamento", "Incendio"]
         self.camaras = [Camara(contem) for contem in camaras] * 3
         os_tesouros = [1,2,3,4,5,5, 7,7,9, 11,11,13,14, 15,17]
         self.os_tesouros = [Camara(valor, valor) for valor in os_tesouros]
