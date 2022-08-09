@@ -27,7 +27,7 @@ class Camara:
         butim, sobra = self.valor // jogadores, self.valor % jogadores
         self.valor = sobra
         return butim 
-    def __repr__ (self)
+    def __repr__(self):
         return self.conteudo
         
 class JogaTesouro():
