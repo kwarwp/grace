@@ -5,16 +5,29 @@
 # SPDX-License-Identifier: (GPLv3-or-later AND LGPL-2.0-only) WITH bison-exception
 
 """ O Jogo do Tesouro Inca """
-Templo = "https://i.imgur.com/DuyTTha.jpg"
-Tesouro = "https://i.imgur.com/OuPgmla.jpg"
-A = "https://imgur.com/iCrJ46A"
-M = "https://imgur.com/a/KYT6HiQ"
-I = "https://imgur.com/xYv9YdG"
-C = "https://i.imgur.com/8VfAotu.jpg"
-D = "https://i.imgur.com/OHmUIhz.jpg"
 
 """importacao de diretorio / biblioteca"""
-from random import choice, shuffle
+from random import shuffle
+from _spy.vitollino.main import Cena, STYLE
+STYLE.update(width=1000, height=500)
+
+"""IMAGENS"""
+TEMPLO = "https://i.imgur.com/DuyTTha.jpg"
+TESOURO = "https://i.imgur.com/OuPgmla.jpg"
+A = "https://imgur.com/iCrJ46A"
+M = "https://imgur.com/a/KYT6HiQ"
+F = "https://imgur.com/xYv9YdG"
+C = "https://i.imgur.com/8VfAotu.jpg"
+D = "https://i.imgur.com/OHmUIhz.jpg" 
+
+"""CENAS"""
+cena_templo = Cena(TEMPLO)
+cena_tesouro = Cena(TESOURO)
+cena_A = Cena(A)
+cena_M = Cena(M)
+cena_F = Cena(F)
+cena_C = Cena(C)
+cena_D = Cena(D)
 
 """classe / modulos"""
 class Camara:
