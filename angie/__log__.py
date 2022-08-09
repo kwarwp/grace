@@ -1320,3 +1320,10 @@ NameError: name 'Cena' is not defined
                     ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Aug 09 2022 17:09:20.369 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 66
+  if cam == 
+             ^
+SyntaxError: invalid syntax
+'''},
