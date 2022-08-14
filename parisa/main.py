@@ -17,16 +17,29 @@ TESOURO = "https://i.imgur.com/OuPgmla.jpg"
 MONSTRO = "https://i.imgur.com/lcvvL1B.png"
 PERIGOS = "p2jHT5d ho6ZMAL G2u6KB1 awwkaBO hZ0ohTz"
 
-from random import choice 
+from random import choice, shuffle 
 
 class Camara: 
+    """ Uma camara do templo que contem um tesouro ou perigo 
+    
+        :param: conteudo: o descritor do conteúdo da camara, perigo ou tesouro
+        :param:valor: o número de tesouros que estão na câmara
+    """
     def __init__(self, conteudo, valor=0):
        self.conteudo = conteudo
        self.valor = valor
+    
     def revela(self):
+       """ Mostra o conteúdo que estava oculto na câmara"""
        return self.conteudo
+    
     def resgata(self, jogadores):
-       butim, sobra = self.valor // jogadores, self.valor % jogadores
+       """ Divide o conteúdo que estava oculto na câmara por um grupo de aventureiros
+        
+            :param: jogadores: o número de aventureiros que vão dividir o tesouro
+            :return: o número de tesouros que cabe a cada aventureiro
+        """
+        butim, sobra = self.valor // jogadores, self.valor % jogadores
        # butim = self.valor // jogadores
        # sobra = self.valor % jogadores
        self.valor = sobra
