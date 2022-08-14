@@ -779,3 +779,10 @@ AttributeError: 'JogaTesouro' object has no attribute 'camaras'
     self.camaras = [Camara(contem) for contem in self.camaras] * 3
 AttributeError: 'JogaTesouro' object has no attribute 'camaras'
 '''},
+{'date': 'Sun Aug 14 2022 20:45:28.132 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 64
+  """Camaras já reveladas pelos aventureiros """
+  ^
+IndentationError: unexpected indent
+'''},
