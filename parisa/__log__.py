@@ -698,3 +698,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sun Aug 14 2022 20:42:22.619 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 42
+  butim, sobra = self.valor  // jogadores, self.valor % jogadores
+  ^
+IndentationError: unexpected indent
+'''},
