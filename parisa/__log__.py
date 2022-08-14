@@ -786,3 +786,10 @@ AttributeError: 'JogaTesouro' object has no attribute 'camaras'
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sun Aug 14 2022 20:45:45.484 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 64
+  """Camaras já reveladas pelos aventureiros"""
+  ^
+IndentationError: unexpected indent
+'''},
