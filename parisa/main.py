@@ -39,14 +39,14 @@ class Camara:
             :param: jogadores: o número de aventureiros que vão dividir o tesouro
             :return: o número de tesouros que cabe a cada aventureiro
         """
-        butim, sobra = self.valor // jogadores, self.valor % jogadores
+       butim, sobra = self.valor // jogadores, self.valor % jogadores
        # butim = self.valor // jogadores
        # sobra = self.valor % jogadores
        self.valor = sobra
        return butim
      
-     def __repr__(self):
-        return self.conteudo
+    def __repr__(self):
+       return self.conteudo
 
 class Incursao:
     pass 
@@ -60,14 +60,15 @@ class Jogador:
 class JogaTesouro():
     """Incia o jogo do tesouro Inca"""
     def __init__(self):
-       self.criptas=[]
-       """Camaras já reveladas pelos aventureiros """
+       self.criptas = []
+       """Camaras já reveladas pelos aventureiros"""
        camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
-       self.camaras = [camara(contem) for contem in self.camaras] * 3
+       self.camaras = [Camara(contem) for contem in camaras] * 3
        """Camaras contidas no Templo """
-       os_tesouros = [1, 2, 3, 4, 5, 5, 7, 7, 9, 11, 11, 12, 13, 14, 15, 17]
-       self.os_tesouros = [camara(valor, valor) for valor in os_tesouros]
-       self.camaras += os_tesouros
+       os_tesouros = [1,2,3,4,5,5, 7,7,9, 11,11,13,14, 15,17]
+       self.os_tesouros = [Camara(valor, valor) for valor in os_tesouros]
+       """Camaras contidas no Templo que contêm tesouros"""
+       self.camaras += self.os_tesouros
        shuffle(self.camaras)
     
     def joga(self):
