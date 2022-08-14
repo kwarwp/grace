@@ -58,18 +58,18 @@ class Jogador:
     pass
 
 class JogaTesouro():
-    """Incia o jogo do tesouro Inca"""
+    """Inicia o jogo do tesouro inca"""
     def __init__(self):
-       self.criptas = []
-       """Camaras já reveladas pelos aventureiros"""
-       camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
-       self.camaras = [Camara(contem) for contem in camaras] * 3
-       """Camaras contidas no Templo """
-       os_tesouros = [1,2,3,4,5,5, 7,7,9, 11,11,13,14, 15,17]
-       self.os_tesouros = [Camara(valor, valor) for valor in os_tesouros]
-       """Camaras contidas no Templo que contêm tesouros"""
-       self.camaras += self.os_tesouros
-       shuffle(self.camaras)
+        self.criptas = []
+        """Camaras já reveladas pelos aventureiros """
+        camaras = ["Aranha", "Múmia", "Cobra", "Desabamento", "Incêndio"]
+        self.camaras = [Camara(contem) for contem in camaras] * 3
+        """Camaras contidas no Templo """
+        os_tesouros = [1,2,3,4,5,5, 7,7,9, 11,11,13,14, 15,17]
+        self.os_tesouros = [Camara(valor, valor) for valor in os_tesouros]
+        """Camaras contidas no Templo que contêm tesouros"""
+        self.camaras += self.os_tesouros
+        shuffle(self.camaras)
     
     def joga(self):
         """Executa uma jogada, revelando uma câmara 
@@ -79,14 +79,15 @@ class JogaTesouro():
         # camara = choice(self.camaras)
         #camara = choice(self.camaras)  # sortear os perigos
         camara = self.camaras.pop()
-        tinha_monstro = (camara not in self.os_tesouros) and (camara in self.criptas)
+
+        tinha_monstro = (camara not in self.os_tesouros) and (camara in self.criptas) 
         self.criptas.append(camara)
         revela = [cam.revela() for cam in self.criptas]
         cam= camara.revela()
         if tinha_monstro:
-            input(f"Ja existia {cam} na {self.criptas}. Você abandonou correndo")
+            input(f"Ja existia {cam} na {revela}. Você abandonou correndo")
             return "n"
-        return input(f"Você visitou {self.criptas} achou {cam}. Continua(s)")
+        return input(f"Você visitou {revela} achou {cam}. Continua(s)")
 
 def tesouro_inca():
     """O jogo do Tesouro Inca"""
