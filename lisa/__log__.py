@@ -918,3 +918,10 @@ i"hope"you"didnt"tr{nsl{te"it"|y"h{nd0"th{ts"wh{t"computers"{re"for0"doing"it"in
     string.isalpha()
 NameError: name 'string' is not defined
 '''},
+{'date': 'Mon Aug 29 2022 15:23:58.408 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  print(" ")
+  ^
+IndentationError: expected an indented block
+'''},
