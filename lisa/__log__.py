@@ -993,3 +993,10 @@ SyntaxError: invalid syntax
                                      ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 29 2022 16:14:03.764 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 1226
+  rc=[(i,j) for i, j in Counter(MSG)items()]
+                                     ^
+SyntaxError: invalid syntax
+'''},
