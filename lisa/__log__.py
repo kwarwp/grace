@@ -142,3 +142,10 @@ Traceback (most recent call last):
     words = ord (MSG)
 TypeError: ord() expected a character, but string of length 203 found
 '''},
+{'date': 'Mon Aug 29 2022 14:39:46.598 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 9
+  i++
+      ^
+SyntaxError: invalid syntax
+'''},
