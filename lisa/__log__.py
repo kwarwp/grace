@@ -223,3 +223,10 @@ TypeError: string indices must be integers
       ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 29 2022 14:49:51.600 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 9
+  i++
+      ^
+SyntaxError: invalid syntax
+'''},
