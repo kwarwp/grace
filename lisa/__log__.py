@@ -13,3 +13,10 @@ SyntaxError: missing parenthesis in call to 'print'
         ^
 SyntaxError: missing parenthesis in call to 'print'
 '''},
+{'date': 'Mon Aug 29 2022 14:23:08.412 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 4
+  print (ord('g')
+        ^
+SyntaxError: Unbalanced bracket (
+'''},
