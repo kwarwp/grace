@@ -262,3 +262,10 @@ Traceback (most recent call last):
     i = i+2
 TypeError: Can't convert int to str implicitely
 '''},
+{'date': 'Mon Aug 29 2022 14:57:40.113 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 9
+  ord(i) = i+2
+         ^
+SyntaxError: can't assign to function call 
+'''},
