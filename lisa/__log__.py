@@ -954,3 +954,10 @@ NameError: name 'end' is not defined
 'error': '''
 Exception: <TypeError: this.tree[2] is undefined>
 '''},
+{'date': 'Mon Aug 29 2022 15:37:56.58 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 9
+  if 96< i <121
+                ^
+SyntaxError: invalid syntax
+'''},
