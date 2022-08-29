@@ -118,3 +118,10 @@ TypeError: ord() expected a character, but string of length 3 found
       ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 29 2022 14:35:27.264 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 9
+  i++
+      ^
+SyntaxError: invalid syntax
+'''},
