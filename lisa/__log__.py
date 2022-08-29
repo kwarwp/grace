@@ -979,3 +979,10 @@ Traceback (most recent call last):
     if 96< i <121:
 TypeError: unorderable types: 'str' < int()
 '''},
+{'date': 'Mon Aug 29 2022 16:13:11.837 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 1226
+  rc=[(i,j) for i, j inCounter(MSG)items()].sorted()
+                      ^
+SyntaxError: invalid syntax
+'''},
