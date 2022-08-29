@@ -54,3 +54,10 @@ Traceback (most recent call last):
     	ord(i+2)
 TypeError: Can't convert int to str implicitely
 '''},
+{'date': 'Mon Aug 29 2022 14:29:47.443 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  i++
+      ^
+SyntaxError: invalid syntax
+'''},
