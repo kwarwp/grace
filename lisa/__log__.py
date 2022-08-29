@@ -838,3 +838,10 @@ NameError: name 'end' is not defined
            ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 29 2022 15:12:40.576 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  if i == isalpha()
+                    ^
+SyntaxError: invalid syntax
+'''},
