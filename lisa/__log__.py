@@ -831,3 +831,10 @@ Traceback (most recent call last):
     print (chr(palavra), end=='')
 NameError: name 'end' is not defined
 '''},
+{'date': 'Mon Aug 29 2022 15:12:36.704 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  if i == .isalpha()
+           ^
+SyntaxError: invalid syntax
+'''},
