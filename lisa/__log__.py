@@ -216,3 +216,10 @@ Traceback (most recent call last):
     palavra = ord (MSG[i])+2
 TypeError: string indices must be integers
 '''},
+{'date': 'Mon Aug 29 2022 14:49:32.753 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 9
+  i++
+      ^
+SyntaxError: invalid syntax
+'''},
