@@ -901,3 +901,20 @@ SyntaxError: invalid syntax
                                                                                                                                                                                                                      ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 29 2022 15:15:25.109 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''103
+i"hope"you"didnt"tr{nsl{te"it"|y"h{nd0"th{ts"wh{t"computers"{re"for0"doing"it"in"|y"h{nd"is"inefficient"{nd"th{t)s"why"this"text"is"so"long0"using"string0m{ketr{ns*+"is"recommended0"now"{pply"on"the"url0Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 282
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 10
+    string.isalpha()
+NameError: name 'string' is not defined
+'''},
