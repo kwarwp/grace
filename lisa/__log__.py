@@ -950,3 +950,7 @@ iTraceback (most recent call last):
     print(i, end=='')
 NameError: name 'end' is not defined
 '''},
+{'date': 'Mon Aug 29 2022 15:37:22.5 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: this.tree[2] is undefined>
+'''},
