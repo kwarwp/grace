@@ -806,3 +806,10 @@ Traceback (most recent call last):
     i = i+2
 TypeError: Can't convert int to str implicitely
 '''},
+{'date': 'Mon Aug 29 2022 15:05:20.48 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 9
+  print chr(palavra)
+        ^
+SyntaxError: missing parenthesis in call to 'print'
+'''},
