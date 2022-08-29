@@ -925,3 +925,10 @@ NameError: name 'string' is not defined
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Aug 29 2022 15:24:06.312 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  print( )
+  ^
+IndentationError: expected an indented block
+'''},
