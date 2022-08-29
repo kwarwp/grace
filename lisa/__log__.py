@@ -61,3 +61,10 @@ TypeError: Can't convert int to str implicitely
       ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 29 2022 14:30:10.498 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  i++
+      ^
+SyntaxError: invalid syntax
+'''},
