@@ -1016,3 +1016,10 @@ SyntaxError: invalid syntax
     rc=[(j,c) for i, j in Counter(MSG).items()]
 NameError: name 'c' is not defined
 '''},
+{'date': 'Tue Aug 30 2022 16:16:37.694 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 1270
+  print([MSG[gd+5] for gd in range(len(MSG)) if is_guard(MSG[gd:gd=9])])
+                                                                  ^
+SyntaxError: can't assign to function call 
+'''},
