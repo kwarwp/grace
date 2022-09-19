@@ -24,11 +24,11 @@ def vasos_vinhos():
                 if cheios + meio_cheio + vazios == 7:
                     muculmano = [vazios, meio_cheio, cheios]
                     muculmano_3vinhos.append(muculmano)
-    for muculmano1 in mulcumano_3vinhos:          
-        for mulcumano2 in mulcumano_3vinhos: 
-            for mulcumano3 in mulcumano_3vinhos:  
+    for muculmano1 in muculmano_3vinhos:          
+        for muculmano2 in muculmano_3vinhos: 
+            for muculmano3 in muculmano_3vinhos:  
                 if True:
-                    muculmano_vinhos.append([muculmano1, mulcumano2, mulcumano3])
+                    muculmano_vinhos.append([muculmano1, muculmano2, muculmano3])
                   
                                        
                     
