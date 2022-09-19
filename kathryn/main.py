@@ -23,12 +23,13 @@ def vasos_vinhos():
             for cheios in range(0,7): #cheios de 0 a 7 
                 if cheios + meio_cheio + vazios == 7:
                     muculmano = [vazios, meio_cheio, cheios]
-                    muculmano_3vinhos.append(muculmano)
+                    muculmano_3vinhos.append(muculmano)#todas as possíveis soluções para 1 mulcumano
     for muculmano1 in muculmano_3vinhos:          
         for muculmano2 in muculmano_3vinhos: 
             for muculmano3 in muculmano_3vinhos:  
                 if True:
-                    muculmano_vinhos.append([muculmano1, muculmano2, muculmano3])
+                    muculmano_vinhos.append([muculmano1, muculmano2, muculmano3]) #todas as possíveis soluções para os 3 mulcumanos
+                    
                   
                                        
                     
