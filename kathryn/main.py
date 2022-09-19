@@ -34,7 +34,7 @@ def vasos_vinhos():
                     
             
                     
-    print (muculmano_3vinhos)
+    print (muculmano_vinhos)
             
     
     
