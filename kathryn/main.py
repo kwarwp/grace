@@ -20,7 +20,7 @@ def vasos_vinhos():
     for vazios in range(0,7):          #vazios de 0 a 7 
         for meio_cheio in range(0,7): #meio cheio de 0 a 7 
             for cheios in range(0,7): #cheios de 0 a 7 
-                if cheios + meio_ceio + vazios == 7:
+                if cheios + meio_cheio + vazios == 7:
                     muculmano = [vazios, meio_cheio, cheios]
                     muculmano_3vinhos.append(muculmano)
                     
