@@ -27,7 +27,7 @@ def vasos_vinhos():
     for muculmano1 in muculmano_3vinhos:          
         for muculmano2 in muculmano_3vinhos: 
             for muculmano3 in muculmano_3vinhos:  
-                if True:
+                if vazios ==7, meio_cheio==7, cheios ==7:    #total de vasos 21 somatória dos vazios ==7 somatória dos cheio == 7 somatoria dos meio cheios ==7
                     muculmano_vinhos.append([muculmano1, muculmano2, muculmano3]) #todas as possíveis soluções para os 3 mulcumanos
                     
                   
