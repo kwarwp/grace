@@ -16,6 +16,7 @@ def vasos_vinhos():
     #muculmano = [vazio, meio_cheio, cheios] # vinho 
     
     muculmano_3vinhos = []
+    muculmano_vinhos = [] #combinação para os 3 mulcumanos
     
     for vazios in range(0,7):          #vazios de 0 a 7 
         for meio_cheio in range(0,7): #meio cheio de 0 a 7 
@@ -23,6 +24,15 @@ def vasos_vinhos():
                 if cheios + meio_cheio + vazios == 7:
                     muculmano = [vazios, meio_cheio, cheios]
                     muculmano_3vinhos.append(muculmano)
+    for muculmano1 in mulcumano_3vinhos:          
+        for mulcumano2 in mulcumano_3vinhos: 
+            for mulcumano3 in mulcumano_3vinhos:  
+                if True:
+                    muculmano_vinhos.append([muculmano1, mulcumano2, mulcumano3])
+                  
+                                       
+                    
+            
                     
     print (muculmano_3vinhos)
             
