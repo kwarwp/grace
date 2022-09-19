@@ -1040,3 +1040,10 @@ Traceback (most recent call last):
     print([MSG[gd+5] for gd in range(len(MSG)) if is_guard(MSG[gd:gd+9])])
 IndexError: string index out of range
 '''},
+{'date': 'Mon Sep 19 2022 18:33:42.630 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  print (ord("g"))
+  ^
+IndentationError: expected an indented block
+'''},
