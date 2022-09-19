@@ -1047,3 +1047,10 @@ IndexError: string index out of range
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Sep 19 2022 18:33:53.573 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  for i in MSG:
+  ^
+IndentationError: unexpected indent
+'''},
