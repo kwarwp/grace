@@ -30,11 +30,11 @@ def mul0():
     print (st)
 
 def mul1():
-    m = [(i, j, k) for i in range(7) for j in range(7) for k in range(7) if i+j+k == 7]
-    s = [(a, b, c) for a in m for b in m for c in m if sum(a) == sum(b) and sum(b) == sum(c)]
-    st = [(m1, m2, m3) for (m1, m2, m3) in s 
-    if  all(sum(vasos) == 7 for vasos in zip(*s))]
+    m = [(i, j, k) for i in range(7) for j in range(7) for k in range(7) if i + j + k == 7]
+    s = [(a, b, c) for a in m for b in m for c in m if len(set(sum(m) for m in (a, b, c))) == 1]
+    st = [mul for mul in s if all(sum(vasos) == 7 for vasos in zip(*mul)) and
+          (len(set([m + 2 * c for v, m, c in mul])) == 1)]
 
-    print (st)
+    print(st)
 
 mul1()
