@@ -20,14 +20,21 @@ Querem, agora, dividir os 21 vasos de modo que cada um deles receba a mesma quan
 class Vaso:
     def __repr__(self):
         return 4
-m = [(i, j, k) for i in range(7) for j in range(7) for k in range(7) if i+j+k == 7]
-s = [(a, b, c) for a in m for b in m for c in m if sum(a) == sum(b) and sum(b) == sum(c)]
-st = [([a0, a1, a2], [b0, b1, b2], [c0, c1, c2]) for [a0, a1, a2], [b0, b1, b2], [c0, c1, c2] in s 
-if  sum([a0, b0, c0])==7 and sum([a1, b1, c1])==7 and sum([a2, b2, c2])==7 and sum([a0, a1, a2, b0, b1, b2, c0, c1, c2])==21
-and 2*b0+c0 == 2*b1+c1 and 2*b1+c1  == 2*b2+c2]
-        
-print (st)
-       
+def mul0():
+    m = [(i, j, k) for i in range(7) for j in range(7) for k in range(7) if i+j+k == 7]
+    s = [(a, b, c) for a in m for b in m for c in m if sum(a) == sum(b) and sum(b) == sum(c)]
+    st = [([a0, a1, a2], [b0, b1, b2], [c0, c1, c2]) for [a0, a1, a2], [b0, b1, b2], [c0, c1, c2] in s 
+    if  sum([a0, b0, c0])==7 and sum([a1, b1, c1])==7 and sum([a2, b2, c2])==7 and sum([a0, a1, a2, b0, b1, b2, c0, c1, c2])==21
+    and 2*b0+c0 == 2*b1+c1 and 2*b1+c1  == 2*b2+c2]
 
+    print (st)
 
+def mul1():
+    m = [(i, j, k) for i in range(7) for j in range(7) for k in range(7) if i+j+k == 7]
+    s = [(a, b, c) for a in m for b in m for c in m if sum(a) == sum(b) and sum(b) == sum(c)]
+    st = [(m1, m2, m3) for (m1, m2, m3) in s 
+    if  all(sum(vasos) == 7 for vasos in zip(*s))]
 
+    print (st)
+
+mul1()
