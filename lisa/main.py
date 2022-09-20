@@ -4,12 +4,12 @@ MSG = ("g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmg
 #SUBIR DUAS LETRAS
 MSG = "map"
 def pcn():
-print (ord("g"))
+    print (ord("g"))
     for i in MSG:
         if i.isalpha():
             words = ord (i)+2
             print (chr(words),end="")
-        else:
+    else:
             print (i,end="")
 
 """#]Como pagamento de um pequeno lote de carneiros,
