@@ -110,3 +110,10 @@ NameError: name 'mulcumano_3vinhos' is not defined
     st = [([a0, a1, a2], [b0, b1, b2], [c0, c1, c2]) for [a0, a1, a2], [b0, b1, b2], [c0, c1, c2] in s 
 NameError: name 'b3' is not defined
 '''},
+{'date': 'Sun Sep 25 2022 22:43:26.894 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  if vazios ==7, meio_cheio==7, cheios ==7:    #total de vasos 21 somatória dos vazios ==7 somatória dos cheio == 7 somatoria dos meio cheios ==7
+                ^
+SyntaxError: invalid syntax
+'''},
