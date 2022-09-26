@@ -124,3 +124,10 @@ SyntaxError: invalid syntax
                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Sep 26 2022 14:37:09.942 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  if vazios ==7, meio_cheio==7, cheios ==7:    #total de vasos 21 somatória dos vazios ==7 somatória dos cheio == 7 somatoria dos meio cheios ==7
+                ^
+SyntaxError: invalid syntax
+'''},
