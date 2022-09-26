@@ -46,7 +46,7 @@ class Camara:
 class JogaTesouro():
     def __init__(self):
         self.criptas = []
-        camaras = ["Aranha", "Mumia", "Cobra", "Desabamento", "Incendio"]
+        camaras = {"a":"Aranha", "m":"Mumia", "c":"Cobra", "D":"Desabamento", "I":"Incendio"}
         self.camaras = [Camara(contem) for contem in camaras] * 3
         os_tesouros = [1,2,3,4,5,5, 7,7,9, 11,11,13,14, 15,17]
         self.os_tesouros = [Camara(valor, valor) for valor in os_tesouros]
