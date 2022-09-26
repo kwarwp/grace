@@ -291,3 +291,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Sep 26 2022 16:51:20.958 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 45
+  self.criptas = []
+  ^
+IndentationError: expected an indented block
+'''},
