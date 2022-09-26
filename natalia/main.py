@@ -4,7 +4,9 @@ import random
 
 Comandos = [ "direita", "esquerda", "cima", "baixo", "enter"]
 def ManobraTrem():
-    Manobras = [[random.choice(Comandos) for i in range(10)] for j in range(10)] 
+    def valido():
+        " ".join(random.choice(Comandos) for i in range(10))
+    Manobras = [valido() for j in range(10)] 
     return Manobras
     
 print(ManobraTrem())
