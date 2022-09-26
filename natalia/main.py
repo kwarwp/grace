@@ -1,4 +1,9 @@
 # grace.natalia.main.py
-# Problema do trem 
-# 
-      
+
+import random
+
+Comandos = [ "direita", "esquerda", "cima", "baixo", "enter"]
+def ManobraTrem():
+    return random.choice(Comandos)
+    
+print(ManobraTrem())
