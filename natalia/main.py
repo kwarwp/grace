@@ -9,6 +9,8 @@ class plataforma:
     def __init__ (self, nome): 
         self.vagoes = [ ] 
         self.nome = nome
+    def __repr__(self):
+        return self.nome
     
     def sair_esquerda (self, vagao):
         if vagao in self.vagoes: 
@@ -29,9 +31,12 @@ class plataforma:
 norte, sul, leste, oeste = plataforma(1), plataforma(2), plataforma(3), plataforma(4)
 
 class trem:  #1 vagao ou uma locomotiva
-    def __init__(self, posicao, sinal):       #elementos da imagem
+    def __init__(self, posicao, sinal, nome):       #elementos da imagem
         self.carro = posicao            #locomotiva
         self.sinal = sinal             #estação / sinaleira
+        self.nome = nome
+    def __repr__(self):
+        return self.nome
     def direita(self):
         if self.carro == sul: 
             self.carro = self.sinal
@@ -60,9 +65,9 @@ class trem:  #1 vagao ou uma locomotiva
             
 class composicao: #todo o trem 
     def __init__(self):      
-        self.vermelho = trem(sul, leste)   
-        self.branco = trem(sul, leste)     
-        self.azul = trem(sul, leste)      
+        self.vermelho = trem(sul, leste, 'v')   
+        self.branco = trem(sul, leste, 'b')     
+        self.azul = trem(sul, leste, 'a')      
         self.sinal = leste  
         sul.vagoes = [self.branco, self.azul, self.vermelho]
     
