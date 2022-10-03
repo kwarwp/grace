@@ -25,8 +25,10 @@ class trem:  #1 vagao ou uma locomotiva
         if self.carro == leste: 
             self.carro = sul
     def baixo(self):                    #separa a locomotiva do azul
+        pass
         #resolver
     def alto(self):                     #separa o azul do branco
+        pass
         #resolver
             
 class composicao: #todo o trem 
