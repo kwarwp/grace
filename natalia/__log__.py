@@ -17,3 +17,10 @@ SyntaxError: invalid syntax
                                                       ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Oct 03 2022 16:57:13.389 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  def alto(self):                     #separa o azul do branco
+  ^
+IndentationError: expected an indented block
+'''},
