@@ -39,8 +39,15 @@ class composicao: #todo o trem
         self.vermelho.direita()
         self.azul.direita()
         self.branco.direita()
-    
 
+class plataforma:
+    def __init__ (self): 
+        self.vagoes = [ ] 
+    
+    def sair (self, vagao):
+        if self.vagao ==   
+    def chegar (self, vagao):
+    
 
 def ManobraTrem():
     def valido():
