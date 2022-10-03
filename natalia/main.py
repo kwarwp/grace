@@ -59,11 +59,12 @@ class plataforma:
 
     def chegar_esquerda (self, vagao):
         
-        self.vagoes.append(vagao)
+        self.vagoes = [vagao] + self.vagoes
     
         
     
-
+def testaTrem():
+    r = trem()
 
 def ManobraTrem():
     def valido():
@@ -75,4 +76,5 @@ def ManobraTrem():
     Manobras = [valido() for j in range(10)] 
     return Manobras
     
-print(ManobraTrem())
+# print(ManobraTrem())
+testaTrem()
