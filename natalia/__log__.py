@@ -24,3 +24,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Oct 03 2022 16:58:19.687 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 52
+  self.vagoes.
+               ^
+SyntaxError: invalid syntax
+'''},
