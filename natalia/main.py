@@ -40,6 +40,7 @@ class trem:  #1 vagao ou uma locomotiva
     def direita(self):
         if self.carro == sul: 
             self.carro = self.sinal
+            print("direita", self.carro, sul)
             oeste.chegar_esquerda(self.carro)
             sul.sair_direita(self.carro)
         
