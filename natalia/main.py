@@ -49,7 +49,7 @@ class plataforma:
     def sair_esquerda (self, vagao):
         if vagao in self.vagoes: 
             self.vagoes.remove(vagao)
-            self.vagoes.
+            
     
     def sair_direita (self, vagao):
         if vagao in self.vagoes: 
