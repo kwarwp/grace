@@ -58,7 +58,8 @@ class composicao: #todo o trem
         self.vermelho = trem(sul, leste)   
         self.branco = trem(sul, leste)     
         self.azul = trem(sul, leste)      
-        self.sinal = leste    
+        self.sinal = leste  
+        sul.vagoes = [self.branco, self.azul, self.vermelho]
     def direita(self):
         self.vermelho.direita()
         self.azul.direita()
