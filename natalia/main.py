@@ -5,7 +5,28 @@ import random
 Comandos = [ "direita", "esquerda", "cima", "baixo", "enter"]
 Bagunca = ["baixo cima", "cima baixo", "baixo baixo", "cima cima"
 "enter enter", "esquerda direita", "direita esquerda"]
-norte, sul, leste, oeste = 1, 2, 3, 4
+class plataforma:
+    def __init__ (self, nome): 
+        self.vagoes = [ ] 
+        self.nome = nome
+    
+    def sair_esquerda (self, vagao):
+        if vagao in self.vagoes: 
+            self.vagoes.remove(vagao)
+            
+    
+    def sair_direita (self, vagao):
+        if vagao in self.vagoes: 
+            self.vagoes.remove(vagao)    
+    
+    def chegar_direita (self, vagao):
+        
+        self.vagoes.append(vagao)
+
+    def chegar_esquerda (self, vagao):
+        
+        self.vagoes = [vagao] + self.vagoes
+norte, sul, leste, oeste = plataforma(1), plataforma(2), plataforma(3), plataforma(4)
 
 class trem:  #1 vagao ou uma locomotiva
     def __init__(self, posicao, sinal):       #elementos da imagem
@@ -43,26 +64,7 @@ class composicao: #todo o trem
         self.azul.direita()
         self.branco.direita()
 
-class plataforma:
-    def __init__ (self): 
-        self.vagoes = [ ] 
-    
-    def sair_esquerda (self, vagao):
-        if vagao in self.vagoes: 
-            self.vagoes.remove(vagao)
-            
-    
-    def sair_direita (self, vagao):
-        if vagao in self.vagoes: 
-            self.vagoes.remove(vagao)    
-    
-    def chegar_direita (self, vagao):
-        
-        self.vagoes.append(vagao)
 
-    def chegar_esquerda (self, vagao):
-        
-        self.vagoes = [vagao] + self.vagoes
     
         
     
