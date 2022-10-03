@@ -76,9 +76,9 @@ class composicao: #todo o trem
     
 def testaTrem():
     r = composicao()
-    print(plataforma(1).vagoes)
+    print(sul.vagoes)
     r.direita()
-    print(plataforma(1).vagoes)
+    print(sul.vagoes)
 def ManobraTrem():
     def valido():
         Manobra = " ".join(random.choice(Comandos) for i in range(10))
