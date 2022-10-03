@@ -44,10 +44,26 @@ class plataforma:
     def __init__ (self): 
         self.vagoes = [ ] 
     
-    def sair (self, vagao):
-        if self.vagao ==   
-    def chegar (self, vagao):
+    def sair_esquerda (self, vagao):
+        if vagao in self.vagoes: 
+            self.vagoes.remove(vagao)
+            self.vagoes.
     
+    def sair_direita (self, vagao):
+        if vagao in self.vagoes: 
+            self.vagoes.remove(vagao)    
+    
+    def chegar_direita (self, vagao):
+        
+        self.vagoes.append(vagao)
+
+    def chegar_esquerda (self, vagao):
+        
+        self.vagoes.append(vagao)
+    
+        
+    
+
 
 def ManobraTrem():
     def valido():
