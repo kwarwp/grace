@@ -5,6 +5,7 @@ import random
 Comandos = [ "direita", "esquerda", "cima", "baixo", "enter"]
 Bagunca = ["baixo cima", "cima baixo", "baixo baixo", "cima cima"
 "enter enter", "esquerda direita", "direita esquerda"]
+norte, sul, leste, oeste = 1, 2, 3, 4
 
 class trem:  #1 vagao ou uma locomotiva
     def __init__(self, posicao, sinal):       #elementos da imagem
@@ -66,7 +67,7 @@ class plataforma:
         
     
 def testaTrem():
-    r = trem()
+    r = composicao()
 
 def ManobraTrem():
     def valido():
