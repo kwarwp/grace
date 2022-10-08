@@ -2023,3 +2023,10 @@ TypeError: Can't convert int to str implicitely
      ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sat Oct 08 2022 18:48:25.790 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 1
+  contar ocorrencias de uma palavra na frase 
+         ^
+SyntaxError: invalid syntax
+'''},
