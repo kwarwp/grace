@@ -2016,3 +2016,10 @@ NameError: name 'total_occurrences' is not defined
     print("Tem " + total_occurrencias + " ocorrencia.")
 TypeError: Can't convert int to str implicitely
 '''},
+{'date': 'Sat Oct 08 2022 18:18:01.881 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 1
+  2. Macacos encrenqueiros¶
+     ^
+SyntaxError: invalid syntax
+'''},
