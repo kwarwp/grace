@@ -1118,3 +1118,10 @@ SyntaxError: invalid syntax
     mus1 = draw()
 TypeError: draw() missing 1 positional argument: mus
 '''},
+{'date': 'Mon Aug 28 2023 17:27:27.551 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 45
+  is_wrong = sum(mus:=sample(vasos,7)) != 7
+                     ^
+SyntaxError: invalid syntax
+'''},
