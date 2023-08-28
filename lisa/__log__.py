@@ -1093,3 +1093,10 @@ NameError: name 'sample' is not defined
               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 28 2023 16:32:26.649 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 43
+  mus1 = [(vs:=sample(vasos,7)) for _ in range(10) if sum(vs) == 7]
+              ^
+SyntaxError: invalid syntax
+'''},
