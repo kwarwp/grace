@@ -1086,3 +1086,10 @@ IndentationError: expected an indented block
     mus1 = sample(vasos,7)
 NameError: name 'sample' is not defined
 '''},
+{'date': 'Mon Aug 28 2023 16:31:41.507 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 43
+  mus1 = [(vs:=sample(vasos,7)) if sum(vs) == 7]
+              ^
+SyntaxError: invalid syntax
+'''},
