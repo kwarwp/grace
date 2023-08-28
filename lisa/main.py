@@ -36,5 +36,18 @@ def mul1():
           (len(set([m + 2 * c for v, m, c in mul])) == 1)]
 
     print(st)
+from random import sample
+#mul1()
+def vas():
+    def draw(is_wrong = True):
+        while is_wrong:
+            mus = sample(vasos,7)
+            is_wrong = sum(mus) != 7
+        [vasos.remove(v) for v in mus]
+        return mus
 
-mul1()
+    vasos = [0]*7 + [1]*7 + [2]*7
+    mus1 = draw()
+    mus2 = draw()
+    print(vasos, mus1, mus2)
+vas()
