@@ -50,4 +50,39 @@ def vas():
     mus1 = draw()
     mus2 = draw()
     print(vasos, mus1, mus2)
-vas()
+#vas()
+fox = " ●●●● ● / ● ●● ●● ●● ● / ●●● ●●  ● ● / ●●●  ●●"
+ovr = "● ●●  ●● ●●● /  ●●● ● ●●"
+dog = " ●●●● ● / ●●● ● ●● ● / ●●  ●"
+
+
+
+def converta_em_morse(texto):
+    """Converta em código Morse.
+        :param texto: O texto a ser codificado
+        :return: O texto em código morse
+    """
+    alpha_morse= "".join(" / ".join([fox,ovr,dog]))
+    #print((alpha_morse))
+    alpha_morser = []
+    [alpha_morser.extend([aml]) for am in alpha_morse.split(" / ") for aml in am.split()]
+    #print(list(alpha_morser))
+    morse_alpha= "the quick brown fox jumps over the lazy dog"
+    morse_alpha = [lt for lt in morse_alpha if not lt.isspace()]
+    alpha_morse = {k:v for k, v in zip(morse_alpha, alpha_morser)}
+    alpha_morse[" "] = "/"
+    #print((alpha_morse))
+    texto_em_morse = " ".join([alpha_morse[i] for i in texto])
+    #print((texto_em_morse))
+    return texto_em_morse
+
+
+fox = " ●●●● ● / ● ●● ●● ●● ● / ●●● ●●  ● ● / ●●●  ●●"
+assert converta_em_morse("the quick brown fox") == fox
+ovr = "● ●●  ●● ●●● /  ●●● ● ●●"
+assert converta_em_morse("jumps over") == ovr
+dog = " ●●●● ● / ●●● ● ●● ● / ●●  ●"
+assert converta_em_morse("the lazy dog") == dog
+print("Acertou o conversor de morse!")
+
+
